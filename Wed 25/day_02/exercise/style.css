@@ -1,0 +1,25 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    background-color: #30598c;
+    
+}
+.footer-item1 {
+height: 300px;
+float: left;
+text-align: center;
+box-sizing: border-box;
+background-color: #30598c;
+}
+
+
+.footer-item2 {
+height: 300px;
+    
+float: left;
+text-align: center;
+box-sizing: border-box;
+background-color: #30598c;
+}

@@ -1,0 +1,28 @@
+:root {
+    --text-color: #000;
+    --color-heading: #ccc;
+    --width: 100px;
+    --height: 200px;
+}
+.text {
+    
+    font-size: 2rem;
+    color : var(--text-color);
+}
+.box {
+    font-size: 10px;
+}
+.box p {
+    font-size: 1.5em;
+    color: var(--color-heading);
+}
+.shape {
+    width: calc(8* var(--width));
+    height: calc(2* var(--height));
+    background-color: blue;
+}
+.child {
+    width: 80%;
+    height: 50%;
+    background-color: orange;
+}

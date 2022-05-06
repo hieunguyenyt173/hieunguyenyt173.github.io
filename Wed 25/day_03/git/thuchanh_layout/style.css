@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+#card {
+  width: 797px;
+  height: 160px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  display: flex;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+#time {
+  background-color: #fe6d3f;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+  color: #fff;
+  position: relative;
+}
+#time .year {
+  background-color: #ef5321;
+
+  height: 30px;
+  display: block;
+}
+#time .year p {
+  padding: 3px 0;
+  line-height: 24px;
+  margin: 0;
+}
+#time .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date .day h3 {
+  margin: 0;
+  font-weight: 400;
+  height: 40px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.date p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 704px;
+  padding: 16px 24px 0;
+  justify-content: space-between;
+}
+.title a {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+  font-size: 20.8px;
+}
+.timetable {
+  display: flex;
+
+  padding: 7px 0;
+}
+.item {
+  width: 33.33%;
+}
+
+.register {
+  border-top: 1px solid black;
+}
+button {
+  border: none;
+  color: rgb(60, 120, 232);
+  background-color: #fff;
+  font-size: 16px;
+
+  padding: 7px 0 5px 0;
+}

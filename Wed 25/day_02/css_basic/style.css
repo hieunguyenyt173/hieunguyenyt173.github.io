@@ -1,0 +1,29 @@
+h2 {
+    color: chocolate;
+    background-color: black;
+  }
+  #heading {
+      color: green;
+      background-color: violet;
+      text-transform: uppercase;
+  }
+  .para{
+      color: crimson;
+      font-size: 30px;
+      text-align: center;
+  }
+  .text-red {
+        color: red;
+  }
+  .text-center{
+      text-align: center;
+  }
+  .text-uppercase {
+      text-transform: uppercase;
+  }
+  .text-size {
+      font-size: 50px;
+  }
+  .box .box1{
+      color: rgb(34, 101, 24);
+  }

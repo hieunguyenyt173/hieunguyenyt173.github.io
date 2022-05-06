@@ -1,5 +1,6 @@
 ## Viết chương trình đầu tiên 
 Bước 1 Tạo 1 file có tên là **index.html**
+
 Bước 2: Tạo cấu trúc file có dạng như sau
 ```html
 <!DOCTYPE html>
