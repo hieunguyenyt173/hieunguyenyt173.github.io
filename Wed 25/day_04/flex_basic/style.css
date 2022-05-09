@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: blue;
+    display: flex;
+    min-height: 600px;
+    flex-wrap: wrap;
+}
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    color: #fff;
+    font-size: 32px;
+    border: 2px solid black;
+    /* >text-align: center; */
+    /* line-height: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

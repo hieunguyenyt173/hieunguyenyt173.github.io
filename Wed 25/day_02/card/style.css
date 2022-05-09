@@ -6,6 +6,9 @@ img {
     display: block;
     margin: auto;
 }
+.list{
+    display: flex;
+}
 .card {
     width: 320px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);

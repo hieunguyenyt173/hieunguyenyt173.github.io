@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #f4f7fa;
+    font-family: 'Roboto', sans-serif;
+}
+.button_back {
+    margin: 15px 40px;
+    text-decoration: none;
+   
+}
+.button_back a {
+    
+    color: #fff;
+    background-color: green;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.course {
+   padding-left: 40px;
+}
+.info {
+    background-color: #fff;
+    margin: 0 40px;
+    padding: 16px 50px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    max-width: 900px;
+}
+h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+ul,ol {
+    
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+li {
+    
+    font-weight: 400;
+    margin-bottom: 8px;
+}
