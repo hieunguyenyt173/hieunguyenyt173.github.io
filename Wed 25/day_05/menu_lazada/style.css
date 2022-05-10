@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner {
+    
+    background-color: #88050a;
+    height: 350px;
+    width: 100%;
+    
+    
+   
+}
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: azure;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #757575;
+}
+img {
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.menu {
+    
+    width: 200px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%);
+}
+
+.menu-item {
+    
+    width: 200px;
+    cursor: pointer;
+}
+
+.menu-item p {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 27px;
+    line-height: 27px;
+    text-decoration: none;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item p .icon {
+    display: none;
+}
+
+.menu-item:hover > p,
+.menu-item:hover > p a {
+    color: chocolate;
+    background-color: #e1e2e9;
+    
+}
+
+.menu-item:hover > p .icon,
+.menu-item:hover > p .icon {
+    display: inline-block;
+    color: chocolate;
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: #fff;
+    display: none;
+    height: 100%;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+.sub-menu li:hover .list-menu {
+    display: block;
+}
+.list-menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 200px;
+    background-color: #fff;
+    width: 200px;
+    height: 100%;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%);;
+}
+.list-item  {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.list-item:hover a {
+    display: inline-block;
+    color: chocolate;
+}

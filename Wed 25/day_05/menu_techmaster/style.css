@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto';
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+}
+header {
+    height: 60px;
+    background-color: #30598c;
+    padding: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 120px;
+}
+.avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.side_bar {
+    display: flex;
+    align-items: center;
+}
+.menu > ul {
+    display: flex;
+}
+.menu_item {
+    height: 60px;
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menu_item span {
+    margin: 4px;
+}
+.menu_item:hover .sub_menu{
+    display: block;
+}
+.sub_menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    display: none;
+}
+.sub_menu_item {
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+    padding: 11px 16px;
+    text-align: center;
+}
+.sub_menu_item:hover {
+    background-color: #c4c4c4;
+    color: #fff;
+}
+.card {
+    position: relative;
+    margin-right: 20px;
+}
+
+.icon_shopping {
+    color: #fff;
+    font-size: 25px;
+}
+.card_number {
+    color: #fff;
+    background-color: #26a69a;
+    padding: 2px 3px;
+   border-radius: 3px;
+   font-size: 13px;
+   position: absolute;
+   top: -8px;
+    left: 19px;
+}
