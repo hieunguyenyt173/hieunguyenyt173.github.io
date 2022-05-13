@@ -5,18 +5,31 @@ img {
     max-width: 100%;
     display: block;
     margin: auto;
+    transition: all 0.5s ease;
+    
 }
 .list{
     display: flex;
+    justify-content: center;
 }
 .card {
     width: 320px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     overflow: hidden;
+    
+}
+.card:hover img {
+    transform: scale(1.2);
+    
+}
+.card:hover .content {
+    transform: translateY(0);
 }
 .content {
     padding: 16px;
+    transition: all 0.5s ease;
+    transform: translateY(150px);
 }
 .content h2 {
     font-size: 19px;
