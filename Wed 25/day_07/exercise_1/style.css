@@ -1,0 +1,65 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heart_1 {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    background-color: #ff6c61;
+    justify-content: center;
+    align-items: center;
+}
+.heart_1 span {
+    color: #fff;
+    font-size: 150px;
+    
+   
+    animation: zoom 1.25s infinite;
+}
+@keyframes zoom {
+    0%{
+        font-size: 200px;
+       
+    }
+   
+    100% {
+        font-size: 150px;
+        
+    }
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: #ff6c61;
+    margin-left: 15px;
+}
+.container .heart {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(-45deg);
+}
+.heart::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(90deg);
+    top: 25px;
+    left: 25px;
+}
+

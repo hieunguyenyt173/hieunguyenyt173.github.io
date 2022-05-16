@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* header */
+#header {
+  position: fixed;
+  height: 80px;
+  background-color: rgb(249, 249, 249);
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#header .container {
+}
+#header .nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 250px;
+}
+#header .logo {
+  line-height: 80px;
+  font-family: "Oleo Script Swash Caps", sans-serif;
+  cursor: pointer;
+  font-size: 45px;
+  opacity: 0.7;
+  color: #ad974f;
+}
+#header .list-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  line-height: 80px;
+}
+#header .nav-item {
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.73);
+  cursor: pointer;
+  text-decoration: none;
+}
+#header .nav-item:hover {
+  opacity: 0.7;
+}
+#header .icon-mes {
+  font-size: 20px;
+}
+/* Content */
+#content .content-agency {
+  position: relative;
+}
+#content .agency-img {
+  width: 100%;
+  height: 500px;
+  filter: brightness(40%);
+}
+#content .container-agency {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-content {
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 12px;
+}
+.heading-content::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1.5px solid #ad974f;
+  width: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#content  .container-agency > .heading-content {
+  color: #fff;
+}
+.agency-info-1 span {
+  color: #ae9952;
+}
+#content .agency-info-1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 30px;
+  text-align: center;
+}
+#content .agency-info {
+  color: #fff;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.8;
+}
+#content .content-title {
+  max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 100px 0;
+}
+#content .about-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#content .title {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.9;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+#content .content-service > .agency-info-1 {
+  color: #000;
+}
+#content .content-service {
+  padding-bottom: 100px;
+}
+#content .service-card {
+  width: 250px;
+  height: 180px;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  margin:15px;
+  transition: 0.5s;
+}
+#content .service-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+#content .content-card {
+  max-width: 1125px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .service-icon {
+  font-size: 30px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+#content .service-card-info {
+  text-align: center;
+}
+/* Footer */
+#footer {
+  background: url(/Page_demo/assets/img/background-footer.jpg) bottom;
+  height: 360px;
+}
+#footer .footer-item {
+  font-size: 40px;
+  padding: 0 12px;
+  color: #ad974f;
+}
+#footer .footer-icon{
+  padding: 25px 0;
+  text-align: center;
+}
+#footer .heading-content {
+  padding-top: 150px;
+}
+#footer .footer-item:hover {
+  opacity: 0.8;
+  
+}

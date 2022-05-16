@@ -1,0 +1,74 @@
+.banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.banner h2 {
+    position: relative;
+    left: -400px;
+    opacity: 0;
+    animation: fade 1s forwards;
+}
+@keyframes fade {
+    0% {
+        left: -400px;
+        opacity: 0;
+    }
+    100%
+    {
+        left: 0;
+        opacity: 1;
+    }
+}
+.banner p {
+    position: relative;
+    right: -400px;
+    opacity: 0;
+    animation: fade1 1s forwards;
+}
+@keyframes fade1 {
+    0% {
+        right: -400px;
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0;
+        opacity: 1;
+    }
+}
+button {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    animation: fade2 1s forwards;
+}
+@keyframes fade2 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100%
+    {
+        top: 0;
+        opacity: 1;
+    }
+}
+.content h1 {
+    text-align: center;
+    color: brown;
+    animation-duration: 1s;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container a {
+    flex-basis: 390px;
+}
