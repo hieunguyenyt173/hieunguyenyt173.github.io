@@ -62,7 +62,7 @@ img {
 #slider {
      position: relative;
     height: 830px;
-    background:url(/Page_demo/assets/img/slider.jpg) top center / cover no-repeat;
+    background:url(/Wed\ 25//day_07/Page_travel_demo/assets/img/slider.jpg) top center / cover no-repeat;
  }
  #slider .slider-content {
      position: absolute;
@@ -243,7 +243,7 @@ img {
 }
 /* Footer */
 #footer {
-    background: url(/Page_demo/assets/img/background-footer.jpg) bottom;
+    background: url(/Wed\ 25//day_07/Page_travel_demo/assets/img/background-footer.jpg) bottom;
     height: 360px;
 }
 #footer .footer-item {
