@@ -47,7 +47,7 @@ let email = "hieunguyenyt173@gmail.com"
 let number = 10;
 console.log(typeof number); // "number"
 
-let name = "Bùi Hiên";
+let name = "Nguyễn Hiếu";
 console.log(typeof name); // "string"
 ```
 ## Kiểu dữ liệu String
