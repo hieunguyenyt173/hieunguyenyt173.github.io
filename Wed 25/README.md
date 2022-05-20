@@ -25,7 +25,7 @@ Ví dụ:
 Để khai báo biến sử dụng từ khóa : let / const
 
 Sử dụng 2 cách sau để khai báo biến:
-* Khai báo biến và không gán giá trị cho biến: **let age***;
+* Khai báo biến và không gán giá trị cho biến: **let age**;
 * Khai báo biến và gán giá trị cho biến: **let age = 25**;
 ```css
 // Khai báo biến và không gán giá trị cho biến
