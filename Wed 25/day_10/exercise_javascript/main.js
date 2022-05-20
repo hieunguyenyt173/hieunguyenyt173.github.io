@@ -49,7 +49,7 @@ function giai_pt_bac2(a, b, c) {
 
         }
         else {
-            console.log("Phương trình có nghiệm x =" + -c/b);
+            console.log("Phương trình có nghiệm x = " + -c/b);
         }
 
     }
