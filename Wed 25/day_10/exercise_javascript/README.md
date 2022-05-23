@@ -39,7 +39,7 @@ function sayHello_1(name, city) {
 sayHello_1("Nguyễn Hiếu", "Thanh Hóa");
 ```
 ### 3. Function trả về kết quả  
-Để trả về kết quả, sử dụng từ khóa ****return**  
+Để trả về kết quả, sử dụng từ khóa **return**  
 ```css
 function sum(a, b) {
     return a + b;
@@ -58,7 +58,7 @@ function sum(a, b) {
 }
 ```
 ### 4. Function không trả về kết quả  
-Đối với function không có từ khóa ****return** thì coi như function đó không trả về kết quả  
+Đối với function không có từ khóa **return** thì coi như function đó không trả về kết quả  
 ## Default Parameter ES6  
 Cho phép khởi tạo function với những default value nếu như chúng được định nghĩa sai.
 Khi sử dụng chức năng này sẽ giúp function dễ kiểm soát và ít lỗi hơn.  
@@ -112,7 +112,7 @@ let a = true;
 let b = false;
 ```
 ## Xác định giá trị Boolean
-Để xác định giá trị boolean cho biến, biểu thức,… ta sử dụng hàm ****Boolean()**
+Để xác định giá trị boolean cho biến, biểu thức,… ta sử dụng hàm **Boolean()**
 ## Truthy & Falsy value
 **Truthy value** là những giá trị mà khi ép kiểu về Boolean thì sẽ cho ra giá trị là **true**.  
 Ngược lại, Falsy value là những giá trị mà khi ép kiểu về Boolean thì cho ra giá trị là **false**
