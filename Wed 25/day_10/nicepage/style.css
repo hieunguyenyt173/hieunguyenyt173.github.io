@@ -29,7 +29,7 @@ img {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    margin: 0 20%;
+    margin: 0 200px;
     z-index: 10;
     background-color: none;
 }
@@ -74,7 +74,7 @@ img {
 #slider .slider-content {
     margin-top: auto;
     margin-bottom: auto;
-   margin-left: 300px;
+   margin-left: 220px;
 }
 #slider .slider-text {
     font-size: 24px;
