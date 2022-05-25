@@ -45,12 +45,12 @@ for (let i = 0; i <= 100; i++) {
 console.log(sum);
 
 // Bài 5:
-function tinhTHeTich(r) {
+function tinhTheTich(r) {
   let v = (4 * Math.PI * Math.pow(r, 3)) / 3;
   console.log(v);
 }
-tinhTHeTich(10);
-tinhTHeTich(25);
+tinhTheTich(10);
+tinhTheTich(25);
 
 // Bài 6:
 function sum1(a, b) {
