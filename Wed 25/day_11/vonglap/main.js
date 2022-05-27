@@ -78,15 +78,15 @@ function sum1(a, b) {
 }
 console.log(sum1(3, 8));
 console.log(sum1(8, 3));
-//   function sum(num1,num2) {
-//   let min = Math.min(num1,num2);
-//   let max = Math.max(num1,num2);
-//   total = 0;
-//   for(let i = min + 1;i < max; i++) {
-//   total += i;
-// }
-//   return total;
-// }
+  function sum(num1,num2) {
+  let min = Math.min(num1,num2);
+  let max = Math.max(num1,num2);
+  total = 0;
+  for(let i = min + 1;i < max; i++) {
+  total += i;
+}
+  return total;
+}
 
 // Bài 7:
 function checkNumber(n) {
