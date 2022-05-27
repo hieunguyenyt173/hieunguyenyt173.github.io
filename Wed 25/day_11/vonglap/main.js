@@ -53,8 +53,13 @@ function tinhTheTich(r) {
   let v = (4 * Math.PI * Math.pow(r, 3)) / 3;
   return v;
 }
+
 console.log(tinhTheTich(10));
 console.log(tinhTheTich(25));
+
+tinhTheTich(10);
+tinhTheTich(25);
+
 
 // Bài 6:
 function sum1(a, b) {
