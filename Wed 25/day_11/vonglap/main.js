@@ -4,11 +4,11 @@ function repeatString(a) {
   for (let i = 1; i <= 10; i++) {
     str = str + `${a}`;
   }
-  console.log(str);
+  return str;
 }
-repeatString("a");
-repeatString("1");
-repeatString("Hiếu");
+console.log(repeatString("a"));
+console.log(repeatString("1"));
+
 
 // Bài 2:
 function repeatString1(b) {
@@ -16,11 +16,11 @@ function repeatString1(b) {
   for (let i = 1; i < 10; i++) {
     str1 += `-${b}`;
   }
-  console.log(str1);
+  return str1;
 }
-repeatString1("a");
-repeatString1("5");
-repeatString1("Hiếu");
+console.log(repeatString1("a"));
+console.log(repeatString1("5"));
+console.log(repeatString1("Hiếu"));
 
 // Bài 3:
 function repeatString2(c, n) {
@@ -29,28 +29,32 @@ function repeatString2(c, n) {
     for (let i = 1; i < n; i++) {
       str2 += `-${c}`;
     }
-    console.log(str2);
+    return str2;
   }
 }
-repeatString2("a", 5);
-repeatString2("Hiếu", 10);
+console.log(repeatString2("a", 5));
+console.log(repeatString2("Hiếu", 10));
 
 // Bài 4:
-let sum = 0;
-for (let i = 0; i <= 100; i++) {
-  if (i % 5 == 0) {
-    sum += i;
+function tinhTong(){
+  let sum = 0;
+  for (let i = 0; i <= 100; i++) {
+    if (i % 5 == 0) {
+     sum += i;
+    }
   }
+    return sum;
 }
-console.log(sum);
+
+console.log(tinhTong());
 
 // Bài 5:
-function tinhTHeTich(r) {
+function tinhTheTich(r) {
   let v = (4 * Math.PI * Math.pow(r, 3)) / 3;
-  console.log(v);
+  return v;
 }
-tinhTHeTich(10);
-tinhTHeTich(25);
+console.log(tinhTheTich(10));
+console.log(tinhTheTich(25));
 
 // Bài 6:
 function sum1(a, b) {
@@ -60,17 +64,29 @@ function sum1(a, b) {
       total += i;
     }
   } else {
-    for (let i = b + 1; i < a; i++) total += i;
+    for (let i = b + 1; i < a; i++) {
+      total += i;
+    }
+    
   }
-  console.log(total);
+  return total;
 }
-sum1(3, 8);
-sum1(8, 3);
+console.log(sum1(3, 8));
+console.log(sum1(8, 3));
+//   function sum(num1,num2) {
+//   let min = Math.min(num1,num2);
+//   let max = Math.max(num1,num2);
+//   total = 0;
+//   for(let i = min + 1;i < max; i++) {
+//   total += i;
+// }
+//   return total;
+// }
 
 // Bài 7:
 function checkNumber(n) {
   if (n < 2) {
-    console.log(false);
+    return false;
   }
   let count = 0;
   for (let i = 2; i <= n - 1; i++) {
@@ -79,20 +95,20 @@ function checkNumber(n) {
     }
   }
   if (count == 0) {
-    console.log(true);
+    return true;
   } else {
-    console.log(false);
+    return false;
   }
 }
 
-checkNumber(15);
-checkNumber(17);
-checkNumber(19);
-checkNumber(25);
+console.log(checkNumber(15));
+console.log(checkNumber(17));
+console.log(checkNumber(21));
+
 
 // Bài 8:
 function sumNumber(n) {
-    sum = 0;
+    let sum = 0;
     for(let j = 2; j <= n; j++){
       let count = 0;
       for (let i = 2; i <= j - 1; i++) {
@@ -104,10 +120,10 @@ function sumNumber(n) {
         sum += j;
       } 
     }
-    console.log(sum);
+    return sum;
 }
-sumNumber(11);
-sumNumber(19);
+console.log(sumNumber(11));
+console.log(sumNumber(19));
 
 // Bài 9:
 function sumNumber1(f) {
@@ -118,9 +134,9 @@ function sumNumber1(f) {
         sum += i;
       }
     }
-    console.log(sum);
+    return sum;
   }
 }
-sumNumber1(15);
-sumNumber1(17);
-sumNumber1(13);
+console.log(sumNumber1(15));
+console.log(sumNumber1(17));
+
