@@ -57,6 +57,7 @@ console.log(checkString("12 i21"));
 function sapXep(num) {
     let number = String(num);
     let number1 = number.split("").sort();
+    if(num > 0) 
     for(let i = 0; i <= number1.length - 1; i++) {
         if(number1[i] == 0) {
             continue;
@@ -90,8 +91,10 @@ console.log(sapXep(53751));
 
 function convertToSnakeCase(str) {
     let string = str.toLowerCase();
-    let stringConvert = string.split(" ").join("_")
-    console.log(stringConvert)
+    return string.split(" ").join("_");
+    
 }
-convertToSnakeCase("HELLO world");
-convertToSnakeCase("Xin Chào Các BẠN");
+console.log(convertToSnakeCase("HELLO world"));
+console.log(convertToSnakeCase("Xin Chào Các BẠN"));
+
+
