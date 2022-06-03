@@ -51,3 +51,5 @@ Math.floor(Math.random() *100 + 1);
 
 // Lấy số ngẫu nhiên 50-100
 Math.floor(Math.random() *(100 - 50 + 1) + 50);
+// Lấy random 1 khoảng ngẫu nhiên
+Math.floor(Math.random() * (max - min + 1) + min);
