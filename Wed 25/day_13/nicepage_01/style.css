@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body {
+    
+}
+img {
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+.font-1 {
+    font-family: 'Open Sans', sans-serif;
+}
+.font-2 {
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    width: 1140px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center {
+    text-align: center;
+}
+/* Header start */
+#header {
+    width: 100%;
+    height: 92px;
+}
+#header .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+#header .logo a {
+   line-height: 92px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 30px;
+   color: #fe7ec9;
+   font-weight: 700;
+}
+#header .navbar {
+    line-height: 92px;
+}
+#header .navbar a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #42434b;
+    padding: 10px 20px;
+    margin-left: 36px;
+}
+/* Header end */
+/* Section 1 start*/
+#section-01 {
+    margin: 60px 0;
+}
+#section-01 .container {
+    height: 670px;
+    overflow: hidden;
+   
+}
+#section-01 .content {
+    flex-basis: 50%;
+    padding: 49px;
+    margin: auto 0;
+}
+#section-01 .heading-sec1 {
+    font-weight: 700;
+    font-size: 72px;
+    color: #488df4;
+    line-height: 1.2;
+}
+#section-01 h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #42434b;
+    padding: 20px 0;
+}
+#section-01 .image-sec-01 {
+    flex-basis: 50%;
+    min-height: 670px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1928ac4fdeea5ee28a624ce0/firstdayofschoolbacktoschoolphotoideasphotographyhowtotakegreatpictures13.jpg) top center / cover no-repeat;
+    background-position: 50% 50%;
+}
+/* Section1 end */
+/* Section2 start */
+.container-1 {
+    width: 100%;
+    display: flex;
+    height: 340px;
+    text-align: center;
+    margin-top: 60px;
+}
+.color1 {
+   background-color:#38c4c1 ;
+}
+.color2 {
+    background-color: #feca02;
+}
+.color3 {
+    background-color: #fe7ec9;
+}
+.color4 {
+    background-color: #488df4;
+}
+.text-color {
+    color:#42434b !important; 
+}
+#section-02 .box {
+    flex-basis: 25%;
+    
+}
+#section-02 .box h3 {
+    font-size: 36px;
+    color: #fff;
+}
+#section-02 .box-info {
+    margin-top: 90px;
+}
+#svg-b033,#svg-7cd8,#svg-a707,.u-svg-content {
+    width: 86px;
+    height: 86px;
+    fill: #fff;
+}
+/* Section2 end */
+/* Section3 start */
+#section-03 {
+    background-color: #f2f2f2;
+    
+}
+#section-03 .container-2 {
+    width: 930px;
+    height: 492px;
+    margin: 0 auto;
+}
+#section-03 .container-2 h1 {
+    font-size: 60px;
+    color: #488df4;
+}
+.container-2 .section-heading {
+    position: relative;
+    padding-top: 120px;
+}
+.container-2 .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    border-bottom: 6px solid #000;
+}
+.container-2 p {
+    margin: 65px 0;
+    font-size: 20px;
+    color:#42434b ;
+    line-height: 1.7;
+}
+/* Section3 end */
+/* Section4 start */
+#section-04 {
+    height:1025px ;
+}
+
+.sec-heading{
+    padding-top: 65px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #808080;
+}
+.heading-sec4 {
+    font-size: 48px;
+    color: #42434b;
+}
+.section4-box {
+    width: 1160px;
+    min-height: 719px;
+    display: flex;
+    margin: 35px auto 65px;
+}
+.box-img {
+    flex-basis: 50%;
+    min-height: 719px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/ca5339361f8853548066bb08/b7040d72be0edade2d96c5faa0198690.jpg) top center / cover no-repeat;
+    background-position: 50% 50%;
+}
+.box-row {
+    width: 580px;
+    display: flex;
+    height: 367px;
+}
+.box-row1 {
+    width: 580px;
+    display: flex;
+    min-height: 352px;
+}
+ .box1 {
+    flex-basis: 50%;
+}
+.box-svg {
+    position: relative;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin: 35px 0 0 162px;
+}
+#svg-d10f, #svg-ce65 {
+    fill: #fff;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-heading {
+    margin: 33px 0 0 114px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #808080;
+}
+.mar-left {
+margin-left: 138px !important;
+
+}
+.text-italic {
+    font-style: italic;
+}
+.box-content {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+.text-color2 {
+    color: #38c4c1;
+}
+.text-color3 {
+    color: #fe7ec9;
+}
+.link-section4 {
+   font-size: 16px; 
+   font-weight: 600;
+   margin: 20px 0 8px 135px;
+}
+.background1 {
+    width: 50%;
+    min-height:352px ;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d3bfc71acd69527589c31f1b/d.jpg) top center / cover no-repeat;
+    background-position: 50% 50%;
+}
+.background2 {
+    min-height:352px ;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf90812ae3b351c4942c0350/dfv.jpg) top center / cover no-repeat;
+    background-position: 50% 50%;
+}
+.col {
+    margin: 10px;
+}
+.row {
+    padding: 0 20px;
+}
+.color5 {
+    background-color: #ebfcfc;
+}
+.color6 {
+    background-color: #fff2fa;
+}
+/* Section4 end */
+/* Section5 start */
+
+.container5 {
+    height: 615px;
+}
+.section-info {
+    padding-top: 85px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.section-info .section-heading- {
+    font-size: 24px;
+    font-weight: 300;
+}
+.section-desc {
+    font-size: 36px;
+}
+.box-section5 {
+    width: 1170px;
+    height: 347px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec5-info {
+    background-color: #fff;
+    padding: 0 13px;
+    margin: 15px;
+}
+
+.text-color4 {
+    color: #488df4;
+}
+.text-color5 {
+    color: #feca02;
+}
+.text-content-sec5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.sec5-desc {
+    font-size: 16px;
+    font-style: italic;
+}
+.svg-564c,.u-svg-content {
+    width: 64px;
+    height: 64px;
+    
+}
+.mar-top {
+    margin-top: 45px;
+}
+/* Section5 end */
+/* Section6 start */
+#section-06 {
+    background-color: #f2f2f2;
+    height: 464px;
+}
+.container6 {
+    width: 1212px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec6-heading {
+    font-size: 60px;
+    flex-basis: 50%;
+    padding: 80px 51px 0;
+}
+.sec6-info {
+    display: flex;
+    justify-content: space-between;
+}
+.sec6-content {
+    border: solid 15px #f2f2f2;
+    flex-basis: 50%;
+    padding: 36px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+/* Section6 end */
+/* Section7 start */
+.section-07 {
+    height: 618px;
+}
+.section-07 .container {
+    padding: 70px 0;
+}
+.image-sec7 {
+    height: 478px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/ca781a3c8fdc51668d3016a3/c4f5abfbf6e1318f547819911d40eb34.jpg) top center / cover no-repeat;
+    background-position: 50% 0;
+}
+.image-sec7-1 { 
+    height: 478px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/45abe08f6d4a5feb8226c2d3/bf76ae7aee2f9e595a6c9f6bdefc52a2.jpg) top center / cover no-repeat;
+    background-position: 50% 50%;
+}
+.col-3 {
+    flex-basis: 33.3333%;
+    margin: 5px;
+}
+.sec7-desc {
+    background-color: #fff;
+    padding: 0 30px;
+    height: 478px;
+}
+.heading-sec7 {
+    font-size: 30px;
+    padding-top: 40px;
+    line-height: 1.2;
+}
+.content-sec7 {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 20px 0 40px;
+}
+/* Section7 end */
+/* Section8 start */
+#section-08 {
+    height: 973px;
+}
+.sec8-info {
+    margin: 100px auto;
+    width: 1164px;
+    height: 671px;
+    display: flex;
+}
+.heading-sec8 {
+    font-size: 36px;
+}
+.sec8-desc {
+    height: 671px;
+}
+.image-sec8 {
+    height: 550px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/25653f39d33452fc8389e6c0/561dd25d5211ef5968fea940105750c6.jpg) top center / cover no-repeat;
+}
+.sec8-desc-1 {
+    height: 33.3333%;
+}
+.sec8-heading {
+    padding: 0 48px;
+    font-size: 20px;
+    
+}
+.sec8-content {
+    padding-top: 20px;
+   
+    font-size: 18px;
+    line-height: 1.7;
+    
+}
+.text-left {
+    text-align: left !important;
+    padding-left: 48px;
+}
+.text-right {
+    text-align: right !important;
+    padding-right: 48px;
+}
+/* Section8 end */
+/* Section9 start */
+#section9 {
+    background-color: #38c4c1;
+}
+#section9 .container2 {
+    width: 1140px;
+    margin: 0 auto;
+}
+.sec9-info {
+    display: flex;
+    margin: 52px 0;
+}
+.image-sec9 {
+    flex-basis: 50%;
+    min-height: 600px;
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/639687807b39575582358f6f/bf46f3252edb2d29641ccb332f377bc9.jpg) top center / cover no-repeat;
+}
+.sec9-desc {
+    text-align: left;
+    flex-basis: 50%;
+    background-color: #fff;
+    padding: 0 60px;
+}
+.sec9-heading {
+    font-size: 36px;
+    margin-top: 179px;
+}
+.sec9-content {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.sec9-link {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+.btn-link {
+    margin-top: 30px;
+}
+/* Section9 end */
+/* Footer */
+.box-footer {
+    background-color: #fff;
+}
+.layout1 {
+    width: 1170px;
+    display: flex;
+    margin: 100px auto;
+}
+.box-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: auto;
+}
+.footer-svg {
+    width: 41px;
+    height: 41px;
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.info {
+    margin: 32px 30px 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.layout2-container {
+    width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.box-layout2 {
+    color: #fff;
+}
+.layout2-heading,.text-layout2 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.link-icon {
+    color: #fff;
+    padding: 0 7px;
+}
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
+.layout-icon {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
