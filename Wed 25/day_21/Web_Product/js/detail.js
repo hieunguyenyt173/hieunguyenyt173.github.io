@@ -11,7 +11,8 @@ const priceEl = document.querySelector(".product-price");
 const sizeEl = document.querySelector(".product-size");
 const descriptionEl = document.querySelector(".product-description");
 const productSizeEl = document.querySelector(".product-size");
-
+const imageEl = document.querySelector(".carousel");
+const imageEll = document.querySelector(".carousel.max-w-xl.mx-auto");
 const btnMinusCount = document.querySelector(".btn-minus-count");
 const btnPlusCount = document.querySelector(".btn-plus-count");
 const countEl = document.querySelector(".count");
@@ -49,6 +50,32 @@ const renderProduct = obj => {
     }).join("");
 
     // Hiển thị hình ảnh (duyệt mảng -> cộng chuỗi -> hiển thị)
+    imageEl.innerHTML = "";
+    let html = "";
+    obj.images.forEach(e => {
+        html += `<div
+        class="carousel__slide"
+        data-src="${e}"
+        data-fancybox="gallery"
+      >
+        <img src="${e}" />
+      </div>`;
+      
+    })
+    imageEl.innerHTML = html;
+    imageEll.innerHTML = "";
+    let html1 = "";
+    obj.images.forEach(e => {
+        html1 += `
+        <div class="carousel__slide">
+                  <img
+                    class="panzoom__content"
+                    src="${e}"
+                  />
+                </div>
+        `;
+    })
+    imageEll.innerHTML = html1;
 }
 
 // Chọn size;
