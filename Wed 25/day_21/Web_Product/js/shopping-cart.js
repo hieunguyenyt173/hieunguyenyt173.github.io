@@ -5,12 +5,21 @@ let discountMoney = document.getElementById("discount-money");
 let discountInput = document.getElementById("discount-form-input");
 const btnApplyEl = document.getElementById("btn-apply");
 let  totalMoneyEl = document.getElementById("total-money");
+const messageEl = document.querySelector(".message");
+const shoppingCartEl = document.querySelector(".shopping-cart");
+
 // Lấy danh sách sản phẩm đang có trong giỏ hàng
 let items = getDataFromLocalStorage();
 
 // Hiển thị danh sách ra ngoài giao diện
 const renderCart = arr => {
      productListEl.innerHTML = "";
+     // Kiểm tra không có sản phẩm trong giỏ -->  hiển thị thông tin
+     if(arr.length == 0) {
+        messageEl.classList.remove("hide");
+        shoppingCartEl.classList.add("hide");
+        return;
+     }
      let html = "";
      arr.forEach(obj => {
         html += ` <div class="product-item d-flex border mb-4">

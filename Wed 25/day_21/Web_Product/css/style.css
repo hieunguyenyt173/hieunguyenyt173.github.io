@@ -137,3 +137,6 @@ ul {
 .discount-form {
     height: 50px;
 }
+.hide {
+    display: none;
+}
