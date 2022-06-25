@@ -34,7 +34,7 @@ const renderTodo = arr => {
         html += `<div class="todo-item ${t.status ? "active-todo" : ""}">
         <div class="todo-item-title">
             <input type="checkbox" ${t.status ? "checked" : ""}
-            onclick="toggle(${t.id})"
+            onclick="toggleStatus(${t.id})"
             />
             <p>${t.title}</p>
         </div>
@@ -96,7 +96,7 @@ const toggleStatus = id => {
     //Lấy ra công việc cần thay đổi
     let todo = todos.find(todo => todo.id == id);
     // Thay đổi trạng thái của công việc đó: true -> false: false -> true;
-    todo.stasus = !todo.stasus;
+    todo.status = !todo.status;
     //hiển thị lên trên giao diện
     setDataToLocalStorage(todos);
 

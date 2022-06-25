@@ -39,18 +39,18 @@ const renderSubBreed = (subBreeds) => {
         subBreedList.innerHTML = "";
         let html1 = "";
         subBreeds.forEach(e => {
-            //  res2 = axios.get(`https://dog.ceo/api/breed/${value}/${e}/images/random`)
-            html1 += `<li><a href="#">${e}</a></li>`;
+            let res2 =  axios.get(`https://dog.ceo/api/breed/${value}/${e}/images/random`)
+            html1 += `<li><a href="#" onclick="randomImage()">${e}</a></li>`;
             subBreedList.innerHTML = html1;
-            
+            console.log(res2)
         })
        
            
 }
 // Hiển thị hình ảnh random
-// const randomImage = () => {
+const randomImage = () => {
     
-//         imageEl.src = res2.data.message;
+       
   
     
-// }
+}
