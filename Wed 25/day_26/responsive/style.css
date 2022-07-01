@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #6fce72;
+    font-weight: 700;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+#header {
+    
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    width: 64px;
+    height: 32px;
+}
+
+.navbar span {
+    font-size: 32px;
+}
+
+.sub-nav {
+    display: flex;
+    
+}
+
+.menu-page {
+    display: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+}
+
+.sub-nav li {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.sub-nav li:hover {
+    color: #e45269;
+}
+
+.background1 {
+    min-height: 400px;
+    background-color: #292d33;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+
+.row {
+   
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: -231px auto 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111111;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+.image {
+    height: 285px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    position: relative;
+    margin: 0 10px;
+   min-height: 521px;
+}
+
+.category {
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translateX(-50%);
+     width: 257px;
+     height: 58px;
+    margin: -31px auto 0;
+    background-color: #ffbc87;
+    text-align: center;
+}
+.category p {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 83px;
+    letter-spacing: 1px;
+    
+}
+
+
+.card-info {
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.card-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.card-desc {
+    font-size: 16px;
+    padding: 11px 22px 0;
+    
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+.link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    font-size: 14px;
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+    background-color: #333333;
+}
+.footer p {
+    padding: 50px ;
+}

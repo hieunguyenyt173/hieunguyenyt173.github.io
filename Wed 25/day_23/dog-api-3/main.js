@@ -3,8 +3,13 @@ const breedList = document.getElementById("breed-list");
 const subBreedList = document.querySelector(".sub-breeds-list");
 const imageEl = document.getElementById("image");
 const getBreedList = async () => {
-     res = await axios.get("https://dog.ceo/api/breeds/list/all")
-    renderBreedList(res.data.message);
+    try {
+        res = await axios.get("https://dog.ceo/api/breeds/list/all")
+        renderBreedList(res.data.message);
+    } catch (error) {
+       console.log(error) 
+    }
+    
     
 }
 // Render Breed List
@@ -20,37 +25,43 @@ const renderBreedList = (breeds) => {
 getBreedList();
 // Bấm nút render subBreeds
 btn.addEventListener("click", async () => {
-    let dataList = res.data.message;
+    try {
+        let dataList = res.data.message;
      value = breedList.value;
     console.log(dataList[value]);
     if(dataList[value].length > 0) {
-        let res1 = await axios.get(`https://dog.ceo/api/breed/${value}/list`)
+         res1 = await axios.get(`https://dog.ceo/api/breed/${value}/list`)
         renderSubBreed(res1.data.message);
     }
     else {
         subBreedList.innerHTML = "<li>Không có sub breed</li>";
     }    
+    } catch (error) {
+        console.log(error);
+    }
+    
 })
 
 // Render subBreeds list
 
-const renderSubBreed = (subBreeds) => {
-    
-        subBreedList.innerHTML = "";
+const renderSubBreed = async (subBreeds) => {
+        try {
+            subBreedList.innerHTML = "";
         let html1 = "";
         subBreeds.forEach(e => {
-            let res2 =  axios.get(`https://dog.ceo/api/breed/${value}/${e}/images/random`)
+        //    res2 = await axios.get(`https://dog.ceo/api/breed/${value}/${e}/images/random`)
             html1 += `<li><a href="#" onclick="randomImage()">${e}</a></li>`;
-            subBreedList.innerHTML = html1;
-            console.log(res2)
+              
         })
-       
+        subBreedList.innerHTML = html1;
+        } catch (error) {
+            console.log(error)
+        }
+        
            
 }
 // Hiển thị hình ảnh random
-const randomImage = () => {
-    
-       
-  
-    
+const randomImage =  () => {
+   
+    // imageEl.src = res2.data.message;
 }
