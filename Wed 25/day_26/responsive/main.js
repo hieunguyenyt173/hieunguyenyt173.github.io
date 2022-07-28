@@ -7,13 +7,13 @@ $(".menu-page").click(function() {
 $(".close-icon").click(function() {
     $(".sub-nav").css("left", "-250px");
     $(".overlay").css("display", "none");
-    $("body").css("overflow", "scroll");
+    $("body").css("overflow", "auto");
 })
 
 $(".overlay").click(function() {
     $(".sub-nav").css("left", "-250px");
     $(".overlay").css("display", "none");
-    $("body").css("overflow", "scroll");
+    $("body").css("overflow", "auto");
 })
 
 $(window).resize(function() {

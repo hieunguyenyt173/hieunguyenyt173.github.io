@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmaster demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="#offcanvasExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+                <div class="dropdown">
+                    <button
+                      class="btn text-white dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      LỘ TRÌNH
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Robtic</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Python</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">PHP Fullstack</a>
+                      </li>
+                    </ul>
+                  </div>
+              <a class="nav-link text-white" href="#">DOANH NGHIỆP</a>
+              <a class="nav-link text-white" href="#">KHÓA HỌC</a>
+              <a class="nav-link text-white" href="#">SẢN PHẨM HỌC VIÊN</a>
+              <a class="nav-link text-white" href="#">KHAI GIẢNG</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body">
+        <div class="navbar-nav">
+          <a class="nav-link text-dark mb-3" href="#">Doanh nghiệp</a>
+          <a class="nav-link text-dark mb-3" href="#">Khóa học</a>
+          <a class="nav-link text-dark mb-3" href="#">Sản phẩm học viên</a>
+          <a class="nav-link text-dark mb-3" href="#">Lộ trình</a>
+          <a class="nav-link text-dark mb-3" href="#">Khai giảng</a>
+        </div>
+      
+    </div>
+    </div>
+</div>
+    <!-- Section 2 -->
+        <div class="service py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Vì sao nên chọn Techmaster?</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 fs-5">
+                        <div class="service-item text-center mb-4 mb-sm-5 mb-lg-0">
+                            <div class="service-image">
+                                <img src="https://techmaster.vn/resources/image/lecture.png" alt="">
+                            </div>
+                            <p class="mt-4">Lựa chọn học trực tiếp tại trung tâm hoặc học trực tuyến có tương tác phù hợp với nhu cầu học viên</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 fs-5">
+                        <div class="service-item text-center mb-4 mb-sm-5 mb-lg-0">
+                            <div class="service-image">
+                                <img src="https://techmaster.vn/resources/image/binary-code.png" alt="">
+                            </div>
+                            <p class="mt-4">Hệ thống giáo trình chi tiết, tài liệu trực tuyến, mã nguồn phong phú cập nhật mới nhất</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 fs-5">
+                        <div class="service-item text-center mb-4 mb-sm-5 mb-lg-0">
+                            <div class="service-image">
+                                <img src="https://techmaster.vn/resources/image/group.png" alt="">
+                            </div>
+                            <p class="mt-4">Đội ngũ giảng viên giỏi, chấm bài 1:1, kinh nghiệm làm việc tại IBM, Microsoft, FSoft,...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 fs-5">
+                        <div class="service-item text-center mb-4 mb-sm-5 mb-lg-0">
+                            <div class="service-image">
+                                <img src="https://techmaster.vn/resources/image/certificate.png" alt="">
+                            </div>
+                            <p class="mt-4">Cam kết giới thiệu việc làm, hoàn lại học phí nếu không xin được việc theo đúng chuyên môn đã học.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="course py-5">
+            <div class="container">
+                <h2 class="text-center fs-4 mb-5">Các khóa học cam kết việc làm</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://techmaster.vn/resources/image/route_java.png" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://techmaster.vn/resources/image/route_devops.png" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://techmaster.vn/resources/image/codegame.jpg" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://techmaster.vn/resources/image/route_frontend.jpg" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://media.techmaster.vn/api/static/c2m5ou451cob24f6skeg/zjwMKvp6" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="course-item shadow-sm mb-4">
+                            <div class="course-image">
+                                <img src="https://techmaster.vn/resources/image/ios.png" alt="khóa học java">
+                            </div>
+                            <div class="course-info p-4">
+                                <h4 class="fs-5">Java Springboot Fullstack</h4>
+                                <p class="fw-light">Lập trình Fullstack từ Frontend tới Backend với Java, khóa học duy nhất bao gồm cả kiến thức về cấu trúc dữ liệu và giải thuật</p>
+                                <p class="fw-bolder text-black-50 mb-0">7 tháng - 84 buổi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+
+        <div class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-white text-center text-md-start mb-5 mb-lg-0 ">
+                            <h4 class="mb-3">CHỦ SỞ HỮU WEBSITE</h4>
+                            <p>Công ty TNHH TechMaster Vietnam Ltd</p>
+                            <p>Số ĐKDN: 0105392153</p>
+                            <p>Ngày cấp: 4-7-2011</p>
+                            <p>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</p>
+                            <p>Người đại diện pháp luật: Lê Minh Thu</p>
+                            <p>Phụ trách nội dung: Trịnh Minh Cường</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-white text-center text-md-start mb-5 mb-lg-0 ">
+                            <h4 class="mb-3">GIỚI THIỆU</h4>
+                            <p>Học viện CNTT TechMaster</p>
+                            <p>Giảng viên</p>
+                            <p>Quy định</p>
+                            <p>Hướng dẫn mua khóa học</p>
+                            <p>Ưu đãi và hoàn trả học phí</p>
+                            <p>Bảo vệ thông tin khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-white text-center text-md-start mb-md-0 mb-lg-0 ">
+                            <h4 class="mb-3">CHỦ SỞ HỮU WEBSITE</h4>
+                            <p>Công ty TNHH TechMaster Vietnam Ltd</p>
+                            <p>Số ĐKDN: 0105392153</p>
+                            <p>Ngày cấp: 4-7-2011</p>
+                            <p>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</p>
+                            <p>Người đại diện pháp luật: Lê Minh Thu</p>
+                            <p>Phụ trách nội dung: Trịnh Minh Cường</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item text-white text-center text-md-start mb-lg-0 ">
+                            <h4 class="mb-3">CHỦ SỞ HỮU WEBSITE</h4>
+                            <p>Công ty TNHH TechMaster Vietnam Ltd</p>
+                            <p>Số ĐKDN: 0105392153</p>
+                            <p>Ngày cấp: 4-7-2011</p>
+                            <p>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</p>
+                            <p>Người đại diện pháp luật: Lê Minh Thu</p>
+                            <p>Phụ trách nội dung: Trịnh Minh Cường</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wed project</title>
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link bootstrap> -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <!-- Link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Tự viết -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <div class="header-bar d-flex justify-content-between">
+          <div class="navbar">
+            <div class="logo text-decoration-underline pe-4">HieuShop</div>
+            <div class="subnav d-flex align-items-center">
+              <a href="#TRANG CHỦ" class="menu-item">TRANG CHỦ</a>
+              <a href="#NƯỚC HOA NAM" class="menu-item">NƯỚC HOA NAM</a>
+              <a href="#NƯỚC HOA NỮ" class="menu-item">NƯỚC HOA NỮ</a>
+              <a href="#KHUYẾN MÃI" class="menu-item">KHUYẾN MÃI</a>
+              <a href="#TIN TỨC" class="menu-item">TIN TỨC</a>
+              <a href="#LIÊN HỆ" class="menu-item">LIÊN HỆ</a>
+            </div>
+          </div>
+          <div class="navbar-icon d-flex align-items-center">
+            <form class="search form">
+              <input class="input" type="text" placeholder="Tìm kiếm" />
+              <span class="search-icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </form>
+            <div class="icon fs-4">
+              <span class="icon-user"><i class="fa-solid fa-user"></i></span>
+              <span class="like"><i class="fa-solid fa-heart"></i></span>
+              <span class="bag"
+                ><i class="fa-solid fa-bag-shopping"></i>
+                <span class="amount">0</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="popup-login mt-5">
+          <div class="image">
+            <img src="./img/login.png" alt="img-login" />
+          </div>
+          <div class="form-login text-center">
+            <div class="close fs-4 text-end me-2"><i class="fa-solid fa-xmark"></i></div>
+            <p class="title text-uppercase mb-4">Vui lòng đăng nhập</p>
+            <form class="input-form mx-auto">
+              <input
+                class="email-login mb-4 box-login"
+                type="text"
+                placeholder="Email"
+              />
+              <br />
+              <input
+                class="pass-login mb-2 box-login"
+                type="text"
+                placeholder="Mật khẩu"
+              />
+              <p class="forget-pass text-end mb-3">Quên mật khẩu?</p>
+              <div class="btn-login text-uppercase box-login mb-2">Đăng nhập</div>
+              <p class="new-account text-end mb-3">Bạn chưa có tài khoản?</p>
+              <div class="btn-create text-uppercase box-login">Đăng kí</div>
+            </form>
+          </div>
+        </div>
+        <div class="popup-create mt-5">
+            <div class="image">
+              <img src="./img/login.png" alt="img-login" />
+            </div>
+            <div class="form-login text-center">
+              <div class="close fs-4 text-end me-2"><i class="fa-solid fa-xmark"></i></div>
+              <p class="title text-uppercase mb-3">Tạo tài khoản</p>
+              <form class="input-form mx-auto">
+                <input
+                  class="email-login mb-10 box-login"
+                  type="text"
+                  placeholder="Tên tài khoản"
+                />
+                <input
+                  class="email-login mb-10 box-login"
+                  type="text"
+                  placeholder="Email"
+                />
+                <br />
+                <input
+                  class="pass-login mb-10 box-login"
+                  type="text"
+                  placeholder="Mật khẩu"
+                />
+                <input
+                  class="email-login mb-3 box-login"
+                  type="text"
+                  placeholder="Xác nhận lại mật khẩu"
+                />
+                <div class="btn-create text-uppercase box-login mb-3">Đăng kí</div>
+                <p class="forget-pass mb-2">Bạn đã có tài khoản?</p>
+                <div class="btn-login text-uppercase box-login">Đăng nhập</div>
+              </form>
+            </div>
+          </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <!-- Section banner -->
+    <div id="banner">
+        <div class="container">
+            <img class="banner" src="./img/banner.webp" alt="banner">
+        </div>
+    </div>
+    <!-- Section slider -->
+    <div id="slider">
+        
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Link tự viết -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
