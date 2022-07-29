@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wed project</title>
+    <!-- Link slide -->
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
     <!-- Link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +24,7 @@
     <!-- Link jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Link bootstrap> -->
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
     <!-- Link icon -->
     <link
       rel="stylesheet"
@@ -66,7 +75,9 @@
             <img src="./img/login.png" alt="img-login" />
           </div>
           <div class="form-login text-center">
-            <div class="close fs-4 text-end me-2"><i class="fa-solid fa-xmark"></i></div>
+            <div class="close fs-4 text-end me-2">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
             <p class="title text-uppercase mb-4">Vui lòng đăng nhập</p>
             <form class="input-form mx-auto">
               <input
@@ -81,63 +92,185 @@
                 placeholder="Mật khẩu"
               />
               <p class="forget-pass text-end mb-3">Quên mật khẩu?</p>
-              <div class="btn-login text-uppercase box-login mb-2">Đăng nhập</div>
+              <div class="btn-login text-uppercase box-login mb-2">
+                Đăng nhập
+              </div>
               <p class="new-account text-end mb-3">Bạn chưa có tài khoản?</p>
               <div class="btn-create text-uppercase box-login">Đăng kí</div>
             </form>
           </div>
         </div>
         <div class="popup-create mt-5">
-            <div class="image">
-              <img src="./img/login.png" alt="img-login" />
-            </div>
-            <div class="form-login text-center">
-              <div class="close fs-4 text-end me-2"><i class="fa-solid fa-xmark"></i></div>
-              <p class="title text-uppercase mb-3">Tạo tài khoản</p>
-              <form class="input-form mx-auto">
-                <input
-                  class="email-login mb-10 box-login"
-                  type="text"
-                  placeholder="Tên tài khoản"
-                />
-                <input
-                  class="email-login mb-10 box-login"
-                  type="text"
-                  placeholder="Email"
-                />
-                <br />
-                <input
-                  class="pass-login mb-10 box-login"
-                  type="text"
-                  placeholder="Mật khẩu"
-                />
-                <input
-                  class="email-login mb-3 box-login"
-                  type="text"
-                  placeholder="Xác nhận lại mật khẩu"
-                />
-                <div class="btn-create text-uppercase box-login mb-3">Đăng kí</div>
-                <p class="forget-pass mb-2">Bạn đã có tài khoản?</p>
-                <div class="btn-login text-uppercase box-login">Đăng nhập</div>
-              </form>
-            </div>
+          <div class="image">
+            <img src="./img/login.png" alt="img-login" />
           </div>
+          <div class="form-login text-center">
+            <div class="close fs-4 text-end me-2">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p class="title text-uppercase mb-3">Tạo tài khoản</p>
+            <form class="input-form mx-auto">
+              <input
+                class="email-login mb-10 box-login"
+                type="text"
+                placeholder="Tên tài khoản"
+              />
+              <input
+                class="email-login mb-10 box-login"
+                type="text"
+                placeholder="Email"
+              />
+              <br />
+              <input
+                class="pass-login mb-10 box-login"
+                type="text"
+                placeholder="Mật khẩu"
+              />
+              <input
+                class="email-login mb-3 box-login"
+                type="text"
+                placeholder="Xác nhận lại mật khẩu"
+              />
+              <div class="btn-create text-uppercase box-login mb-3">
+                Đăng kí
+              </div>
+              <p class="forget-pass mb-2">Bạn đã có tài khoản?</p>
+              <div class="btn-login text-uppercase box-login">Đăng nhập</div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="overlay"></div>
     </div>
     <!-- Section banner -->
     <div id="banner">
-        <div class="container">
-            <img class="banner" src="./img/banner.webp" alt="banner">
-        </div>
+      <div class="container">
+        <img class="banner" src="./img/banner.webp" alt="banner" />
+      </div>
     </div>
     <!-- Section slider -->
     <div id="slider">
-        
+      <div class="container">
+        <h3 class="heading text-uppercase mt-4 mb-4">
+          Những thương hiệu hàng đầu
+        </h3>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./img/brand-item/Azzardo.webp" alt="brand1" />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/blvgari_logo.webp" alt="brand2" />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/Burberry_Brand_Logo.webp" alt="brand3" />
+          </div>
+          <div class="item">
+            <img
+              src="./img/brand-item/Calvin_Klein_Brand_Logo.webp"
+              alt="brand4"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./img/brand-item/Carolina_Herrera_Brand_Logo.webp"
+              alt="brand5"
+            />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/dolce_gabbana.webp" alt="" />
+          </div>
+          <div class="item">
+            <img
+              src="./img/brand-item/Giorgio_Armani_Brand_Logo.webp"
+              alt="brand6"
+            />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/Gucci_Brand_Logo.webp" alt="brand7" />
+          </div>
+          <div class="item">
+            <img
+              src="./img/brand-item/Kenneth_Cole_Brand_Logo.webp"
+              alt="brand8"
+            />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/Marc_Jacobs_Logo.webp" alt="brand9" />
+          </div>
+          <div class="item">
+            <img src="./img/brand-item/Ralph_Lauren_Logo.webp" alt="brand10" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section popular -->
+    <div id="category-popular">
+      <div class="container">
+        <h3 class="text-center text-uppercase fs-4 mt-5 mb-4">Các danh mục phổ biến</h3>
+        <div class="row">
+          <div class="col">
+            <div class="women-image">
+            </div>
+            <div class="category-women d-flex justify-content-between">
+              <p class="popular-item">Tất cả nước hoa nữ</p>
+              <p class="popular-item">Bán chạy</p>
+              <p class="popular-item">Bộ quà tặng</p>
+              </div>
+          </div>
+          <div class="col">
+            <div class="men-image">
+              
+            </div>
+            <div class="category-men d-flex justify-content-between">
+              <p class="popular-item">Tất cả nước hoa nam</p>
+              <p class="popular-item">Bán chạy</p>
+              <p class="popular-item">Bộ quà tặng</p>
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section sale -->
+    <div id="sale">
+      <div class="container">
+        <div class="flash-sale mt-5 mb-2 d-flex justify-content-between">
+          <div class="time-sale">
+            
+            <div class="timer text-center d-flex">
+              <img src="./img/flashsale.png" alt="flashsale">
+            <div class="sale-timer">17</div>
+            <div class="sale-timer">15</div>
+            <div class="sale-timer">35</div>
+            </div>
+          </div>
+          <div class="btn-more">Xem thêm
+            <span class="icon-more"><i class="fa-solid fa-angles-right"></i></span>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"> 
+            <div class="image-product">
+              <img src="./img/img-product.png" alt="anh san pham">
+            </div>
+            <div class="btn-view mx-auto">Xem nhanh</div>
+            <div class="saleoff">Sale 45%</div>
+            <div class="product-info">
+              <p class="product-name" >Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+              <div class="product-price d-flex">
+                <p class="price-sale pe-3">2.390.000₫</p>
+              <p class="price text-decoration-line-through">4.125.000₫</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
+    <!-- Link slide -->
+    <script src="jquery.min.js"></script>
+    <script src="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     <!-- Bootstrap -->
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Link tự viết -->
     <script src="./js/main.js"></script>
   </body>
