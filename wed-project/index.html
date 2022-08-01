@@ -41,65 +41,81 @@
     <!-- Header -->
     <div id="header">
       <div class="container">
-        <div class="header-bar d-flex justify-content-between">
-          <div class="navbar">
-            <div class="logo text-decoration-underline pe-4">HieuShop</div>
-            <div class="subnav d-flex align-items-center">
-              <a href="#TRANG CHỦ" class="menu-item">TRANG CHỦ</a>
-              <a href="#NƯỚC HOA NAM" class="menu-item">NƯỚC HOA NAM</a>
-              <a href="#NƯỚC HOA NỮ" class="menu-item">NƯỚC HOA NỮ</a>
-              <a href="#KHUYẾN MÃI" class="menu-item">KHUYẾN MÃI</a>
-              <a href="#TIN TỨC" class="menu-item">TIN TỨC</a>
-              <a href="#LIÊN HỆ" class="menu-item">LIÊN HỆ</a>
+        <div class="header-bar">
+          <div class="row">
+            <div class="col-sm-4 d-flex align-items-center">
+              <form class="search form">
+                <input class="input" type="text" placeholder="Tìm kiếm" />
+                <span class="search-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </form>
             </div>
-          </div>
-          <div class="navbar-icon d-flex align-items-center">
-            <form class="search form">
-              <input class="input" type="text" placeholder="Tìm kiếm" />
-              <span class="search-icon"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></span>
-            </form>
-            <div class="icon fs-4">
-              <span class="icon-user"><i class="fa-solid fa-user"></i></span>
-              <span class="like"><i class="fa-solid fa-heart"></i></span>
-              <span class="bag"
-                ><i class="fa-solid fa-bag-shopping"></i>
-                <span class="amount">0</span></span
-              >
+            <div class="col-sm-4 d-flex align-items-center justify-content-center">
+              <div class="logo text-decoration-underline">HieuShop</div>
             </div>
-          </div>
-        </div>
-        <div class="popup-login mt-5">
-          <div class="image">
-            <img src="./img/login.png" alt="img-login" />
-          </div>
-          <div class="form-login text-center">
-            <div class="close fs-4 text-end me-2">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
-            <p class="title text-uppercase mb-4">Vui lòng đăng nhập</p>
-            <form class="input-form mx-auto">
-              <input
-                class="email-login mb-4 box-login"
-                type="text"
-                placeholder="Email"
-              />
-              <br />
-              <input
-                class="pass-login mb-2 box-login"
-                type="text"
-                placeholder="Mật khẩu"
-              />
-              <p class="forget-pass text-end mb-3">Quên mật khẩu?</p>
-              <div class="btn-login text-uppercase box-login mb-2">
-                Đăng nhập
+            <div class="col-sm-4">
+              <div class="navbar-icon align-items-center justify-content-end">
+                <p class="hello mb-0 hide">Xin chào, <span class="username">Khách</span></p>
+                <div class="icon fs-4">
+                  
+                  <span class="icon-user"><i class="fa-solid fa-user"></i></span>
+                  <span class="like"><i class="fa-solid fa-heart"></i></span>
+                  <span class="bag"
+                    ><i class="fa-solid fa-bag-shopping"></i>
+                    <span class="amount">0</span></span
+                  >
+                </div>
               </div>
-              <p class="new-account text-end mb-3">Bạn chưa có tài khoản?</p>
-              <div class="btn-create text-uppercase box-login">Đăng kí</div>
-            </form>
+            </div>
           </div>
         </div>
+      </div>
+     <!-- Popup login -->
+     
+        <div class="popup-login mt-5">
+          <div class="container d-flex">
+            <div class="row">
+              <div class="col">
+                <div class="image">
+                  <img src="./img/login.png" alt="img-login" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-login text-center">
+                  <div class="close fs-4 text-end me-2">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <p class="title text-uppercase mb-4">Vui lòng đăng nhập</p>
+                  <form class="input-form mx-auto">
+                    <input
+                      class="email-login mb-4 box-login"
+                      type="text"
+                      placeholder="Email"
+                    />
+                    <br />
+                    <input
+                      class="pass-login mb-2 box-login"
+                      type="text"
+                      placeholder="Mật khẩu"
+                    />
+                    <p class="forget-pass text-end mb-3">Quên mật khẩu?</p>
+                    <div class="btn-login text-uppercase box-login mb-2">
+                      Đăng nhập
+                    </div>
+                    <p class="new-account text-end mb-3">Bạn chưa có tài khoản?</p>
+                    <div class="btn-create text-uppercase box-login">Đăng kí</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <!-- Popup create -->
         <div class="popup-create mt-5">
           <div class="image">
             <img src="./img/login.png" alt="img-login" />
@@ -140,6 +156,546 @@
           </div>
         </div>
       </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="main-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="subnav">
+              <a href="#TRANG CHỦ" class="menu-item">TRANG CHỦ</a>
+              <a href="#NƯỚC HOA NAM" class="menu-item">NƯỚC HOA NAM</a>
+              <a href="#NƯỚC HOA NỮ" class="menu-item">NƯỚC HOA NỮ</a>
+              <a href="#KHUYẾN MÃI" class="menu-item">KHUYẾN MÃI</a>
+              <a href="#TIN TỨC" class="menu-item">TIN TỨC</a>
+              <a href="#LIÊN HỆ" class="menu-item">LIÊN HỆ</a>
+              <div class="subnav-tablet">
+                <p class="menu-item-tablet">NƯỚC HOA NAM</p>
+                <p class="menu-item-tablet">NƯỚC HOA NỮ</p>
+                <p class="menu-item-tablet">KHUYẾN MÃI</p>
+                <span class="menu-bar fs-5 text-white"><i class="fa-solid fa-bars"></i></span>
+            </div>
+              </div>
+              
+          </div>
+          <!-- Menu-men-destop -->
+          <div class="menu-men-desktop">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="category-title">Nhãn hiệu</p>
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="row-md-2 d-flex">
+              
+              <div class="col">
+                  <p class="brand-name">Azzaro</p>
+                  <p class="brand-name">Issey Miyake</p>
+                  <p class="brand-name">Burberry</p>  
+                  <p class="brand-name">Jean Paul Gaultier</p>
+                  <p class="brand-name">Calvin Klein</p>
+                  <p class="brand-name">Kenneth Cole</p>
+                  <p class="brand-name">Carolina Herrera</p>
+                  <p class="brand-name">Lacoste</p>
+                  <p class="brand-name">Davidoff</p>
+                  <p class="brand-name">Dolce & Gabbana</p>
+                  
+                
+              </div>
+              <div class="col-md-2">
+                <p class="brand-name">Gianni Versace</p>
+                <p class="brand-name">Ralph Lauren</p>
+                <p class="brand-name">Giorgio Armani</p>
+                <p class="brand-name">Sean John</p>
+                <p class="brand-name">Givenchy</p>
+                <p class="brand-name">Thierry Mugler</p>
+                <p class="brand-name">Gucci</p>
+                <p class="brand-name">Tom Ford</p>
+                <p class="brand-name">Hugo Boss</p>
+                
+                <p class="brand-name">Shop all brands</p>
+              </div>
+              <div class="col-md-8">
+                <div class="row mb-4">
+                  <div class="col-6">
+                    <div class="item-men">
+                      <div class="img-item-men">
+                        <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+                      </div>
+                      
+                        <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                      <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="item-men">
+                      <div class="img-item-men">
+                        <img src="./img/dang-sale.png" alt="dang-sale">
+                      </div>
+                      
+                        <p class="item-sidebar-men">Đang khuyến mãi</p>
+                      <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                     
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="item-men">
+                      <div class="img-item-men">
+                        <img src="./img/bo-qua-tang.png" alt="bo-qua-tang">
+                      </div>
+                      
+                        <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+                    <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="item-men">
+                      <div class="img-item-men">
+                        <img src="./img/all-sp.png" alt="all-sp">
+                      </div>
+                     
+                      <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                      <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="row mx-0 ">
+            <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+              <p class="my-3">MENU</p>
+              <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-3 menu-men d-flex justify-content-between align-items-center border-bottom">
+              <p class="my-3">Nước hoa nam</p>
+              <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-3 menu-women d-flex justify-content-between align-items-center border-bottom">
+              <p class="my-3">Nước hoa nữ</p>
+              <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-3 d-flex justify-content-between align-items-center border-bottom">
+              <p class="my-3">Khuyến mãi</p>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-3 border-bottom">
+              <p class="my-3">Tin tức</p>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-3 border-bottom">
+              <p class="my-3">Liên hệ</p>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="sidebar-login d-flex justify-content-center align-items-center mt-3 mx-3">
+                <span class="user pe-2"> <i class="fa-solid fa-user"></i></span>
+              <p class="my-3">Đăng nhập/ Đăng kí</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="sidebar-like d-flex justify-content-center align-items-center my-3 mx-3">
+                <span class="like pe-2"><i class="fa-solid fa-heart"></i></span>
+              <p class="my-3">Sản phẩm yêu thích</p>
+            </div>
+              </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      <!-- Sidebar-men -->
+      <div class="sidebar-men">
+        <div class="row mx-0 ">
+          <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+            <div class="menu-back d-flex align-items-center">
+              <span class="btn-back-icon me-2"><i class="fa-solid fa-angle-left"></i></span>
+              <p class="my-3">NƯỚC HOA NAM</p>
+            </div>
+            
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 brand-menu d-flex justify-content-between align-items-center border-bottom">
+            <p class="my-3">Nhãn hiệu</p>
+            <span class="next-icon brand-menu"><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+              </div>
+              
+                <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+              <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/dang-sale.png" alt="dang-sale">
+              </div>
+              
+                <p class="item-sidebar-men">Đang khuyến mãi</p>
+              <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/bo-qua-tang.png" alt="bo-qua-tang">
+              </div>
+              
+                <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/all-sp.png" alt="all-sp">
+              </div>
+            
+              <p class="item-sidebar-men">Tất cả sản phẩm</p>
+              <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Sidebar-brand-men-->
+      <div class="sidebar-brand">
+        <div class="row mx-0 ">
+          <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+            <div class="menu-back d-flex align-items-center">
+              <span class="btn-back-icon-1 me-2"><i class="fa-solid fa-angle-left"></i></span>
+              <p class="my-3">NHÃN HIỆU</p>
+            </div>
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Azzaro</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Burberry</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Calvin Klein</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Carolina Herrera</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Davidoff</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Ralph Lauren</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Sean John</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Thierry Mugler</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Tom Ford</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Vince Camuto</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Issey Miyake</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Jean Paul Gaultier</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Kenneth Cole</p>
+          </div>
+        </div>
+
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Lacoste</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Dolce & Gabbana</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Gianni Versace</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Giorgio Armani</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Givenchy</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Gucci</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Hugo Boss</p>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar-women -->
+      <div class="sidebar-women">
+        <div class="row mx-0 ">
+          <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+            <div class="menu-back d-flex align-items-center">
+              <span class="btn-back-icon me-2"><i class="fa-solid fa-angle-left"></i></span>
+              <p class="my-3">NƯỚC HOA NỮ</p>
+            </div>
+            
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 brand-menu d-flex justify-content-between align-items-center border-bottom">
+            <p class="my-3">Nhãn hiệu</p>
+            <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
+              </div>
+             
+                <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/dang-sale-nu.webp" alt="dang-sale">
+              </div>
+              
+                <p class="item-sidebar-men">Đang khuyến mãi</p>
+              <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/bo-quatang-nu.webp" alt="bo-qua-tang">
+              </div>
+              
+                <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-4">
+          <div class="col">
+            <div class="item-men">
+              <div class="img-item-men">
+                <img src="./img/all-sp-nu.webp" alt="all-sp">
+              </div>
+             
+              <p class="item-sidebar-men">Tất cả sản phẩm</p>
+              <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Sidebar-brand-women-->
+      <div class="sidebar-brand-women">
+        <div class="row mx-0 ">
+          <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+            <div class="menu-back d-flex align-items-center">
+              <span class="btn-back-icon-1 me-2"><i class="fa-solid fa-angle-left"></i></span>
+              <p class="my-3">NHÃN HIỆU</p>
+            </div>
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Burberry</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Bvlgari</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Calvin Klein</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Clinique</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Davidoff</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Dolce & Gabbana</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Elizabeth Taylor</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Estee Lauder</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Gianni Versace</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Giorgio Armani</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Givenchy</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Gucci</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Hugo Boss</p>
+          </div>
+        </div>
+
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Jessica Simpson</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Kenneth Cole</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Lacoste</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Marc Jacobs</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Paris Hilton</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Ralph Lauren</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Thierry Mugler</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
       <div class="overlay"></div>
     </div>
     <!-- Section banner -->
