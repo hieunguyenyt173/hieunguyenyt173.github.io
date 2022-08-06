@@ -111,23 +111,24 @@ owl.owlCarousel({
     responsive:{
         0:{
             items:2,
-            nav:true
+            
         },
-        600:{
+        576:{
             items:3,
-            nav:false
+            
         },
-        1000:{
+        992:{
             items:5,
-            nav:true,
-            loop:false
+            
+            
         }
     },
-  loop: true,
+  // loop: true,
   margin: 10,
   autoplay: true,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
+  nav: false,
 });
 $(".play").on("click", function () {
   owl.trigger("play.owl.autoplay", [1000]);
