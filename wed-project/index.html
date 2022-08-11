@@ -49,8 +49,10 @@
             <div class="navbar-icon align-items-center justify-content-end">
               <p class="hello mb-0 hide">Xin chào, <span class="username">Khách</span></p>
               <div class="icon fs-4">
-
-                <span class="icon-user"><i class="fa-solid fa-user"></i></span>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="icon-user"><i class="fa-solid fa-user"></i></span>
+                </button>
+                
                 <span class="like-icon-header"><i class="fa-solid fa-heart"></i></span>
                 <span class="bag"><i class="fa-solid fa-bag-shopping"></i>
                   <span class="amount">0</span></span>
@@ -60,69 +62,8 @@
         </div>
       </div>
     </div>
-    <!-- Popup login -->
-
-    <div class="popup-login mt-5">
-      <div class="container d-flex">
-        <div class="row">
-          <div class="col">
-            <div class="image">
-              <img src="./img/login.png" alt="img-login" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="form-login text-center">
-              <div class="close fs-4 text-end me-2">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <p class="title text-uppercase mb-4">Vui lòng đăng nhập</p>
-              <form class="input-form mx-auto">
-                <input class="email-login mb-4 box-login" type="text" placeholder="Email" />
-                <br />
-                <input class="pass-login mb-2 box-login" type="text" placeholder="Mật khẩu" />
-                <p class="forget-pass text-end mb-3">Quên mật khẩu?</p>
-                <div class="btn-login text-uppercase box-login mb-2">
-                  Đăng nhập
-                </div>
-                <p class="new-account text-end mb-3">Bạn chưa có tài khoản?</p>
-                <div class="btn-create text-uppercase box-login">Đăng kí</div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <!-- Popup create -->
-    <div class="popup-create mt-5">
-      <div class="image">
-        <img src="./img/login.png" alt="img-login" />
-      </div>
-      <div class="form-login text-center">
-        <div class="close fs-4 text-end me-2">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <p class="title text-uppercase mb-3">Tạo tài khoản</p>
-        <form class="input-form mx-auto">
-          <input class="email-login mb-10 box-login" type="text" placeholder="Tên tài khoản" />
-          <input class="email-login mb-10 box-login" type="text" placeholder="Email" />
-          <br />
-          <input class="pass-login mb-10 box-login" type="text" placeholder="Mật khẩu" />
-          <input class="email-login mb-3 box-login" type="text" placeholder="Xác nhận lại mật khẩu" />
-          <div class="btn-create text-uppercase box-login mb-3">
-            Đăng kí
-          </div>
-          <p class="forget-pass mb-2">Bạn đã có tài khoản?</p>
-          <div class="btn-login text-uppercase box-login">Đăng nhập</div>
-        </form>
-      </div>
-    </div>
   </div>
-  <div class="overlay"></div>
-  </div>
+  <!-- Main-menu -->
   <div class="main-menu">
     <div class="container">
       <div class="row">
@@ -232,7 +173,7 @@
           </div>
         </div>
       </div>
-      <!-- Sidebar -->
+        <!-- Sidebar -->
       <div class="sidebar">
         <div class="row mx-0 ">
           <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
@@ -278,7 +219,6 @@
         <div class="row mx-0">
           <div class="col">
             <div class="sidebar-like d-flex justify-content-center align-items-center my-3 mx-3">
-              <span class="like pe-2"><i class="fa-solid fa-heart"></i></span>
               <p class="my-3">Sản phẩm yêu thích</p>
             </div>
           </div>
@@ -661,8 +601,109 @@
     </div>
 
   </div>
-  <div class="overlay"></div>
-  </div>
+  <!-- Popuplogin, create -->
+  <div id="login">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-0">
+              <div class="popup-login">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="image">
+                      <img src="./img/login.png" alt="img-login" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="infomation">
+                      <div class="modal-header border-none">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <p class="title text-uppercase text-center mb-4">Vui lòng đăng nhập</p>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Mật khẩu</label>
+                      </div>
+                      <p class="subtitle text-end mb-3 mt-2">Quên mật khẩu?</p>
+                      <div class="btn-login text-uppercase text-center box-login mb-2">
+                        Đăng nhập
+                      </div>
+                      <p class="subtitle text-center mb-3">Bạn chưa có tài khoản?</p>
+                     
+                        <button type="button" class="btn btn-create text-uppercase text-center box-login" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                          Đăng kí
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="create">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-0">
+              <div class="popup-login">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="image">
+                      <img src="./img/login.png" alt="img-login" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="infomation">
+                      <div class="modal-header border-none">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <p class="title text-uppercase text-center mb-4">Tạo tài khoản</p>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                        <label for="floatingInput">Tên tài khoản</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Mật khẩu</label>
+                      </div>
+  
+  
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Xác nhận lại mật khẩu</label>
+                      </div>
+                      
+                      <div class="btn-create text-uppercase text-center box-login mb-3">
+                        Đăng kí
+                      </div>
+                      <p class="subtitle text-center mb-2">Bạn đã có tài khoản?</p>
+                      <button type="button" class="btn btn-login text-uppercase text-center box-login mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                       Đăng nhập
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
   <!-- Section banner -->
   <div id="banner">
     <div class="container">
@@ -1795,7 +1836,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12">
           <div class="row">
             <div class="col">
@@ -1837,7 +1878,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="btn-more text-center">Xem thêm
         <span class="icon-more"><i class="fa-solid fa-angles-right"></i></span>
       </div>
@@ -1900,6 +1941,7 @@
       </div>
     </div>
   </div>
+  <div class="overlay"></div>
 
 
 

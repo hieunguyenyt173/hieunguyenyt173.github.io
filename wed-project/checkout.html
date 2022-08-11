@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang thanh toan</title>
+  <!-- Link favicon -->
+  <link rel="shortcut icon" href="/wed-project/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/wed-project/favicon.ico" type="image/x-icon" />
+  <!-- Link slide -->
+  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" />
+  <!-- Link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <!-- Link jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Link bootstrap> -->
+  <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
+  <!-- Link icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link Tự viết -->
+  <link rel="stylesheet" href="./css/checkout.css" />
+</head>
+
+<body>
+  <!-- Section checkout -->
+  <div id="checkout">
+    <div class="container">
+      <div class="logo text-decoration-underline mt-5">Perfuma</div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3 pb-4">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item" aria-current="page">
+                Thông tin sản phẩm
+              </li>
+              <li class="breadcrumb-item" aria-current="page">Vận chuyển</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Thanh toán
+              </li>
+            </ol>
+          </nav>
+      <div class="row layout-checkout">
+        <div class="col-md-6">
+          
+          <p class="text-uppercase title-checkout">Thông tin thanh toán</p>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingName" placeholder="Name" />
+            <label for="floatingName">Họ và tên</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone" />
+            <label for="floatingPhone">Số điện thoại</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingAddress" placeholder="Address" />
+            <label for="floatingAddress">Địa chỉ(tùy chọn)</label>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Lựa chọn tỉnh thành</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Tỉnh thành</label>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Lựa chọn quận,huyện</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Quận, huyện</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-5 mt-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Ghi chú</label>
+          </div>
+          <p class="text-uppercase title-checkout">Phương thức thanh toán</p>
+          <div class="form-payment mb-3">
+            <div class="form-check mb-3 mt-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label d-flex justify-content-between d-flex justify-content-between"
+                for="flexRadioDefault1">
+                OnePay - Thanh toán online qua thẻ nội địa (ATM)
+                <div class="img-payment">
+                  <img src="./img/checkout-img.png" alt="">
+                </div>
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
+                OnePay - Thanh toán online qua thẻ quốc tế (Visa/Master Card)
+                <div class="img-payment">
+                  <img src="./img/checkout-img.png" alt="">
+                </div>
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
+                Thanh toán qua Ví điện tử MoMo
+                <div class="img-payment">
+                  <img src="./img/momo.png" alt="">
+                </div>
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
+                Thanh toán khi giao hàng (COD)
+                <span class="bill-icon"><i class="fa-solid fa-money-bill-1"></i></span>
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
+                Thanh toán qua VNPAY-QR
+                <div class="img-payment">
+                  <img src="./img/vnpay.png" alt="">
+                </div>
+              </label>
+            </div>
+          </div>
+          
+            <div class="btn-oder oder-mobile text-uppercase d-flex justify-content-center align-items-center">Đặt hàng</div>
+          
+          <div class="shopping-continue d-flex justify-content-between mb-5">
+            <p class="btn-backtocart"><span><i class="fa-solid fa-angle-left"></i></span> Trở lại giỏ hàng</p>
+            <button type="button" class="btn btn-danger">Tiếp tục mua hàng</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="checkout-info mb-5">
+            <p class="text-uppercase title-checkout">Đơn hàng(<span class="amount-product"> 2 </span>Sản phẩm)</p>
+            <div class="list-product border-top border-bottom">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="item-checkout d-flex">
+                    <div class="image-product">
+                      <div class="product-thumbnail-wrapper">
+                        <img src="./img/img-product.png" alt="">
+                        <div class="product-thumbnail-quantity text-center">1</div>
+                      </div>
+  
+                    </div>
+                    <div class="product-name-checkout px-3">
+                      <p class="product-name-checkout">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+                      <p class="mil mb-2">50ml</p>
+  
+                    </div>
+                    <p class="price d-flex align-items-center my-0">2.390.000₫</p>
+                  </div>
+                  <div class="item-checkout d-flex">
+                    <div class="image-product">
+                      <div class="product-thumbnail-wrapper">
+                        <img src="./img/img-product.png" alt="">
+                        <div class="product-thumbnail-quantity text-center">1</div>
+                      </div>
+  
+                    </div>
+                    <div class="product-name-checkout px-3">
+                      <p class="product-name-checkout">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+                      <p class="mil mb-2">50ml</p>
+  
+                    </div>
+                    <p class="price d-flex align-items-center my-0">2.390.000₫</p>
+                  </div>
+                  <div class="item-checkout d-flex">
+                    <div class="image-product">
+                      <div class="product-thumbnail-wrapper">
+                        <img src="./img/img-product.png" alt="">
+                        <div class="product-thumbnail-quantity text-center">1</div>
+                      </div>
+  
+                    </div>
+                    <div class="product-name-checkout px-3">
+                      <p class="product-name-checkout">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+                      <p class="mil mb-2">50ml</p>
+  
+                    </div>
+                    <p class="price d-flex align-items-center my-0">2.390.000₫</p>
+                  </div>
+                  <div class="item-checkout d-flex">
+                    <div class="image-product">
+                      <div class="product-thumbnail-wrapper">
+                        <img src="./img/img-product.png" alt="">
+                        <div class="product-thumbnail-quantity text-center">1</div>
+                      </div>
+  
+                    </div>
+                    <div class="product-name-checkout px-3">
+                      <p class="product-name-checkout">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+                      <p class="mil mb-2">50ml</p>
+  
+                    </div>
+                    <p class="price d-flex align-items-center my-0">2.390.000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-discount my-3 d-flex">
+                  <div class="discount-input pe-2">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingDiscount" placeholder="Discount" />
+                      <label for="floatingDiscount">Mã giảm giá</label>
+                    </div>
+                  </div>
+                  <div class="btn btn-dark d-flex justify-content-center align-items-center" type="submit">Áp dụng</div>
+             
+            </div>
+            <div class="checkout-money border-top pt-3">
+              <div class="sub-total d-flex justify-content-between">
+                <p>Tạm tính</p>
+                <p class="sub-total-money">6.380.000₫</p>
+              </div>
+              <div class="shipping d-flex justify-content-between">
+                <p>Phí vận chuyển</p>
+                <p class="shipping-money">0</p>
+              </div>
+              <div class="total border-top pt-3 d-flex justify-content-between">
+                <p class="">Thành tiền</p>
+                <p class="total-money">6.380.000₫</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="btn-oder oder-desktop text-uppercase">Đặt hàng</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  <!-- Bootstrap -->
+  <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- Link tự viết -->
+  <script src="./js/checkout.js"></script>
+</body>
+
+</html>
