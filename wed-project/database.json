@@ -1,0 +1,220 @@
+{"users": [
+    {
+        "userid": 1,
+        "username":"Hieu Nguyen",
+        "email": "hieunguyenyt173@gmail.com",
+        "pass-word":"12345678"
+    },
+    {
+        "userid": 2,
+        "user-name":"Hieu Nguyen",
+        "email": "hieunguyenyt173@gmail.com",
+        "password":"12345678"
+    }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "categories": "Women",
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Brit-Women-Eau-de-Parfum-1.6-Best-Price-Fragrance-Parfume-FragranceOutlet.com-DETAILS_1024x1024.jpg?v=1591879601",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Brit-Women-Eau-de-Parfum-1.6-Best-Price-Fragrance-Parfume-FragranceOutlet.com-MAIN_1024x1024.jpg?v=1591879601"
+            ],
+            "brand-name":"Burberry",
+            "name": "Burberry Brit For Women By Burberry Eau De Parfum Spray",
+            "status": true,
+            "like-status": false,
+            "price": 520000,
+            "sale-status" : 0,
+            "desc": "Nước hoa BURBERRY BRIT được nhà thiết kế BURBERRY giới thiệu vào năm 2003, thể hiện tinh thần cá tính vui tươi của người Anh. Người đẹp Brit mặc hở bạo nhưng luôn quyến rũ và gợi cảm khó lường. Tươi mát và vui tươi, Burberry Brit dành cho phụ nữ là sự pha trộn cổ điển, xanh mát của phương Đông giữa chanh Ý, lê Icy, hoa mẫu đơn trắng và các tinh chất hạt ngọt ngào như Green Almond và Sugared Almonds, với hổ phách nhẹ nhàng, vani và đậu Tonka. Kem dưỡng thể Burberry Brit được thoa cùng với nước hoa sẽ tạo ra một trải nghiệm hương thơm sâu sắc hơn trên toàn bộ cơ thể. Các loại nước hoa khác của Burberry là Burberry Touch và Weekend Burberry.",
+            "rate": 4.8,
+            "size": ["10ml", "30ml", "50ml", "100ml"]
+        },
+        {
+            "id": 2,
+            "categories": "Men",
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1579123544",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579123544",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-mens-Eau-de-Toilette-Spray-3.4-tester-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579123544"
+            ],
+            "brand-name":"AZZARO",
+            "name": "Azzaro Chrome For Men By Azzaro Eau De Toilette Spray",
+            "status": true,
+            "like-status": false,
+            "price": 520000,
+            "sale-status" : 0.3,
+            "desc": "Nước hoa CHROME được AZZARO tung ra vào năm 1996. AZZARO CHROME là một hương thơm nam tính say đắm với cam bergamot, hoa oải hương và gừng. Được làm giàu với bạch đậu khấu, gỗ đàn hương, gỗ hồng sắc, cây thường xuân, gỗ sồi và dầu hoa cam, loại nước hoa này chắc chắn sẽ đánh lừa các giác quan. Kết hợp AZZARO CHROME với sau cạo râu để có mùi hương lâu dài. Hương thơm này được khuyến khích sử dụng vào ban ngày.",
+            "rate": 4.9,
+            "size": ["10ml", "30ml", "50ml", "100ml"]
+        },
+        {
+            "id": 3,
+            "categories": "Men",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579124114",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579124114",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-1-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1579124114"
+            ],
+            "brand-name":"CALVIN KLEIN",
+            "name": "Eternity Aqua Eau de Toilette Spray for Men by Calvin Klein",
+            "status": true,
+            "like-status": false,
+            "price": 450000,
+            "sale-status" : 0,
+            "desc": "CK Eternity Aqua là sản phẩm eau de toilette dành cho nam của Calvin Klein. Đây là một hương thơm nam tính tươi mát với các nốt hương thủy sinh và xanh lá, rất thích hợp cho một ngày nắng ấm. Nó có hương cam quýt tươi mát với tông màu gỗ ấm áp và một chút hương trái cây mát lạnh.",
+            "rate": 4.9,
+            "size": ["10ml", "30ml", "50ml", "100ml"]
+        },
+        {
+            "id": 4,
+            "categories": "Men",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1598971735",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1598971735",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-De-Toilette-EDT-Spray-1.7-oz.-Best-Price-Fragrance-Parfume-FragranceOutlet.com-main_1024x1024.jpg?v=1598971735",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-de-Toilette-Spray-3.4-Unboxed-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1598971735"
+            ],
+            "brand-name":"VERSACE",
+            "name": "The Dreamer Eau de Toilette Spray for Men by Versace",
+            "status": true,
+            "like-status": false,
+            "price": 630000,
+            "sale-status" : 0.3,
+            "desc": "Chúng ta có thể nói gì về The Dreamer vẫn chưa được nói. Ngọt ngào, gợi cảm, gợi cảm, lãng mạn, hạnh phúc, thanh lịch, thiên đường _ cuối cùng bạn sẽ cần phải dùng những từ mới để mô tả mùi hương cổ điển này tuyệt vời như thế nào. Được ra mắt vào năm 1997 bởi hãng thời trang nổi tiếng thế giới Versace, The Dreamer for Men không hổ danh là một kiệt tác. Sự khởi đầu Lavendery ngọt ngào được tiếp nối bởi sự pha trộn tuyệt vời của thuốc lá và hoa hồng, và khô lại trong một hương thơm hương gỗ, ấm áp và lưu lại hạnh phúc.",
+            "rate": 4.8,
+            "size": ["10ml", "30ml", "50ml", "100ml"]
+        },
+        {
+            "id": 5,
+            "categories": "Women",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-1314larger_1024x1024.jpg?v=1617046171",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-1314larger_1024x1024.jpg?v=1617046171"
+            
+            ],
+            "brand-name":"BURBERRY",
+            "name": "Weekend Eau de Parfum Spray for Women by Burberry",
+            "status": true,
+            "like-status": false,
+            "price": 480000,
+            "sale-status" : 0,
+            "desc": "Được ra mắt vào năm 1997 bởi nhà Burberry, Weekend for Women mang phong cách giản dị, mát mẻ và vui tươi _ chỉ là mùi hương mà bạn muốn tỏa ra trong những ngày cuối tuần vui vẻ. Các nốt hương ngọt ngào và hấp dẫn, trong khi vẫn sang trọng. Chúng hòa quyện với nhau một cách hoàn hảo để tỏa ra một mùi hương gợi lên ý tưởng về sự tự do, hạnh phúc và niềm vui trọn vẹn.",
+            "rate": 4.7,
+            "size": [ "30ml", "50ml", "100ml"]
+        },
+        {
+            "id": 6,
+            "categories": "Women",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1580148163",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1580148154",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1580148159",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1580148163"
+            ],
+            "brand-name":"BURBERRY",
+            "name": "Burberry Touch For Women By Burberry Eau De Parfum Spray",
+            "status": true,
+            "like-status": false,
+            "price": 550000,
+            "sale-status" : 0,
+            "desc": "Nước hoa Burberry Touch được Burberry cho ra mắt vào năm 2000 và được mô tả như một phương Đông rực rỡ. Một hương thơm nữ tính mạnh mẽ gợi cảm giác thoải mái và thân mật. Hương thơm của nước hoa Burberry Touch là nho đen, quả mâm xôi, hạt tiêu hồng, cam, tinh dầu hoa hồng, hoa huệ, hoa nhài, Madonna Lilly, đào, mâm xôi, vani và gỗ tuyết tùng. Burberry Touch được khuyến khích sử dụng bình thường.",
+            "rate": 4.7,
+            "size": ["50ml", "100ml"]
+        },
+        {
+            "id": 7,
+            "categories": "Women",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/burberryclassicforwomen_1024x1024.jpg?v=1593632769",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/burberry_1024x1024.jpg?v=1593632770"
+            
+            ],
+            "brand-name":"BURBERRY",
+            "name": "Burberry For Women By Burberry Eau De Parfum Spray",
+            "status": true,
+            "like-status": false,
+            "price": 610000,
+            "sale-status" : 0.15,
+            "desc": "Ra mắt vào năm 1995, Burberry dành cho phụ nữ là một sản phẩm cổ điển. Được thiết kế như hương thơm của người phụ nữ hiện đại, đảm đang, Burberry mang đến cho bạn sự pha trộn thú vị giữa Hoa cam, Đào, Cúc vạn thọ với một chút hương thơm của gỗ. Hoa nhài nổi bật như nốt hương trái tim và khiến bạn đắm chìm trong hương thơm tươi vui, sống động của nó. Hương thơm của Xạ hương và Vanilla thật ấm áp và lãng mạn. Burberry Women hoàn hảo để mặc hàng ngày.",
+            "rate": 4.8,
+            "size": ["10ml", "30ml", "100ml"]
+        },
+        {
+            "id": 8,
+            "categories": "Women",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Bvlgari-Omnia-Pink-Sapphire-Women-Eau-de-Toilette-2.2-Best-Price-Fragrance-Parfume-FragranceOutlet.com-details_1024x1024.jpg?v=1579128151",
+            "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Bvlgari-Omnia-Pink-Sapphire-Women-Eau-de-Toilette-2.2-Best-Price-Fragrance-Parfume-FragranceOutlet.com-main_1024x1024.jpg?v=1579128151"
+            
+            ],
+            "brand-name":"BVLGARI",
+            "name": "Omnia Pink Sapphire Eau de Toilette Spray for Women by Bvlgari",
+            "status": true,
+            "like-status": false,
+            "price": 587000,
+            "sale-status" : 0.15,
+            "desc": "Ra mắt bởi nhà thiết kế của Bvlgari. Hương hoa chypre này có sự pha trộn của mận đen quyến rũ, hoa cam gợi cảm, hoa nhài sambac tuyệt đối, vani madagascar, hoắc hương, xạ hương đen quyến rũ và rêu pha lê hiện đại.",
+            "rate": 4.8,
+            "size": ["10ml", "30ml", "100ml"]
+        },
+        {
+            "id": 9,
+            "categories": "Women",            
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0097512larger_086313b8-c4eb-4ab6-a563-ef5ce5612758_1024x1024.jpg?v=1617654601"
+            
+            ],
+            "brand-name":"BVLGARI",
+            "name": "Goldea The Roman Night Absolute by Bvlgari for Women - Eau de Parfum Spray",
+            "status": true,
+            "like-status": false,
+            "price": 580000,
+            "sale-status" : 0.2,
+            "desc": "Ra mắt bởi nhà thiết kế của Bvlgari. Hương hoa chypre này có sự pha trộn của mận đen quyến rũ, hoa cam gợi cảm, hoa nhài sambac tuyệt đối, vani madagascar, hoắc hương, xạ hương đen quyến rũ và rêu pha lê hiện đại.",
+            "rate": 4.8,
+            "size": ["10ml", "30ml", "100ml"]
+        },
+        {
+            "id": 10,
+            "categories": "Women",
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
+            
+            ],
+            "brand-name":"BVLGARI",
+            "name": "Bvlgari Petits et Mamans by Bvlgari for Women - Eau de Toilette",
+            "status": true,
+            "like-status": false,
+            "price": 850000,
+            "sale-status" : 0.2,
+            "desc": "Được ra mắt bởi nhà thiết kế Bvlgari vào năm 2005. Hương thơm nữ tính này có sự pha trộn của hương hoa hồng, cam bergamot, hoa hướng dương và vani. Nó được khuyến khích cho mặc giản dị.",
+            "rate": 4.8,
+            "size": ["50ml"]
+        },
+        {
+            "id": 11,
+            "categories": "Gift Set",
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
+            
+            ],
+            "brand-name":"BVLGARI",
+            "name": "Goldea The Roman Night by Bvlgari for Women - 4 Pc Gift Set",
+            "status": true,
+            "like-status": false,
+            "price": 865000,
+            "sale-status" : 0.2,
+            "desc": "Ra mắt bởi nhà thiết kế của Bvlgari. Hương hoa chypre này có sự pha trộn của cam bergamot, tiêu đen, dâu tằm, hoa mẫu đơn đen, hoa nhài nở về đêm, hoa hồng, hoa huệ, hoắc hương, xạ hương đen, cỏ vetiver và rêu. Goldea The Roman Night by Bvlgari for Women - Bộ quà tặng 4 món Xịt gợi cảm EDP 2,5oz, Sữa dưỡng thể thơm mát 2,5oz, Sữa tắm và sữa tắm thơm 2,5oz, Túi làm đẹp",
+            "rate": 4.8,
+            "size": ["50ml"]
+        },
+        {
+            "id": 12,
+            "categories": "Women",
+            "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
+            
+            ],
+            "brand-name":"BVLGARI",
+            "name": "Goldea The Roman Night by Bvlgari for Women - 4 Pc Gift Set",
+            "status": true,
+            "like-status": false,
+            "price": 850000,
+            "sale-status" : 0.2,
+            "desc": "Được ra mắt bởi nhà thiết kế Bvlgari vào năm 2005. Hương thơm nữ tính này có sự pha trộn của hương hoa hồng, cam bergamot, hoa hướng dương và vani. Nó được khuyến khích cho mặc giản dị.",
+            "rate": 4.8,
+            "size": ["50ml"]
+        }
+
+    ]
+    
+}

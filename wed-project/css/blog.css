@@ -1,0 +1,45 @@
+@import url(./base.css);
+
+
+
+.image-blog {
+    width: 100%;
+}
+
+.image-blog img {
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 8px 16px;
+}
+.page-link {
+    color: var(--black);
+}
+
+.time-blog, .by {
+    font-size: 12px;
+}
+
+.detail {
+    font-size: 14px;
+}
+
+.menu-blog .sub-title:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+.card-blog-thumbnail:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+.item-blog {
+    transition: all 0.3s;
+}
+.item-blog:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    color: var(--red);
+}

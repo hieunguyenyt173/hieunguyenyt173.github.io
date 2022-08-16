@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm yêu thích</title>
+    <title>Blog</title>
     <!-- Link favicon -->
-  <link rel="shortcut icon" href="/wed-project/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/wed-project/favicon.ico" type="image/x-icon">
-  <!-- Link slide -->
-  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" />
-  <!-- Link font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
-    rel="stylesheet" />
-  <!-- Link jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Link bootstrap> -->
-  <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
-  <!-- Link icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Link Tự viết -->
-  <link rel="stylesheet" href="./css/favorite.css" />
+    <link rel="shortcut icon" href="/wed-project/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wed-project/favicon.ico" type="image/x-icon">
+    <!-- Link slide -->
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link bootstrap> -->
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
+    <!-- Link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Tự viết -->
+    <link rel="stylesheet" href="./css/blog.css" />
 </head>
 <body>
-   <!-- Header -->
-   <div id="header">
+    <!-- Header -->
+  <div id="header">
     <div class="container">
       <div class="header-bar">
         <div class="row">
@@ -74,7 +85,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="subnav">
-            <a href="./index.html" class="menu-item">TRANG CHỦ</a>
+            <a href="#TRANG CHỦ" class="menu-item">TRANG CHỦ</a>
             <a href="#NƯỚC HOA NAM" class="menu-item">NƯỚC HOA NAM</a>
             <a href="#NƯỚC HOA NỮ" class="menu-item">NƯỚC HOA NỮ</a>
             <a href="sale.html" class="menu-item">KHUYẾN MÃI</a>
@@ -937,115 +948,246 @@
   </div>
 </div>
   </div>
-  <!-- Section favorite product -->
-  <div id="favorite">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb pt-3 pb-4">
-              <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Sản phẩm yêu thích</li>
-            </ol>
-          </nav>
-        <div class="row title-favorite text-uppercase d-flex justify-content-between">
-            <p class="col text-center">Hình ảnh</p>
-            <p class="col text-center">Tên sản phẩm</p>
-            <p class="col text-center">Giá</p>
-            <p class="col text-center">Xóa sản phẩm</p>
-            <p class="col text-center">Thêm vào giỏ hàng</p>
-        </div>
-        <div class="row item-favorite justify-content-center align-items-center mb-4">
-            <div class="col-md-3 col-sm-4 image-favorite">
-                <img src="./img/img-favorite.png" alt="san pham yeu thich">
-            </div>
-            <div class="col-md-3 col-sm-8 info-favorite ps-2">
-                <p class="text-uppercase brand-name-favorite">GIORGIO ARMANI</p>
-                <p class="product-name">Acqua Di Gio For Women By Giorgio Armani Eau De Toilette Spray</p>
-                <div class="rating d-flex">
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <p class="number-rating ms-1">4.8</p>
+    <!-- Section blog -->
+    <div id="blog">
+        <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pt-3 pb-4">
+                  <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
+                </ol>
+              </nav>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="title-heading text-uppercase mb-3">
+                        Danh mục
+                    </h4>
+                    <div class="menu-blog border-bottom">
+                        <p class="sub-title text-uppercase">
+                            Nước hoa nam
+                        </p>
+                        <p class="sub-title text-uppercase">
+                            Nước hoa nữ
+                        </p>
+                        <p class="sub-title text-uppercase">
+                            Sản phẩm nổi bật
+                        </p>
+                        <p class="sub-title text-uppercase">
+                            Bán chạy
+                        </p>
+                    </div>
+                    <h4 class="title-heading text-uppercase mt-3">Tin nổi bật</h4>
+                    <div class="menu-thumbnail-blog">
+                        <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        <p class="btn-more text-center">Xem thêm <span><i class="fa-solid fa-angles-right"></i></span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 product-price d-sm-flex flex-md-column justify-content-sm-center">
-                <p class="text-center px-3">2.390.000₫</p>
-                <p class="text-decoration-line-through text-center px-3">4.125.000₫</p>
-            </div>
-            <div class="col-md-1 btn-delete text-center">
-                <span class="delete-icon fs-3 d-sm-none d-md-block"><i class="fa-solid fa-square-xmark"></i></span>
-                <div class="col-md-3 btn-delete-product d-sm-block d-md-none">
-                    <p class="text-uppercase text-white py-2 text-center mx-3">Xóa sản phẩm</p>
+                <div class="col-md-8">
+                    <h4 class="title-heading text-uppercase mb-3">
+                        Tin tức
+                    </h4>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center mb-3">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 btn-add-tocart mb-sm-3 mb-md-0">
-                <p class="text-uppercase text-white py-2 text-center mx-3">Thêm vào giỏ hàng</p>
-            </div>
-        </div>
-        <div class="row item-favorite justify-content-center align-items-center mb-4">
-            <div class="col-md-3 col-sm-4 image-favorite">
-                <img src="./img/img-favorite.png" alt="san pham yeu thich">
-            </div>
-            <div class="col-md-3 col-sm-8 info-favorite ps-2">
-                <p class="text-uppercase brand-name-favorite">GIORGIO ARMANI</p>
-                <p class="product-name">Acqua Di Gio For Women By Giorgio Armani Eau De Toilette Spray</p>
-                <div class="rating d-flex">
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <p class="number-rating ms-1">4.8</p>
-                </div>
-            </div>
-            <div class="col-md-2 product-price d-sm-flex flex-md-column justify-content-sm-center">
-                <p class="text-center px-3">2.390.000₫</p>
-                <p class="text-decoration-line-through text-center px-3">4.125.000₫</p>
-            </div>
-            <div class="col-md-1 btn-delete text-center">
-                <span class="delete-icon fs-3 d-sm-none d-md-block"><i class="fa-solid fa-square-xmark"></i></span>
-                <div class="col-md-3 btn-delete-product d-sm-block d-md-none">
-                    <p class="text-uppercase text-white py-2 text-center mx-3">Xóa sản phẩm</p>
-                </div>
-            </div>
-            <div class="col-md-3 btn-add-tocart mb-sm-3 mb-md-0">
-                <p class="text-uppercase text-white py-2 text-center mx-3">Thêm vào giỏ hàng</p>
-            </div>
-        </div>
-        <div class="row item-favorite justify-content-center align-items-center mb-4">
-            <div class="col-md-3 col-sm-4 image-favorite">
-                <img src="./img/img-favorite.png" alt="san pham yeu thich">
-            </div>
-            <div class="col-md-3 col-sm-8 info-favorite ps-2">
-                <p class="text-uppercase brand-name-favorite">GIORGIO ARMANI</p>
-                <p class="product-name">Acqua Di Gio For Women By Giorgio Armani Eau De Toilette Spray</p>
-                <div class="rating d-flex">
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
-                    <p class="number-rating ms-1">4.8</p>
-                </div>
-            </div>
-            <div class="col-md-2 product-price d-sm-flex flex-md-column justify-content-sm-center">
-                <p class="text-center px-3">2.390.000₫</p>
-                <p class="text-decoration-line-through text-center px-3">4.125.000₫</p>
-            </div>
-            <div class="col-md-1 btn-delete text-center">
-                <span class="delete-icon fs-3 d-sm-none d-md-block"><i class="fa-solid fa-square-xmark"></i></span>
-                <div class="col-md-3 btn-delete-product d-sm-block d-md-none">
-                    <p class="text-uppercase text-white py-2 text-center mx-3">Xóa sản phẩm</p>
-                </div>
-            </div>
-            <div class="col-md-3 btn-add-tocart mb-sm-3 mb-md-0">
-                <p class="text-uppercase text-white py-2 text-center mx-3">Thêm vào giỏ hàng</p>
             </div>
         </div>
     </div>
-  </div>
-  <!-- Section footer -->
+     <!-- Section footer -->
   <div id="footer">
     <div class="container">
       <div class="row">
@@ -1060,17 +1202,33 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <p class="title-footer mt-5">HÕ TRỢ KHÁCH HÀNG</p>
-          <a href="#"><p>Chính sách bảo mật</p></a>
-          <a href="#"><p>Chính sách vận chuyển</p></a>
-          <a href="#"><p>Chính sách đổi trả</p></a>
-          <a href="#"><p>Hình thức thanh toán</p></a>
+          <a href="#">
+            <p>Chính sách bảo mật</p>
+          </a>
+          <a href="#">
+            <p>Chính sách vận chuyển</p>
+          </a>
+          <a href="#">
+            <p>Chính sách đổi trả</p>
+          </a>
+          <a href="#">
+            <p>Hình thức thanh toán</p>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <p class="title-footer mt-5">HƯỚNG DẪN</p>
-          <a href="#"><p>Hướng dẫn mua hàng</p></a>
-          <a href="#"><p>Hướng dẫn thanh toán</p></a>
-          <a href="#"><p>Hướng dẫn giao nhận</p></a>
-          <a href="#"><p>Điều khoản dịch vụ</p></a>
+          <a href="#">
+            <p>Hướng dẫn mua hàng</p>
+          </a>
+          <a href="#">
+            <p>Hướng dẫn thanh toán</p>
+          </a>
+          <a href="#">
+            <p>Hướng dẫn giao nhận</p>
+          </a>
+          <a href="#">
+            <p>Điều khoản dịch vụ</p>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 pb-4">
           <p class="title-footer mt-5">KẾT NỐI VỚI CHÚNG TÔI</p>
@@ -1091,9 +1249,11 @@
 
 
 
-  <!-- Bootstrap -->
-  <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- Link tự viết -->
-  <script src="./js/favorite.js"></script>
+
+    <script src="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Link tự viết -->
+    <script src="./js/blog.js"></script>
 </body>
 </html>

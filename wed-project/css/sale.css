@@ -1,6 +1,5 @@
 @import url(./base.css);
 
-
 /* Section 1 */
 .option-more-brand {
     height: 250px;
@@ -51,7 +50,15 @@
     height: auto;
     object-fit: cover;
 }
-
+.sale-timer {
+    width: 33px;
+    height: 33px;
+    color:var(--white);
+    background-color: #000;
+    border-radius: 5px;
+    margin-left: 10px;
+    line-height: 33px;
+}
 .product-info {
     margin: 0 10px;
 }
@@ -68,6 +75,16 @@
     color: var(--white);
     background-color:var(--red);
 }
+.sale-timer {
+    width: 33px;
+    height: 33px;
+    color:var(--white);
+    background-color: #000;
+    border-radius: 5px;
+    margin-left: 10px;
+    line-height: 33px;
+}
+
 
   
 .saleoff {
@@ -212,4 +229,3 @@
         margin-top: 14px;
     }
 }
-

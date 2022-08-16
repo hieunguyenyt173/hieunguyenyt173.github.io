@@ -35,10 +35,14 @@
       <div class="header-bar">
         <div class="row">
           <div class="col-sm-4 d-flex align-items-center">
-            <form class="search form">
-              <input class="input" type="text" placeholder="Tìm kiếm" />
-              <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-            </form>
+            <div class="seach-form d-flex align-items-center rounded shadow-sm pe-3">
+              <!-- Ô tìm kiếm sản phẩm -->
+              <input type="text" placeholder="Tìm kiếm sản phẩm"
+                  class="form-control border-0 seach-form-input">
+                  <!-- Nút tìm kiếm sản phẩm -->
+              <span class="text-black-50 seach-form-button"><i
+                      class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
           </div>
           <div class="col-sm-4 d-flex align-items-center justify-content-center">
             <div class="logo text-decoration-underline">Perfuma</div>
@@ -51,7 +55,7 @@
                   <span class="icon-user"><i class="fa-solid fa-user"></i></span>
                 </button>
 
-                <span class="like-icon-header"><i class="fa-solid fa-heart"></i></span>
+                <a href="./favorite.html"><span class="like-icon-header"><i class="fa-solid fa-heart"></i></span></a>
                 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   <span class="bag"><i class="fa-solid fa-bag-shopping"></i>
                     <span class="amount">0</span></span>

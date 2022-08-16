@@ -66,6 +66,10 @@ button {
 .btn-more:hover {
     color: var(--red);
 }
+
+.form-control:focus {
+    box-shadow: none;
+}
 /* Header */
 /* Header */
 .main-menu {
@@ -115,14 +119,7 @@ button {
     cursor: pointer;
 }
 
-.input { 
-    border-radius: 5px ;
-    font-size: 16px;
-}
 
-.input::placeholder {
-    padding-left: 10px;
-}
 
 .icon span {
     font-size: 22px;
