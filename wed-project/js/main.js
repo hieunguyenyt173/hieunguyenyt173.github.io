@@ -14,14 +14,20 @@ $(".close-icon").click(function() {
   $(".sidebar").css("left","-360px");
   $(".overlay").css("display","none");
   $(".menu-men-desktop").css("top","-70%");
+  $(".menu-women-desktop").css("top","-70%");
   $(".subnav .menu-item:nth-child(2)").css("background-color", "#E12222")
   $('body').css('overflow', 'auto');
 })
 
 // Menu-men-desktop
 $(".subnav .menu-item:nth-child(2)").click(function() {
-  $(".subnav .menu-item:nth-child(2)").css("background-color", "#000")
   $(".menu-men-desktop").css("top","100px");
+  $(".overlay").css("display","block");
+  $(".overlay").css("top","100px");
+  $('body').css('overflow', 'hidden');
+})
+$(".subnav .menu-item:nth-child(3)").click(function() {
+  $(".menu-women-desktop").css("top","100px");
   $(".overlay").css("display","block");
   $(".overlay").css("top","100px");
   $('body').css('overflow', 'hidden');
@@ -71,6 +77,37 @@ $(".subnav .menu-item-tablet:nth-child(2)").click(function() {
 })
 // Đăng nhập, đăng xuất
 
+
+// Initialise Carousel ********************************
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  Dots: false,
+});
+
+// Thumbnails
+const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+  Sync: {
+      target: mainCarousel,
+      friction: 0,
+  },
+  Dots: false,
+  Navigation: false,
+  center: true,
+  slidesPerPage: 1,
+  infinite: false,
+});
+
+// Customize Fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Carousel: {
+      on: {
+          change: (that) => {
+              mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+                  friction: 0,
+              });
+          },
+      },
+  },
+});
 // Slider brand
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
@@ -108,11 +145,3 @@ $(".stop").on("click", function () {
   owl.trigger("stop.owl.autoplay");
 });
 
-
-
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})

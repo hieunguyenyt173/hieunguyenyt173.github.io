@@ -1,0 +1,218 @@
+@import url(./base.css);
+/* Trang chi tiết */
+.supporter-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product-size p:hover {
+    background-color: #212529;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-minus-count, .btn-plus-count {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.product-sale {
+    opacity: 0.7;
+}
+
+#mainCarousel {
+    width: 100%;
+    margin: 0 auto 1rem auto;
+
+    --carousel-button-color: #170724;
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+        0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+#mainCarousel .carousel__slide {
+    width: 100%;
+    padding: 0;
+}
+
+#mainCarousel .carousel__button.is-prev {
+    left: -0.5rem;
+}
+
+#mainCarousel .carousel__button.is-next {
+    right: -0.5rem;
+}
+
+#mainCarousel .carousel__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #a78bfa;
+}
+
+#thumbCarousel .carousel__slide {
+    opacity: 0.5;
+    padding: 0;
+    margin: 0.25rem;
+    width: 96px;
+    height: 64px;
+}
+
+#thumbCarousel .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#thumbCarousel .carousel__slide.is-nav-selected {
+    opacity: 1;
+}
+
+/* Recommended */
+.item { 
+    overflow: hidden;
+    background-color: rgba(217,217,217,12%);
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover {
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-product {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-info {
+    margin: 0 10px;
+}
+
+.btn-view {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-size: 14px;
+    width: 60%;
+    height: 15%;
+    color: var(--white);
+    background-color:var(--red);
+}
+  
+.saleoff {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: var(--red);
+    align-items: center;
+}
+
+.btn-more {
+    font-size: 14px;
+}
+.like {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+.like:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.like-icon {
+    color: var(--red);
+    opacity: 0.2;
+}
+.saleoff p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.image-product img {
+    max-width: 100%;
+    object-fit: cover;
+}
+ .price-sale, .price {
+    color: var(--red);
+ }
+
+ .product-brand {
+    font-weight: 500;
+ }
+
+ .product-name {
+    font-size: 14px;
+    font-weight: 300;
+ }
+
+ .progress {
+    width: 80%;
+ }
+.star-rate p {
+    width: 10%;
+    margin: 0;
+}
+
+.rating-count {
+    padding: 0 8px;
+}
+
+.progress-bar {
+    background-color: var(--semi-black);
+    border-radius: 0.25rem;
+}
+
+.rating-form {
+    padding: 16px;
+    border: var(--boder);
+}
+/* rate */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Responsive */
+ @media (min-width:768px) {
+    /* product */
+    .btn-view {
+        bottom: -20%;
+        transition: all 0.5s;
+    }
+
+    .item:hover .image-product img{
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .item:hover .btn-view {
+        bottom: 0;
+    }
+ }

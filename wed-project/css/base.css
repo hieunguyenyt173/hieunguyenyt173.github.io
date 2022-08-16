@@ -30,6 +30,7 @@ li {
 }
 
 a {
+    color: var(--semi-black);
     text-decoration: none;
 }
 
@@ -54,10 +55,546 @@ img {
     box-shadow: none;
 }
 
+button {
+    border: none;
+}
 
+.breadcrumb-item.active {
+    color: var(--red);
+}
+
+.btn-more:hover {
+    color: var(--red);
+}
+/* Header */
+/* Header */
+.main-menu {
+    background-color: var(--red);
+}
+
+#header .hello {
+    font-size: 14px;
+}
+
+.menu-bar {
+    display: none;
+    padding: 0 8px;
+}
+
+
+.logo {
+    font-family: 'Devonshire', cursive;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.navbar-icon {
+    display: flex;
+    height: 100%;
+}
+.subnav a {
+    padding: 8px 10px;
+    
+    color:var(--white);
+}
+
+.subnav-tablet {
+    display: none;
+}
+.subnav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.subnav .menu-item:hover {
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.input { 
+    border-radius: 5px ;
+    font-size: 16px;
+}
+
+.input::placeholder {
+    padding-left: 10px;
+}
+
+.icon span {
+    font-size: 22px;
+}
+
+.input {
+    border: var(--boder);
+}
+
+.icon span:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+.bag {
+    position: relative;
+}
+
+.amount {
+    position: absolute;
+    top: -12px;
+    left: 18px;
+    font-size: 16px;
+}
+
+.search {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    top: 1px;
+    left: 172px;
+}
+/* Sidebar */
+.sidebar, .sidebar-men, .sidebar-brand, .sidebar-women, .sidebar-brand-women {
+    width: 360px;
+    background-color: var(--white);
+}
+
+.sidebar-login, .sidebar-like {
+    border: var(--boder);
+    background-color: #E9EEF8;
+}
+
+.sidebar-menu {
+    background-color: #E9EEF8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Sidebar-men */
+.img-item-men {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-men {
+    position: relative;
+}
+
+.item-sidebar-men {
+    width: 100px;
+    position: absolute;
+    top: 12%;
+    left: 9%;
+}
+
+.more {
+    position: absolute;
+    bottom: 9%;
+    left: 9%;
+}
+
+/* Menu-men desktop */
+.menu-desktop {
+    background-color: var(--white);
+    height: auto;
+}
+
+.category-title {
+    font-weight: 600;
+    margin-top: 15px;
+}
+.desktop-layoutmenu,.item-men,.img-item-men {
+    width: 100%;
+    height: 100%;
+}
+
+.img-item-men img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-desktop .brand-name:hover {
+    color: var(--red);
+}
+
+.item-men {
+    transition: all 0.3s;
+}
+.item-men:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+/* Popup-login,create */
+
+#exampleModal .modal-header {
+    padding: 16px 0;
+    border: none;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-login {
+    padding: 12px 0;
+    background-color:var(--black);
+    color: var(--white);
+    letter-spacing: 1.37px;
+}
+
+.btn-create {
+    padding: 12px 0;
+    background-color:var(--red);
+    color: var(--white);
+    letter-spacing: 1.37px;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.subtitle:hover {
+    color: var(--red);
+}
+.form-floating .form-control {
+    height: auto;
+}
+
+.image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+.image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.infomation .btn {
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+
+/* Popup create account */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.btn-login:hover {
+    opacity: 0.8;
+}
+.btn-create:hover {
+    background-color: var(red);
+    opacity: 0.8;
+    color: var(--white);
+}
+/* thumbnail cart */
+.offcanvas-end {
+    width: 470px;
+}
+.item-cart-info {
+    font-size: 14px;
+}
+
+.btn-up, .btn-down {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: var(--boder);
+}
+
+.btn-up:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-down:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.amount-pro-thumbnail  {
+    font-size: 12px;
+}
+
+.item-cart-info p {
+    margin-bottom: 8px;
+}
+
+.price-cart-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--red);
+}
+.navbar-icon button {
+    border: none;
+    background-color: #fff;
+    color: var(--semi-black);
+}
+
+.oder {
+    font-weight: 600;
+}
+
+.price-desc {
+    font-weight: 500;
+    color: var(--red);
+}
+
+.ship-title {
+    font-size: 13px;
+}
+
+.total-price {
+    font-weight: 600;
+}
+
+.btn-pay {
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--black);
+}
+
+.btn-continue {
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--red);
+}
+
+.btn-pay:hover {
+    opacity: 0.8;
+}
+
+.btn-continue:hover {
+    opacity: 0.8;
+}
+
+.capacity {
+    color: var(--red);
+}
+
+/* Footer */
+#footer {
+    background-color: #f4f4f4;
+ }
+
+ #footer a {
+    color: var(--semi-black);
+ }
+
+ #footer a:hover {
+    color: var(--red);
+ }
 /* Reponsive */
-@media (max-width:568px) {
+
+@media (max-width: 992px) {
+    /* Header */
+    .item-sidebar-men {
+        font-size: 14px;
+        
+    }
+    .brand-name {
+        font-size: 12px;
+        margin-bottom:6px;
+    }
+   
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    /* Header */
+    .brand-name {
+        margin-bottom: 8px;
+    }
+    .price, .price-sale {
+        font-size: 12px;
+    }
+    .product-brand, .product-name {
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width:568px) and (max-width:768px) {
+    .tablet-none {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .sidebar, .sidebar-men, .sidebar-brand,.sidebar-women, .sidebar-brand-women {
+        display: none;
+    }
+    .menu-men-desktop,.menu-women-desktop {
+        position: fixed;
+        top: -70%;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        z-index: 1001;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .hide {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .subnav {
+        justify-content: space-between;
+        margin: 0 -8px;
+    }
+    .logo {
+        font-size: 34px;
+    }
+    .sidebar, .sidebar-men, .sidebar-brand, .sidebar-women, .sidebar-brand-women {
+        position: fixed;
+        top: 0px;
+        left: -360px;
+        width: 360px;
+        height: 100vh;
+        overflow: auto;
+        z-index: 1001;
+        transition: all 0.7s;
+    }
+    .menu-men-desktop {
+        display: none;
+    }
+    .menu-women-desktop {
+        display: none;
+    }
+    .subnav a {
+        display: none;
+    }
+    .subnav-tablet {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .subnav-tablet p {
+        margin: 0;
+        padding: 8px 10px;
+        color: var(--white);
+    }
+    .product-brand, .product-name {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 576px) {
     body {
         margin: 0 10px;
     }
+    /* header */
+    .subnav {
+        margin: 0;
+    }
+    .subnav-tablet p  {
+        font-size: 12px;
+    }
+    #header .row>* { 
+        width: 50%;
+    }
+    #header .row {
+        padding: 0 10px;
+    }
+    .navbar-icon {
+        display:none;
+    }
+    .logo {
+        text-align: right;
+    }
+    /* Footer */
+    #footer p {
+        text-align: center;
+    }
+    #footer .icon-footer {
+        justify-content: center;
+    }
+    #footer .logo {
+        text-align: center;
+    }
 }
+
+
+
+/* responsive Login, create */
+@media (min-width:576px){
+    #login .title {
+        font-size: 16px;
+    }
+    .form-floating label, .btn-login{
+        font-size: 14px;
+    }
+    .btn-create {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .infomation {
+        padding-right: 24px;
+    }
+}
+
+@media (max-width:576px) {
+    .popup-login {
+        position: relative;
+    }
+    .btn-close {
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .image img {
+        width: 100%;
+    }
+    .image {
+        height: 220px;
+    }
+
+    .infomation {
+        padding: 0 12px;
+    }
+    .btn-create {
+        margin-bottom: 16px;
+    }
+}
+

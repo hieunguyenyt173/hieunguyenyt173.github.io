@@ -1,0 +1,36 @@
+@import url(./base.css);
+
+.ggmap {
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+}
+
+.layout-form-contact {
+    width: 70%;
+}
+
+
+/* Reponsive  */
+@media (max-width:768px) {
+    .layout-form-contact {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:992px) {
+    .contact-desc {
+        line-height: 1.8;
+    }
+}
+@media (max-width:576px) {
+    .contact-info .logo {
+        text-align: left;
+    }
+    .contact-desc {
+        line-height: 1.8;
+    }
+}
