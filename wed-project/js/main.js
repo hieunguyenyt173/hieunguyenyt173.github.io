@@ -13,25 +13,8 @@ $(".close-icon").click(function() {
   $(".sidebar-men").css("left","-360px");
   $(".sidebar").css("left","-360px");
   $(".overlay").css("display","none");
-  // $(".menu-men-desktop").css("top","-70%");
-  // $(".menu-women-desktop").css("top","-70%");
-  // $(".subnav .menu-item:nth-child(2)").css("background-color", "#E12222")
-  // $('body').css('overflow', 'auto');
+ 
 })
-
-// // Menu-men-desktop
-// $(".subnav .menu-item:nth-child(2)").click(function() {
-//   $(".menu-men-desktop").css("top","100px");
-//   $(".overlay").css("display","block");
-//   $(".overlay").css("top","100px");
-//   $('body').css('overflow', 'hidden');
-// })
-// $(".subnav .menu-item:nth-child(3)").click(function() {
-//   $(".menu-women-desktop").css("top","100px");
-//   $(".overlay").css("display","block");
-//   $(".overlay").css("top","100px");
-//   $('body').css('overflow', 'hidden');
-// })
 
 $(window).resize(function() {
   if($(window).innerWidth > 768) {
@@ -145,3 +128,20 @@ $(".stop").on("click", function () {
   owl.trigger("stop.owl.autoplay");
 });
 
+// Countdown clock
+const hours = document.getElementById("hours")
+const minutes = document.getElementById("minutes")
+const seconds = document.getElementById("seconds")
+const nowYear = new Date().getFullYear();
+const saleTime = new Date("August 19 2022 00:00:00");
+const timeCountdown = function(){
+  const nowTime = new Date();
+  const diff = saleTime - nowTime;
+  const h = Math.floor(diff / 1000/60/60) % 24;
+  const m = Math.floor(diff / 1000/60) % 60;
+  const s = Math.floor(diff / 1000) % 60;
+  hours.innerHTML =  h < 10 ? "0" + h : h;
+  minutes.innerHTML = m < 10 ? "0" + m : m;
+  seconds.innerHTML = s < 10 ? "0" + s : s;
+}
+setInterval(timeCountdown, 1000);

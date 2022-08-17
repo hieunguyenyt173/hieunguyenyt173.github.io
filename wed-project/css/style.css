@@ -44,6 +44,7 @@ img {
 }
 
 .btn-more:hover {
+    cursor: pointer;
     color: var(--red);
 }
 
@@ -729,17 +730,6 @@ img {
 
 
 
-.menu-women-desktop {
-    color: var(--semi-black);
-    background-color: #fff;
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-}
-
-
 
 
 
@@ -895,6 +885,9 @@ img {
     }
     .product-brand, .product-name {
         margin-bottom: 12px;
+    }
+    .menu-men-desktop, .menu-women-desktop {
+        display: none;
     }
     /* For user */
     #sale-for-user .product-price {

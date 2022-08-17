@@ -13,19 +13,9 @@ $(".menu-bar").click(function() {
     $(".sidebar-men").css("left","-360px");
     $(".sidebar").css("left","-360px");
     $(".overlay").css("display","none");
-    $(".menu-men-desktop").css("top","-70%");
-    $(".subnav .menu-item:nth-child(2)").css("background-color", "#E12222")
-    $('body').css('overflow', 'auto');
+
   })
   
-  // Menu-men-desktop
-  $(".subnav .menu-item:nth-child(2)").click(function() {
-    $(".subnav .menu-item:nth-child(2)").css("background-color", "#000")
-    $(".menu-men-desktop").css("top","100px");
-    $(".overlay").css("display","block");
-    $(".overlay").css("top","100px");
-    $('body').css('overflow', 'hidden');
-  })
   
   $(window).resize(function() {
     if($(window).innerWidth > 768) {
@@ -69,36 +59,6 @@ $(".menu-bar").click(function() {
     $(".sidebar-women").css("left","0");
     $(".overlay").css("display","block");
   })
-  // Đăng nhập, đăng xuất
-  
-  $(".icon-user").click(function () {
-    $(".popup-login").css("display", "flex");
-    $(".popup-login").css("top", "50%");
-    $(".overlay").css("display", "block");
-  });
-  
-  $(".popup-login .close").click(function () {
-    $(".popup-login").css("display", "none");
-    $(".overlay").css("display", "none");
-  });
-  
-  $(".btn-create").click(function () {
-    $(".popup-create").css("display", "flex");
-    $(".popup-create").css("top", "50%");
-    $(".overlay").css("display", "block");
-    $(".popup-login").css("display", "none");
-  });
-  
-  $(".popup-create .close").click(function () {
-    $(".popup-create").css("display", "none");
-    $(".overlay").css("display", "none");
-  });
-  $(".popup-create .btn-login").click(function () {
-    $(".popup-login").css("display", "flex");
-    $(".popup-login").css("top", "50%");
-    $(".overlay").css("display", "block");
-    $(".popup-create").css("display", "none");
-  });
   
   // Slider brand
   $(document).ready(function () {
