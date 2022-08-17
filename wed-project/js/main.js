@@ -13,25 +13,25 @@ $(".close-icon").click(function() {
   $(".sidebar-men").css("left","-360px");
   $(".sidebar").css("left","-360px");
   $(".overlay").css("display","none");
-  $(".menu-men-desktop").css("top","-70%");
-  $(".menu-women-desktop").css("top","-70%");
-  $(".subnav .menu-item:nth-child(2)").css("background-color", "#E12222")
-  $('body').css('overflow', 'auto');
+  // $(".menu-men-desktop").css("top","-70%");
+  // $(".menu-women-desktop").css("top","-70%");
+  // $(".subnav .menu-item:nth-child(2)").css("background-color", "#E12222")
+  // $('body').css('overflow', 'auto');
 })
 
-// Menu-men-desktop
-$(".subnav .menu-item:nth-child(2)").click(function() {
-  $(".menu-men-desktop").css("top","100px");
-  $(".overlay").css("display","block");
-  $(".overlay").css("top","100px");
-  $('body').css('overflow', 'hidden');
-})
-$(".subnav .menu-item:nth-child(3)").click(function() {
-  $(".menu-women-desktop").css("top","100px");
-  $(".overlay").css("display","block");
-  $(".overlay").css("top","100px");
-  $('body').css('overflow', 'hidden');
-})
+// // Menu-men-desktop
+// $(".subnav .menu-item:nth-child(2)").click(function() {
+//   $(".menu-men-desktop").css("top","100px");
+//   $(".overlay").css("display","block");
+//   $(".overlay").css("top","100px");
+//   $('body').css('overflow', 'hidden');
+// })
+// $(".subnav .menu-item:nth-child(3)").click(function() {
+//   $(".menu-women-desktop").css("top","100px");
+//   $(".overlay").css("display","block");
+//   $(".overlay").css("top","100px");
+//   $('body').css('overflow', 'hidden');
+// })
 
 $(window).resize(function() {
   if($(window).innerWidth > 768) {

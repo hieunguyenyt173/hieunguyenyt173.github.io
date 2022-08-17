@@ -188,14 +188,12 @@ img {
     font-weight: 600;
     margin-top: 15px;
 }
-.desktop-layoutmenu,.item-men,.img-item-men {
+.item-men,.img-item-men {
     width: 100%;
-    height: 100%;
 }
 
 .img-item-men img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -731,6 +729,16 @@ img {
 
 
 
+.menu-women-desktop {
+    color: var(--semi-black);
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+
 
 
 
@@ -805,17 +813,29 @@ img {
     .sidebar, .sidebar-men, .sidebar-brand,.sidebar-women, .sidebar-brand-women {
         display: none;
     }
-    .menu-men-desktop,.menu-women-desktop {
-        position: fixed;
-        top: -70%;
+    .main-menu {
+        position: relative;
+    }
+    .menu-men-desktop, .menu-women-desktop {
+        padding: 0 20px;
+        color: var(--semi-black);
+        background-color: #f2f2f2;
+        display: none;
+        position: absolute;
+        top: 40px;
         left: 0;
         width: 100%;
-        height: 70%;
-        overflow: hidden;
         z-index: 1001;
-        transition: all 0.5s;
     }
-
+    .layout-menu {
+        margin-bottom: 20px;
+    }
+    .subnav a:nth-child(2):hover .menu-men-desktop {
+        display: block;
+    }
+    .subnav a:nth-child(3):hover .menu-women-desktop {
+        display: block;
+    }
     /* product */
     .btn-view {
         bottom: -20%;
@@ -855,12 +875,6 @@ img {
         overflow: auto;
         z-index: 1001;
         transition: all 0.7s;
-    }
-    .menu-men-desktop {
-        display: none;
-    }
-    .menu-women-desktop {
-        display: none;
     }
     .subnav a {
         display: none;
