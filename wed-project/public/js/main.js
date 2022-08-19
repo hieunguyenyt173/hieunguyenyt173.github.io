@@ -58,7 +58,7 @@ $(".subnav .menu-item-tablet:nth-child(2)").click(function() {
   $(".sidebar-women").css("left","0");
   $(".overlay").css("display","block");
 })
-// Đăng nhập, đăng xuất
+
 
 
 // Initialise Carousel ********************************
@@ -145,3 +145,77 @@ const timeCountdown = function(){
   seconds.innerHTML = s < 10 ? "0" + s : s;
 }
 setInterval(timeCountdown, 1000);
+
+const productListEl = document.querySelector("#sale .list-item");
+// API lấy danh sách todo
+ function getProductsAPI() {
+  return axios.get("http://localhost:3000/products");
+}
+
+// Khai báo biến
+let products = [];
+
+// Lấy danh sách 
+async function getProducts() {
+    try {
+        const res = await getProductsAPI();
+        products = res.data;
+        // Render ra ngoài giao diện
+        renderProduct(products);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// Hiển thị sản phẩm 
+const renderProduct = arr => {
+  productListEl.innerHTML = "";
+
+  // Kiểm tra xem có sản phẩm không
+  if(arr.length == 0) {
+      productListEl.innerHTML = "Không có sản phẩm nào";
+      return;
+  }
+  // Hiển thị ds sản phẩm nếu có
+  let html = "";
+  arr.forEach(p => {
+      html += `
+      <div class="item">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="image-product">
+                <img src="${p.image-product[0]}" alt="anh san pham">
+                <div class="btn-view mx-auto d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#quickview-modal">
+                  <p class="my-0">Xem nhanh</p>
+                </div>
+                <div class="saleoff d-flex align-item-center text-white text-center">
+                  <p class="">Sale 45%</p>
+                </div>
+                <div class="like">
+                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="./product-details.html?id=${p.id}"><div class="product-info">
+                <p class="product-brand">${p.product-name}</p>
+                <p class="product-name">${p.name}</p>
+                <div class="product-price d-flex justify-content-between">
+                  <p class="price-sale">${p.price}</p>
+                  <p class="price text-decoration-line-through">${p.price - (p.price * p.sale-status)}</p>
+                </div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      `
+  })
+  productListEl.innerHTML = html;
+  
+}
+window.onload = () => {
+  getProducts();
+};

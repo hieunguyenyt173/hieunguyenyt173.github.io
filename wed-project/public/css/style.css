@@ -52,7 +52,9 @@ img {
 .main-menu {
     background-color: var(--red);
 }
-
+.brand-name:hover {
+    color: var(--red);
+}
 #header .hello {
     font-size: 14px;
 }
@@ -633,7 +635,7 @@ img {
 
 .banner-subcribe {
     width: 100%;
-    background: url(/wed-project/img/newsletter_banner.webp) top center / cover no-repeat;
+    background: url(/wed-project/public/img/newsletter_banner.webp) top center / cover no-repeat;
     height: auto;
 }
 

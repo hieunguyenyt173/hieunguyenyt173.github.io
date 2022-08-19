@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="/wed-project/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wed-project/favicon.ico" type="image/x-icon">
+    <!-- Link slide -->
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link bootstrap> -->
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
+    <!-- Link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Tự viết -->
+    <link rel="stylesheet" href="./css/blog.css" />
+</head>
+<body>
+    <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <div class="header-bar">
+        <div class="row">
+          <div class="col-sm-4 d-flex align-items-center">
+            <div class="seach-form d-flex align-items-center rounded shadow-sm pe-3">
+              <!-- Ô tìm kiếm sản phẩm -->
+              <input type="text" placeholder="Tìm kiếm sản phẩm"
+                  class="form-control border-0 seach-form-input">
+                  <!-- Nút tìm kiếm sản phẩm -->
+              <span class="text-black-50 seach-form-button"><i
+                      class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          </div>
+          <div class="col-sm-4 d-flex align-items-center justify-content-center">
+            <div class="logo text-decoration-underline">Perfuma</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="navbar-icon align-items-center justify-content-end">
+              <p class="hello mb-0 hide">Xin chào, <span class="username">Khách</span></p>
+              <div class="icon fs-4">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="icon-user"><i class="fa-solid fa-user"></i></span>
+                </button>
+
+                <a href="./favorite.html"><span class="like-icon-header"><i class="fa-solid fa-heart"></i></span></a>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="bag"><i class="fa-solid fa-bag-shopping"></i>
+                    <span class="amount">0</span></span>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main-menu -->
+  <div class="main-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="subnav">
+            <a href="./index.html" class="menu-item">TRANG CHỦ</a>
+            <a href="./product.html" class="menu-item">NƯỚC HOA NAM
+              <div class="menu-men-desktop"> 
+                <p class="category-title">Nhãn hiệu</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="brand-name">Azzaro</p>
+                      <p class="brand-name">Issey Miyake</p>
+                      <p class="brand-name">Burberry</p>  
+                      <p class="brand-name">Jean Paul Gaultier</p>
+                      <p class="brand-name">Calvin Klein</p>
+                      <p class="brand-name">Kenneth Cole</p>
+                      <p class="brand-name">Carolina Herrera</p>
+                      <p class="brand-name">Lacoste</p>
+                      <p class="brand-name">Davidoff</p>
+                      <p class="brand-name">Dolce & Gabbana</p>
+                      
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <p class="brand-name">Gianni Versace</p>
+                    <p class="brand-name">Ralph Lauren</p>
+                    <p class="brand-name">Giorgio Armani</p>
+                    <p class="brand-name">Sean John</p>
+                    <p class="brand-name">Givenchy</p>
+                    <p class="brand-name">Thierry Mugler</p>
+                    <p class="brand-name">Gucci</p>
+                    <p class="brand-name">Tom Ford</p>
+                    <p class="brand-name">Hugo Boss</p>
+                    
+                    <p class="brand-name">Shop all brands</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="layout-menu pb-4">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+                          </div>
+                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/dang-sale.png" alt="dang-sale">
+                          </div>
+                            <p class="item-sidebar-men">Đang khuyến mãi</p>
+                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                         
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/bo-qua-tang.png" alt="bo qua tang nam">
+                          </div>
+                            <p class="item-sidebar-men">Bộ quà tặng</p>
+                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/all-sp.png" alt="tat ca sp nam">
+                          </div>
+                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="./product-women.html" class="menu-item">NƯỚC HOA NỮ
+              <div class="menu-women-desktop"> 
+                <p class="category-title">Nhãn hiệu</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="brand-name">Azzaro</p>
+                      <p class="brand-name">Issey Miyake</p>
+                      <p class="brand-name">Burberry</p>  
+                      <p class="brand-name">Jean Paul Gaultier</p>
+                      <p class="brand-name">Calvin Klein</p>
+                      <p class="brand-name">Kenneth Cole</p>
+                      <p class="brand-name">Carolina Herrera</p>
+                      <p class="brand-name">Lacoste</p>
+                      <p class="brand-name">Davidoff</p>
+                      <p class="brand-name">Dolce & Gabbana</p>
+                      
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <p class="brand-name">Gianni Versace</p>
+                    <p class="brand-name">Ralph Lauren</p>
+                    <p class="brand-name">Giorgio Armani</p>
+                    <p class="brand-name">Sean John</p>
+                    <p class="brand-name">Givenchy</p>
+                    <p class="brand-name">Thierry Mugler</p>
+                    <p class="brand-name">Gucci</p>
+                    <p class="brand-name">Tom Ford</p>
+                    <p class="brand-name">Hugo Boss</p>
+                    
+                    <p class="brand-name">Shop all brands</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="layout-menu pb-4">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
+                          </div>
+                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/dang-sale-nu.webp" alt="dang-sale">
+                          </div>
+                            <p class="item-sidebar-men">Đang khuyến mãi</p>
+                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                         
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/bo-quatang-nu.webp" alt="bo qua tang nu">
+                          </div>
+                            <p class="item-sidebar-men">Bộ quà tặng</p>
+                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/all-sp-nu.webp" alt="tat ca sp nam">
+                          </div>
+                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="sale.html" class="menu-item">KHUYẾN MÃI</a>
+            <a href="./blog.html" class="menu-item">TIN TỨC</a>
+            <a href="./contact.html" class="menu-item">LIÊN HỆ</a>
+            <div class="subnav-tablet">
+              <p class="menu-item-tablet">NƯỚC HOA NAM</p>
+              <p class="menu-item-tablet">NƯỚC HOA NỮ</p>
+              <p class="menu-item-tablet">KHUYẾN MÃI</p>
+              <span class="menu-bar fs-5 text-white"><i class="fa-solid fa-bars"></i></span>
+            </div>
+          </div>
+
+        </div>
+        <!-- Menu-destop -->
+        <div class="menu-desktop menu-men-desktop">
+          <div class="container">
+            <div class="row">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="category-title">Nhãn hiệu</p>
+                <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  
+                  <div class="col-md-6">
+                    <p class="brand-name">Azzaro</p>
+                    <p class="brand-name">Issey Miyake</p>
+                    <p class="brand-name">Burberry</p>
+                    <p class="brand-name">Jean Paul Gaultier</p>
+                    <p class="brand-name">Calvin Klein</p>
+                    <p class="brand-name">Kenneth Cole</p>
+                    <p class="brand-name">Carolina Herrera</p>
+                    <p class="brand-name">Lacoste</p>
+                    <p class="brand-name">Davidoff</p>
+                    <p class="brand-name">Dolce & Gabbana</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="brand-name">Gianni Versace</p>
+                    <p class="brand-name">Ralph Lauren</p>
+                    <p class="brand-name">Giorgio Armani</p>
+                    <p class="brand-name">Sean John</p>
+                    <p class="brand-name">Givenchy</p>
+                    <p class="brand-name">Thierry Mugler</p>
+                    <p class="brand-name">Gucci</p>
+                    <p class="brand-name">Tom Ford</p>
+                    <p class="brand-name">Hugo Boss</p>
+                    <p class="brand-name">Shop all brands</p>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="col-md-8">
+                
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <a href="./product.html">
+                        <div class="item-men">
+                          <div class="img-item-men">
+                            <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+                          </div>
+                          <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/dang-sale.png" alt="dang-sale">
+                        </div>
+                        <p class="item-sidebar-men">Đang khuyến mãi</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/bo-qua-tang.png" alt="bo-qua-tang">
+                        </div>
+                        <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/all-sp.png" alt="all-sp">
+                        </div>
+    
+                        <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+    
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="menu-desktop menu-women-desktop">
+          <div class="container">
+            <div class="row">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="category-title">Nhãn hiệu</p>
+                <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  
+                  <div class="col-md-6">
+                    <p class="brand-name">Azzaro</p>
+                    <p class="brand-name">Issey Miyake</p>
+                    <p class="brand-name">Burberry</p>
+                    <p class="brand-name">Jean Paul Gaultier</p>
+                    <p class="brand-name">Calvin Klein</p>
+                    <p class="brand-name">Kenneth Cole</p>
+                    <p class="brand-name">Carolina Herrera</p>
+                    <p class="brand-name">Lacoste</p>
+                    <p class="brand-name">Davidoff</p>
+                    <p class="brand-name">Dolce & Gabbana</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="brand-name">Gianni Versace</p>
+                    <p class="brand-name">Ralph Lauren</p>
+                    <p class="brand-name">Giorgio Armani</p>
+                    <p class="brand-name">Sean John</p>
+                    <p class="brand-name">Givenchy</p>
+                    <p class="brand-name">Thierry Mugler</p>
+                    <p class="brand-name">Gucci</p>
+                    <p class="brand-name">Tom Ford</p>
+                    <p class="brand-name">Hugo Boss</p>
+                    <p class="brand-name">Shop all brands</p>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="col-md-8">
+                <div class="desktop-layoutmenu">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
+                        </div>
+                        <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                        <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/dang-sale-nu.webp" alt="dang-sale">
+                        </div>
+                        <p class="item-sidebar-men">Đang khuyến mãi</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/bo-quatang-nu.webp" alt="bo-qua-tang">
+                        </div>
+                        <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="item-men">
+                        <div class="img-item-men">
+                          <img src="./img/all-sp-nu.webp" alt="all-sp">
+                        </div>
+    
+                        <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                        <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="row mx-0 ">
+          <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+            <p class="my-3">MENU</p>
+            <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 menu-men d-flex justify-content-between align-items-center border-bottom">
+            <p class="my-3">Nước hoa nam</p>
+            <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 menu-women d-flex justify-content-between align-items-center border-bottom">
+            <p class="my-3">Nước hoa nữ</p>
+            <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 d-flex justify-content-between align-items-center border-bottom">
+            <p class="my-3">Khuyến mãi</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Tin tức</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col px-3 border-bottom">
+            <p class="my-3">Liên hệ</p>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col">
+            <div class="sidebar-login d-flex justify-content-center align-items-center mt-3 mx-3">
+              <span class="user pe-2"> <i class="fa-solid fa-user"></i></span>
+              <p class="my-3">Đăng nhập/ Đăng kí</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col">
+            <div class="sidebar-like d-flex justify-content-center align-items-center my-3 mx-3">
+              <p class="my-3">Sản phẩm yêu thích</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Sidebar-men -->
+    <div class="sidebar-men">
+      <div class="row mx-0 ">
+        <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+          <div class="menu-back d-flex align-items-center">
+            <span class="btn-back-icon me-2"><i class="fa-solid fa-angle-left"></i></span>
+            <p class="my-3">NƯỚC HOA NAM</p>
+          </div>
+
+          <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 brand-menu d-flex justify-content-between align-items-center border-bottom">
+          <p class="my-3">Nhãn hiệu</p>
+          <span class="next-icon brand-menu"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+            </div>
+
+            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+            <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/dang-sale.png" alt="dang-sale">
+            </div>
+
+            <p class="item-sidebar-men">Đang khuyến mãi</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/bo-qua-tang.png" alt="bo-qua-tang">
+            </div>
+
+            <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/all-sp.png" alt="all-sp">
+            </div>
+
+            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Sidebar-brand-men-->
+    <div class="sidebar-brand">
+      <div class="row mx-0 ">
+        <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+          <div class="menu-back d-flex align-items-center">
+            <span class="btn-back-icon-1 me-2"><i class="fa-solid fa-angle-left"></i></span>
+            <p class="my-3">NHÃN HIỆU</p>
+          </div>
+          <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Azzaro</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Burberry</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Calvin Klein</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Carolina Herrera</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Davidoff</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Ralph Lauren</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Sean John</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Thierry Mugler</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Tom Ford</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Vince Camuto</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Issey Miyake</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Jean Paul Gaultier</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Kenneth Cole</p>
+        </div>
+      </div>
+
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Lacoste</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Dolce & Gabbana</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Gianni Versace</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Giorgio Armani</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Givenchy</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Gucci</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Hugo Boss</p>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar-women -->
+    <div class="sidebar-women">
+      <div class="row mx-0 ">
+        <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+          <div class="menu-back d-flex align-items-center">
+            <span class="btn-back-icon me-2"><i class="fa-solid fa-angle-left"></i></span>
+            <p class="my-3">NƯỚC HOA NỮ</p>
+          </div>
+
+          <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 brand-menu d-flex justify-content-between align-items-center border-bottom">
+          <p class="my-3">Nhãn hiệu</p>
+          <span class="next-icon"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
+            </div>
+
+            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/dang-sale-nu.webp" alt="dang-sale">
+            </div>
+
+            <p class="item-sidebar-men">Đang khuyến mãi</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/bo-quatang-nu.webp" alt="bo-qua-tang">
+            </div>
+
+            <p class="item-sidebar-men pb-4">Bộ quà tặng</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 mx-4">
+        <div class="col">
+          <div class="item-men">
+            <div class="img-item-men">
+              <img src="./img/all-sp-nu.webp" alt="all-sp">
+            </div>
+
+            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Sidebar-brand-women-->
+    <div class="sidebar-brand-women">
+      <div class="row mx-0 ">
+        <div class="col sidebar-menu px-3 d-flex justify-content-between align-items-center ">
+          <div class="menu-back d-flex align-items-center">
+            <span class="btn-back-icon-1 me-2"><i class="fa-solid fa-angle-left"></i></span>
+            <p class="my-3">NHÃN HIỆU</p>
+          </div>
+          <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Burberry</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Bvlgari</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Calvin Klein</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Clinique</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Davidoff</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Dolce & Gabbana</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Elizabeth Taylor</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Estee Lauder</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Gianni Versace</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Giorgio Armani</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Givenchy</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Gucci</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Hugo Boss</p>
+        </div>
+      </div>
+
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Jessica Simpson</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Kenneth Cole</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Lacoste</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Marc Jacobs</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Paris Hilton</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Ralph Lauren</p>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <div class="col px-3 border-bottom">
+          <p class="my-3">Thierry Mugler</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Popuplogin, create -->
+  <div id="login">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body px-0 py-0">
+            <div class="popup-login">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="image">
+                    <img src="./img/login.png" alt="img-login" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="infomation">
+                    <div class="modal-header border-none">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="title text-uppercase text-center mb-4">Vui lòng đăng nhập</p>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Mật khẩu</label>
+                    </div>
+                    <p class="subtitle text-end mb-3 mt-2">Quên mật khẩu?</p>
+                    <div class="btn-login text-uppercase text-center box-login mb-2">
+                      Đăng nhập
+                    </div>
+                    <p class="subtitle text-center mb-3">Bạn chưa có tài khoản?</p>
+
+                    <button type="button" class="btn btn-create text-uppercase text-center box-login"
+                      data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                      Đăng kí
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="create">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body px-0 py-0">
+            <div class="popup-login">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="image">
+                    <img src="./img/login.png" alt="img-login" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="infomation">
+                    <div class="modal-header border-none">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="title text-uppercase text-center mb-4">Tạo tài khoản</p>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                      <label for="floatingInput">Tên tài khoản</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Mật khẩu</label>
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Xác nhận lại mật khẩu</label>
+                    </div>
+
+                    <div class="btn-create text-uppercase text-center box-login mb-3">
+                      Đăng kí
+                    </div>
+                    <p class="subtitle text-center mb-2">Bạn đã có tài khoản?</p>
+                    <button type="button" class="btn btn-login text-uppercase text-center box-login mb-3"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Đăng nhập
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cart -->
+  <div id="thumbnail-cart">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 id="offcanvasRightLabel" class="text-uppercase">Giỏ hàng( <span>5</span> sản phẩm)</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="menu-item-thumbalnail">
+      <div class="item-thumbnail-cart border-bottom">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="image-cart">
+              <img src="./img/img-product.png" alt="image-product">
+            </div>
+          </div>
+          <div class="col-sm-7">
+              <div class="item-cart-info">
+                <p class="text-uppercase brand-name">
+                  GIORGIO ARMANI
+                </p>
+                <p class="product-name">
+                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                  Spray
+                </p>
+                <p class="capacity">50ml</p>
+              </div>
+              <div class="price-cart-item d-flex justify-content-between">
+                <p class="mb-2">2.390.000₫</p>
+                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+              </div>
+          </div>
+          <div class="col-sm-2 d-flex align-items-center justify-content-center">
+            <div class="product-amount d-flex align-items-center justify-content-center">
+              <div
+                class="btn-up d-flex justify-content-center align-items-center"
+              >
+                +
+              </div>
+              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+              <div
+                class="btn-down d-flex justify-content-center align-items-center"
+              >
+                -
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="item-thumbnail-cart border-bottom">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="image-cart">
+              <img src="./img/img-product.png" alt="image-product">
+            </div>
+          </div>
+          <div class="col-sm-7">
+              <div class="item-cart-info">
+                <p class="text-uppercase brand-name">
+                  GIORGIO ARMANI
+                </p>
+                <p class="product-name">
+                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                  Spray
+                </p>
+                <p class="capacity">50ml</p>
+              </div>
+              <div class="price-cart-item d-flex justify-content-between">
+                <p class="mb-2">2.390.000₫</p>
+                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+              </div>
+          </div>
+          <div class="col-sm-2 d-flex align-items-center justify-content-center">
+            <div class="product-amount d-flex align-items-center justify-content-center">
+              <div
+                class="btn-up d-flex justify-content-center align-items-center"
+              >
+                +
+              </div>
+              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+              <div
+                class="btn-down d-flex justify-content-center align-items-center"
+              >
+                -
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="item-thumbnail-cart border-bottom">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="image-cart">
+              <img src="./img/img-product.png" alt="image-product">
+            </div>
+          </div>
+          <div class="col-sm-7">
+              <div class="item-cart-info">
+                <p class="text-uppercase brand-name">
+                  GIORGIO ARMANI
+                </p>
+                <p class="product-name">
+                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                  Spray
+                </p>
+                <p class="capacity">50ml</p>
+              </div>
+              <div class="price-cart-item d-flex justify-content-between">
+                <p class="mb-2">2.390.000₫</p>
+                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+              </div>
+          </div>
+          <div class="col-sm-2 d-flex align-items-center justify-content-center">
+            <div class="product-amount d-flex align-items-center justify-content-center">
+              <div
+                class="btn-up d-flex justify-content-center align-items-center"
+              >
+                +
+              </div>
+              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+              <div
+                class="btn-down d-flex justify-content-center align-items-center"
+              >
+                -
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+    <div class="cart-footer mt-3">
+      <div class="total d-flex justify-content-between pb-2">
+        <p class="total-price text-uppercase">Thành tiền</p>
+        <p class="price-desc">6.380.000₫</p>
+      </div>
+      <div class="btn-pay px-2 py-3 mb-3 text-center">Tiến hành thanh toán</div>
+      <div class="btn-continue px-2 py-3 mb-3 text-center">Xem giỏ hàng</div>
+      <a  href="#" class="mt-2">Tiếp tục mua hàng</a>
+    </div>
+  </div>
+</div>
+  </div>
+    <!-- Section blog -->
+    <div id="blog">
+        <div class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pt-3 pb-4">
+                  <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
+                </ol>
+              </nav>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="title-heading text-uppercase mb-3">
+                        Danh mục
+                    </h4>
+                    <div class="menu-blog border-bottom">
+                      <a href="./product.html">
+                        <p class="sub-title text-uppercase">
+                          Nước hoa nam
+                      </p>
+                      </a>
+                      <a href="./product-women.html">
+                        <p class="sub-title text-uppercase">
+                          Nước hoa nữ
+                      </p>
+                      </a>
+                      <a href="./sale.html">
+                        <p class="sub-title text-uppercase">
+                          Khuyến mãi
+                      </p>
+                      </a>
+                      <a href="#">
+                        <p class="sub-title text-uppercase">
+                          Bán chạy
+                      </p>
+                      </a>
+                  </div>
+                    <h4 class="title-heading text-uppercase mt-3">Tin nổi bật</h4>
+                    <div class="menu-thumbnail-blog">
+                        <a href="./blog-details.html">
+                          <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="./blog-details.html">
+                          <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="./blog-details.html">
+                          <div class="card-blog-thumbnail border d-lg-flex mb-3">
+                            <div class="image-blog">
+                                <img src="./img/blog1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <p class="detail">John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                            </div>
+                        </div>
+                        </a>
+                        <p class="btn-more text-center">Xem thêm <span><i class="fa-solid fa-angles-right"></i></span></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="title-heading text-uppercase mb-3">
+                        Tin tức
+                    </h4>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <a href="./blog-details.html">
+                              <div class="item-blog shadow mb-5 bg-body rounded">
+                                <div class="image-item-blog">
+                                    <img src="./img/blog1.webp" alt="">
+                                    <div class="blog-info">
+                                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                        <div class="time-detail d-flex justify-content-between">
+                                            <p class="time-blog">
+                                                03/07/2022
+                                            </p>
+                                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                          <a href="./blog-details.html">
+                            <div class="item-blog shadow mb-5 bg-body rounded">
+                              <div class="image-item-blog">
+                                  <img src="./img/blog1.webp" alt="">
+                                  <div class="blog-info">
+                                      <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                      <div class="time-detail d-flex justify-content-between">
+                                          <p class="time-blog">
+                                              03/07/2022
+                                          </p>
+                                          <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                          </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <a href="./blog-details.html">
+                          <div class="item-blog shadow mb-5 bg-body rounded">
+                            <div class="image-item-blog">
+                                <img src="./img/blog1.webp" alt="">
+                                <div class="blog-info">
+                                    <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                    <div class="time-detail d-flex justify-content-between">
+                                        <p class="time-blog">
+                                            03/07/2022
+                                        </p>
+                                        <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="./blog-details.html">
+                        <div class="item-blog shadow mb-5 bg-body rounded">
+                          <div class="image-item-blog">
+                              <img src="./img/blog1.webp" alt="">
+                              <div class="blog-info">
+                                  <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                  <div class="time-detail d-flex justify-content-between">
+                                      <p class="time-blog">
+                                          03/07/2022
+                                      </p>
+                                      <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="./blog-details.html">
+                      <div class="item-blog shadow mb-5 bg-body rounded">
+                        <div class="image-item-blog">
+                            <img src="./img/blog1.webp" alt="">
+                            <div class="blog-info">
+                                <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                                <div class="time-detail d-flex justify-content-between">
+                                    <p class="time-blog">
+                                        03/07/2022
+                                    </p>
+                                    <p class="by">Viết bởi: <span>Perfuma</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <a href="./blog-details.html">
+                    <div class="item-blog shadow mb-5 bg-body rounded">
+                      <div class="image-item-blog">
+                          <img src="./img/blog1.webp" alt="">
+                          <div class="blog-info">
+                              <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                              <div class="time-detail d-flex justify-content-between">
+                                  <p class="time-blog">
+                                      03/07/2022
+                                  </p>
+                                  <p class="by">Viết bởi: <span>Perfuma</span></p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./blog-details.html">
+                  <div class="item-blog shadow mb-5 bg-body rounded">
+                    <div class="image-item-blog">
+                        <img src="./img/blog1.webp" alt="">
+                        <div class="blog-info">
+                            <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                            <div class="time-detail d-flex justify-content-between">
+                                <p class="time-blog">
+                                    03/07/2022
+                                </p>
+                                <p class="by">Viết bởi: <span>Perfuma</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <a href="./blog-details.html">
+                <div class="item-blog shadow mb-5 bg-body rounded">
+                  <div class="image-item-blog">
+                      <img src="./img/blog1.webp" alt="">
+                      <div class="blog-info">
+                          <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                          <div class="time-detail d-flex justify-content-between">
+                              <p class="time-blog">
+                                  03/07/2022
+                              </p>
+                              <p class="by">Viết bởi: <span>Perfuma</span></p>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="./blog-details.html">
+              <div class="item-blog shadow mb-5 bg-body rounded">
+                <div class="image-item-blog">
+                    <img src="./img/blog1.webp" alt="">
+                    <div class="blog-info">
+                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                        <div class="time-detail d-flex justify-content-between">
+                            <p class="time-blog">
+                                03/07/2022
+                            </p>
+                            <p class="by">Viết bởi: <span>Perfuma</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </a>
+        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center mb-3">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Section footer -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="logo text-decoration-underline my-3">Perfuma</div>
+          <p>GPKD số: 58A8011955</p>
+          <p>Ngày cấp: 01/10/2021</p>
+          <p>Cấp bởi: UBND TP Trà Vinh</p>
+          <p>Đ/c: 77 Điện Biên Phủ, P.6, Trà Vinh</p>
+          <p>Sđt : 0966434787</p>
+          <p>Email: support@hieushop.com.vn</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <p class="title-footer mt-5">HÕ TRỢ KHÁCH HÀNG</p>
+          <a href="#">
+            <p>Chính sách bảo mật</p>
+          </a>
+          <a href="#">
+            <p>Chính sách vận chuyển</p>
+          </a>
+          <a href="#">
+            <p>Chính sách đổi trả</p>
+          </a>
+          <a href="#">
+            <p>Hình thức thanh toán</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <p class="title-footer mt-5">HƯỚNG DẪN</p>
+          <a href="#">
+            <p>Hướng dẫn mua hàng</p>
+          </a>
+          <a href="#">
+            <p>Hướng dẫn thanh toán</p>
+          </a>
+          <a href="#">
+            <p>Hướng dẫn giao nhận</p>
+          </a>
+          <a href="#">
+            <p>Điều khoản dịch vụ</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 pb-4">
+          <p class="title-footer mt-5">KẾT NỐI VỚI CHÚNG TÔI</p>
+          <div class="icon-footer d-flex">
+            <a href="#"><span class="social-icon fs-3 mx-2"><i class="fa-brands fa-facebook"></i></span></a>
+            <a href="#"><span class="social-icon fs-3 mx-2"><i class="fa-brands fa-instagram"></i></span></span></a>
+            <a href="#"><span class="social-icon fs-3 mx-2"><i class="fa-brands fa-twitter"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+
+
+
+
+
+
+
+    <script src="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Link tự viết -->
+    <script src="./js/blog.js"></script>
+</body>
+</html>

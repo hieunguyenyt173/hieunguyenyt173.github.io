@@ -15,7 +15,8 @@
     "products": [
         {
             "id": 1,
-            "categories": "Women",
+            "gender":"women",
+            
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Brit-Women-Eau-de-Parfum-1.6-Best-Price-Fragrance-Parfume-FragranceOutlet.com-DETAILS_1024x1024.jpg?v=1591879601",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Brit-Women-Eau-de-Parfum-1.6-Best-Price-Fragrance-Parfume-FragranceOutlet.com-MAIN_1024x1024.jpg?v=1591879601"
             ],
@@ -31,7 +32,8 @@
         },
         {
             "id": 2,
-            "categories": "Men",
+            "gender":"men",
+            
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1579123544",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579123544",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Azzaro-Chrome-mens-Eau-de-Toilette-Spray-3.4-tester-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579123544"
@@ -48,7 +50,8 @@
         },
         {
             "id": 3,
-            "categories": "Men",            
+            "gender":"men",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579124114",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1579124114",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Calvin-Klein-Eternity-Aqua-Mens-Eau-de-Toilette-Spray-1-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1579124114"
@@ -65,7 +68,8 @@
         },
         {
             "id": 4,
-            "categories": "Men",            
+            "gender":"men",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1598971735",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-de-Toilette-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1598971735",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Versace-The-Dreamer-Mens-Eau-De-Toilette-EDT-Spray-1.7-oz.-Best-Price-Fragrance-Parfume-FragranceOutlet.com-main_1024x1024.jpg?v=1598971735",
@@ -83,7 +87,8 @@
         },
         {
             "id": 5,
-            "categories": "Women",            
+            "gender":"women",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-1314larger_1024x1024.jpg?v=1617046171",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-1314larger_1024x1024.jpg?v=1617046171"
             
@@ -100,7 +105,8 @@
         },
         {
             "id": 6,
-            "categories": "Women",            
+            "gender":"women",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Details_1024x1024.jpg?v=1580148163",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-3.4-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1580148154",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Burberry-Touch-Women-Eau-de-Parfume-Spray-1.7-Best-Price-Fragrance-Parfume-FragranceOutlet.com-Main_1024x1024.jpg?v=1580148159",
@@ -118,7 +124,8 @@
         },
         {
             "id": 7,
-            "categories": "Women",            
+            "gender":"women",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/burberryclassicforwomen_1024x1024.jpg?v=1593632769",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/burberry_1024x1024.jpg?v=1593632770"
             
@@ -135,7 +142,8 @@
         },
         {
             "id": 8,
-            "categories": "Women",            
+            "gender":"women",
+                        
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Bvlgari-Omnia-Pink-Sapphire-Women-Eau-de-Toilette-2.2-Best-Price-Fragrance-Parfume-FragranceOutlet.com-details_1024x1024.jpg?v=1579128151",
             "https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/Bvlgari-Omnia-Pink-Sapphire-Women-Eau-de-Toilette-2.2-Best-Price-Fragrance-Parfume-FragranceOutlet.com-main_1024x1024.jpg?v=1579128151"
             
@@ -152,7 +160,8 @@
         },
         {
             "id": 9,
-            "categories": "Women",            
+            "gender":"women",
+            "categories": "bestseler",            
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0097512larger_086313b8-c4eb-4ab6-a563-ef5ce5612758_1024x1024.jpg?v=1617654601"
             
             ],
@@ -168,7 +177,8 @@
         },
         {
             "id": 10,
-            "categories": "Women",
+            "gender":"women",
+            "categories": "all",
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
             
             ],
@@ -184,6 +194,7 @@
         },
         {
             "id": 11,
+            
             "categories": "Gift Set",
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
             
@@ -200,6 +211,7 @@
         },
         {
             "id": 12,
+            
             "categories": "Women",
             "image-product": ["https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/W-3092larger_1024x1024.jpg?v=1579127935"
             
