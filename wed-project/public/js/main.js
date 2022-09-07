@@ -216,6 +216,71 @@ const renderProduct = arr => {
   productListEl.innerHTML = html;
   
 }
-window.onload = () => {
-  getProducts();
-};
+
+function start() {
+  getProducts(function (products) {
+    console.log(products)
+    renderProduct(products);
+  });
+
+}
+start();
+// Khai báo biến
+// let products = [];
+
+// Lấy danh sách 
+function getProducts(callback) {
+  fetch(productsApi)
+    .then((response) => response.json())
+    .then(callback);
+
+}
+let html = "";
+function renderProduct(products) {
+  // productListEl.innerHTML="";
+  if (products.length == 0) {
+    productListEl.innerHTML = "Không có sản phẩm nào"
+  }
+  
+  products.forEach(product => {
+    html += `
+    <div class="col-md-3 col-6">
+          <div class="item">
+            <div class="row">
+              <div class="col">
+                <div class="image-product">
+                  <img src="./img/img-product.png" alt="anh san pham">
+                  <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
+                    <p class="my-0">Xem nhanh</p>
+                  </div>
+                  <div class="saleoff d-flex align-item-center text-white text-center">
+                    <p class="">Sale 45%</p>
+                  </div>
+                  <div class="like">
+                    <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="product-info">
+                  <p class="product-brand">Azzaro</p>
+                  <p class="product-name">${product.name}</p>
+                  <div class="product-price d-flex justify-content-between">
+                    <p class="price-sale">2.390.000₫</p>
+                    <p class="price text-decoration-line-through">4.125.000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ `
+  });
+
+  productListEl.innerHTML = html
+ console.log(html)
+  
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/babel">
+        const Header = () => (
+            <header className="header d-flex align-items-center">
+                <div className="container-fluid">
+                    <div className="d-flex justify-content-start align-items-center">
+                        <div className="logo">
+                            <a href="#">
+                                <img
+                                    src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png"
+                                    alt="logo"
+                                />
+                            </a>
+                        </div>
+                        <div className="menu">
+                            <a className="text-white text-uppercase ms-5" href="#">
+                                Phòng lab
+                            </a>
+                            <a className="text-white text-uppercase ms-3" href="#">
+                                Trực tuyến
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        );
+        const Footer = () => (
+            <footer className="pt-5 pb-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3">
+                            <h3 className="fs-5 mb-4">CHỦ SỞ HỮU WEBSITE</h3>
+                            <p>Công ty TNHH TechMaster Vietnam Ltd</p>
+                            <p>Số ĐKDN: 0105392153</p>
+                            <p>Ngày cấp: 4-7-2011</p>
+                            <p>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</p>
+                            <p>Người đại diện pháp luật: Lê Minh Thu</p>
+                            <p>Phụ trách nội dung: Trịnh Minh Cường</p>
+                        </div>
+                        <div className="col-lg-3">
+                            <h3 className="fs-5 mb-4">GIỚI THIỆU</h3>
+                            <p>Học viện CNTT TechMaster</p>
+                            <p>Giảng viên</p>
+                            <p>Quy định</p>
+                            <p>Hướng dẫn mua khóa học</p>
+                            <p>Ưu đãi và hoàn trả học phí</p>
+                            <p>Bảo vệ thông tin khách hàng</p>
+                        </div>
+                        <div className="col-lg-3">
+                            <h3 className="fs-5 mb-4">TƯ VẤN TUYỂN SINH</h3>
+                            <p>Phạm Thị Mẫn - 0963023185</p>
+                            <p>manpham@techmaster.vn</p>
+                            <p>Dương Đức Thịnh - 0987273764</p>
+                            <p>thinh@techmaster.vn</p>
+                            <p>Nguyễn Thanh Hương - 0382416368</p>
+                            <p>huong@techmaster.vn</p>
+                        </div>
+                        <div className="col-lg-3">
+                            <h3 className="fs-5 mb-4">ĐỊA CHỈ</h3>
+                            <p>
+                                Cơ sở 1: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà Trưng, Hà
+                                Nội
+                            </p>
+                            <p>
+                                Cơ sở 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê
+                                Văn Lương kéo dài, Hà Nội
+                            </p>
+                            <p>Cơ sở 3: Tầng 5, số 13 Dịch Vọng Hậu, Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        );
+        const CourseFiler = () => {
+            return (
+                <div className="col-md-3">
+                    <h2 className="fs-5 mb-4">Chủ đề</h2>
+                    <div className="topic-item input-group d-flex align-items-center mb-1">
+                        <input type="radio" value="Backend" id="backend" name="topic" />
+                        <label htmlFor="backend" className="ms-2 fs-5">
+                            Lập trình Backend
+                        </label>
+                    </div>
+                    <div className="topic-item input-group d-flex align-items-center mb-1">
+                        <input type="radio" value="Frontend" id="frontend" name="topic" />
+                        <label htmlFor="frontend" className="ms-2 fs-5">
+                            Lập trình Frontend
+                        </label>
+                    </div>
+                    <div className="topic-item input-group d-flex align-items-center mb-1">
+                        <input type="radio" value="Di động" id="mobile" name="topic" />
+                        <label htmlFor="mobile" className="ms-2 fs-5">
+                            Lập trình di động
+                        </label>
+                    </div>
+                    <div className="topic-item input-group d-flex align-items-center mb-1">
+                        <input type="radio" value="Database" id="database" name="topic" />
+                        <label htmlFor="database" className="ms-2 fs-5">
+                            Cơ sở dữ liệu
+                        </label>
+                    </div>
+                </div>
+            );
+        };
+        const SearchCourse = () => {
+            return (
+                
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="seach-form d-flex align-items-center rounded shadow-sm mb-4 pe-3">
+                            <input
+                                type="text"
+                                placeholder="Tìm kiếm khóa học"
+                                className="form-control border-0 seach-form-input"
+                            />
+                            <span className="text-black-50 seach-form-button">
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            );
+        };
+        const CourseItem = () => {
+            return (
+                <div className="col-md-4">
+                            <a href="#">
+                                <div className="course-item shadow-sm rounded mb-4">
+                                    <div className="course-item-image">
+                                        <img src="https://media.techmaster.vn/api/static/8028/bpfneoc51co8tcg6lek0"
+                                            alt="khoa hoc"/>
+                                    </div>
+                                    <div className="course-item-info p-3">
+                                        <h2 className="fs-/5 mb-3 text-dark">Spring Boot - Web Back End</h2>
+                                        <p className="type fw-light text-black-50">Trực tuyến</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+            )
+        }
+        const CourseList =() => {
+            return (
+                <div className="course-list row">
+                    <CourseItem />
+                    <CourseItem />
+                    <CourseItem />
+                    <CourseItem />
+                    <CourseItem />
+                    <CourseItem />
+                </div>
+            )
+        }
+        const App = () => (
+            <React.Fragment>
+                <Header />
+                <div className="course-container mt-5 mb-5">
+                    <div className="container">
+                        <div className="row">
+                            <CourseFiler />
+                            <div className="col-md-9">
+                            <SearchCourse />
+                            <CourseList />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <Footer />
+            </React.Fragment>
+        );
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>

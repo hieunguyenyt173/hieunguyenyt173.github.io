@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        
+      const Counter = () => {
+        const {count, setCount} = React.useState(0);
+        const {color, setColor} = React.useState("#33333");
+        const minusCount = () => { 
+             // Hàm useState là những hàm bất đồng bộ
+             let newCount = count + 1;
+             changeColor(newCount);
+            setCount(newCount);
+        }
+        const plusCount = () => {
+            let newCount = count - 1;
+            changeColor(newCount);
+            setCount(newCount);
+        }
+        // Cách 1:
+        // React.useEffect(() => {
+        //     changeColor()
+        // }, {count})
+        // Cách 2:
+
+        const changeColor = (newCount) => {
+            if(count > 0) {
+                setColor("green");
+            } else if(count == 0) {
+                setColor("#33333")
+            } else {
+                setColor("red");
+            }
+
+        }
+        return (
+          <div className="main-container">
+            <h1 className="title">Đếm số</h1>
+            <h1 id="counter" style={{color: color}}>
+              {count}
+            </h1>
+            <div className="btn-container">
+              <button className="btn counterBtn prevBtn" onClick={minusCount}>Trừ</button>
+              <button className="btn counterBtn nextBtn" onClick={plusCount}>Cộng</button>
+            </div>
+          </div>
+        );
+      };
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<Counter />);
+    </script>
+  </body>
+</html>
