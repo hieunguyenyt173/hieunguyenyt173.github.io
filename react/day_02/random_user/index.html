@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      let data = [
+        {
+          id: 1,
+          name: "Bùi Hiên",
+          email: "hien@gmail.com",
+          address: "Thái Bình",
+        },
+        {
+          id: 2,
+          name: "Thu Hằng",
+          email: "hang@gmail.com",
+          address: "Hải Dương",
+        },
+        {
+          id: 3,
+          name: "Minh Duy",
+          email: "duy@gmail.com",
+          address: "Hưng Yên",
+        },
+      ];
+      const RandomUser = () => {
+        const [user, setUser] = React.useState(data[Math.floor(Math.random() * data.length)]);
+        const random = () => {
+            console.log(data)
+            if(data == []) {
+                alert("Không còn user nào")
+            }
+            else {
+                setUser(data[Math.floor(Math.random() * data.length)]);
+            }
+        };
+        const deleteUser = (index) => {
+            data.splice(index, 1);
+            console.log(data)
+        }
+        return (
+            <div>
+                <h2 style={{color:"red"}}>Name: {user.name}</h2>
+                <ul>
+                    <li>Address: {user.address}</li>
+                    <li>Email: {user.email}</li>
+                </ul>
+                <button onClick={random}>Random User</button>
+                <button onClick={deleteUser}>Delete User</button>
+            </div>
+            
+
+        )
+      };
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<RandomUser />);
+    </script>
+  </body>
+</html>

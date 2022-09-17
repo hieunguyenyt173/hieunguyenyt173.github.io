@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const RandomColor = () => {
+        const randomcolor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        const [color, setColor] = React.useState(randomcolor);
+        const randomItem = () => {
+            setColor("#" + Math.floor(Math.random()*16777215).toString(16));
+            localStorage.setItem("box_color", randomcolor );
+        }
+        return (
+            
+            <div className="box" style={{backgroundColor:color}} onClick={randomItem}></div>
+        )
+      };
+
+      
+      const App = () => {
+        return (
+            <React.Fragment>
+                <RandomColor />
+                
+            </React.Fragment>
+        )
+      }
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

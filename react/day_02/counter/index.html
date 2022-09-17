@@ -22,8 +22,8 @@
     <script type="text/babel">
         
       const Counter = () => {
-        const {count, setCount} = React.useState(0);
-        const {color, setColor} = React.useState("#33333");
+        const [count, setCount] = React.useState(0);
+        const [color, setColor] = React.useState("#33333");
         const minusCount = () => { 
              // Hàm useState là những hàm bất đồng bộ
              let newCount = count + 1;

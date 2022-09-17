@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const themes = [
+        {
+          colorHeading: "#2C3639", // light theme
+          colorText: "#3F4E4F",
+          bg: "#F9F5EB",
+        },
+        {
+          colorHeading: "#EAE3D2", // dark theme
+          colorText: "#F9F5EB",
+          bg: "#100720",
+        },
+      ];
+      const App = () => {
+        const [theme, setTheme] = React.useState(themes[0])
+        const [select, setSelect] = React.useState("Light Theme");
+        console.log(select)
+        console.log(theme)
+        const handleChange= (e) => {
+            setSelect(e.target.value)
+            if(select == "Dark Theme") {
+               
+                setTheme(themes[0]);
+            }
+            else {
+                setTheme(themes[1]);
+            }
+           
+        
+        }
+        
+        return (
+            
+          <div style={{backgroundColor: theme.bg}}>
+            <select onChange={handleChange} >
+              <option value={"Light Theme"}>Light Theme</option>
+              <option value={"Dark Theme"}>Dark Theme</option>
+            </select>
+            
+            <h2 style={{color: theme.colorHeading}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+            <p style={{color: theme.colorText}}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              placeat necessitatibus, vitae laboriosam in quos, nesciunt modi
+              error sit porro, reprehenderit voluptatem dolore libero incidunt.
+              Illo mollitia fugit quam inventore?
+            </p>
+          </div>
+        );
+      };
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

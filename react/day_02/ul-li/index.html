@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        // Code xử lý ở đây
+        const [listItems, setListItems] = React.useState([
+          "Item 1",
+          "Item 2",
+          "Item 3",
+        ]);
+        const [isShow, setIsShow] = React.useState(true);
+        const [value, setValue] = React.useState("");
+
+        // Thêm item
+        function addList() {
+          if (!value) {
+            alert("Trường input không được để trống!");
+            return;
+          }
+
+          setListItems([...listItems, value]);
+          setValue("");
+        }
+
+        // Xóa item
+        function removeList() {
+          if (!listItems.length) {
+            alert("Không thể xóa thêm!");
+            return;
+          }
+
+          let newListItems = listItems.slice(0, listItems.length - 1);
+          setListItems(newListItems);
+        }
+
+        // Ẩn hiện danh sách
+        function toggleList() {
+          setIsShow(!isShow);
+        }
+
+        // Render ra giao diện
+        return (
+          <div>
+            <button onClick={addList}>Add</button>
+            <button onClick={removeList}>Remove</button>
+            <input
+              type="text"
+              id="input"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+
+            {isShow ? <List listItems={listItems} /> : null}
+
+            <button
+              id="toggle-btn"
+              style={{ display: "block" }}
+              onClick={toggleList}
+            >
+              {isShow ? "Hide" : "Show"}
+            </button>
+          </div>
+        );
+      };
+
+      const List = ({ listItems }) => {
+        return (
+          <ul>
+            {listItems.map((listItem, index) => (
+              <li key={index}>{listItem}</li>
+            ))}
+          </ul>
+        );
+      };
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

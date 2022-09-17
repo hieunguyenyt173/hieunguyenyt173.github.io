@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <style>
+      button {
+        margin-top: 30px;
+      }
+      span {
+        font-size: 14px;
+        color: red;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+          const [weightInput, setWeightInput] = React.useState("");
+  const [heightInput, setHeightInput] = React.useState("");
+  const [errMessW, setErrMessW] = React.useState("");
+  const [errMessH, setErrMessH] = React.useState("");
+  const [result, setResult] = React.useState(0);
+
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+
+    // Check validate form
+    if (validate()) {
+      let BMI = weightInput / (heightInput * heightInput);
+      setResult(BMI);
+    } else {
+      setResult(0);
+    }
+  };
+
+  const validate = () => {
+    let isValidWeight = false;
+    let isValidHeight = false;
+
+    // Check weight
+    if (!weightInput) {
+      setErrMessW("Weight Khong duoc de trong");
+    } else if (!isNumber(weightInput)) {
+      setErrMessW("Weight Khong dung dinh dang");
+    } else if (weightInput < 0) {
+      setErrMessW("Weight Phai lon hon 0");
+    } else {
+      setErrMessW("");
+      isValidWeight = true;
+    }
+
+    // Check height
+    if (!heightInput) {
+      setErrMessH("Height Khong duoc de trong");
+    } else if (!isNumber(heightInput)) {
+      setErrMessH("Height Khong dung dinh dang");
+    } else if (heightInput < 0) {
+      setErrMessH("Height Phai lon hon 0");
+    } else {
+      setErrMessH("");
+      isValidHeight = true;
+    }
+
+    return isValidWeight && isValidHeight;
+  };
+
+  const isNumber = (str) => {
+    if (str.trim() === "") {
+      return false;
+    }
+    return !isNaN(str);
+  };
+
+  return (
+    <React.Fragment>
+      <form onSubmit={onSubmitForm}>
+        <input
+          type="text"
+          placeholder="dien vao day"
+          value={weightInput}
+          onChange={(e) => setWeightInput(e.target.value)}
+        />
+        <br />
+
+        {errMessW && <span>{errMessW}</span>}
+        <br />
+
+        <input
+          type="text"
+          placeholder="dien vao day"
+          value={heightInput}
+          onChange={(e) => setHeightInput(e.target.value)}
+        />
+
+        <br />
+        {errMessH && <span>{errMessH}</span>}
+        <br />
+
+        <button type="submit">Tinh</button>
+        <br />
+
+        <p>
+          BMI: <span>{result}</span>
+        </p>
+      </form>
+    </React.Fragment>
+  );
+      };
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+  </body>
+</html>

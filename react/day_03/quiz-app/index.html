@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        const questions = [
+            {
+                text:"Thủ đô của Việt Nam là?",
+                option: [
+                    {
+                        id: 1,
+                        text: "Thành phố Hồ Chí Minh",
+                        isCorrect: false
+                    },
+                    {
+                        id: 2,
+                        text: "Hải Phòng",
+                        isCorrect: false
+                    },
+                    {
+                        id: 3,
+                        text: "Hà Nội",
+                        isCorrect: true
+                    },
+                    {
+                        id: 4,
+                        text: "Đà Nẵng",
+                        isCorrect: false
+                    }
+                ]
+            },
+            {
+                text:"Quốc hoa của việt nam là?",
+                option: [
+                    {
+                        id: 1,
+                        text: "Hoa súng",
+                        isCorrect: false
+                    },
+                    {
+                        id: 2,
+                        text: "Hoa sen",
+                        isCorrect: true
+                    },
+                    {
+                        id: 3,
+                        text: "Hoa hồng",
+                        isCorrect: false
+                    },
+                    {
+                        id: 4,
+                        text: "Hoa lan",
+                        isCorrect: false
+                    }
+                ]
+            },
+            {
+                text:"Trang phục truyền thống của Việt Nam là?",
+                option: [
+                    {
+                        id: 1,
+                        text: "Kimono",
+                        isCorrect: false
+                    },
+                    {
+                        id: 2,
+                        text: "Áo dài",
+                        isCorrect: true
+                    },
+                    {
+                        id: 3,
+                        text: "Bikini",
+                        isCorrect: false
+                    },
+                    {
+                        id: 4,
+                        text: "Hanbok ",
+                        isCorrect: false
+                    }
+                ]
+            },
+            {
+                text:"Nước nào sau đây là láng giềng Việt Nam?",
+                option: [
+                    {
+                        id: 1,
+                        text: "Lào",
+                        isCorrect: true
+                    },
+                    {
+                        id: 2,
+                        text: "Mỹ",
+                        isCorrect: false
+                    },
+                    {
+                        id: 3,
+                        text: "Nhật Bản",
+                        isCorrect: false
+                    },
+                    {
+                        id: 4,
+                        text: "Hàn Quốc ",
+                        isCorrect: false
+                    }
+                ]
+            }
+        ];
+        
+        const [isShowResult, setShowResult] = React.useState(false);
+        const [score, setScore] = React.useState(0);
+        const [curentQuestion, setCurentQuestion] = React.useState(0);
+        const optionChecked = (isCorrect) => {
+           if(isCorrect) {
+            let newScore = score + 1;
+            setScore(newScore);
+           }
+           let newQuestion = curentQuestion + 1;
+           setCurentQuestion(newQuestion);
+
+           if(curentQuestion + 1 < questions.length) {
+            let newQuestion = curentQuestion + 1;
+            setCurentQuestion(newQuestion);
+           }
+           else {
+            setShowResult(true);
+           } 
+        }
+        console.log(score)
+        return (
+          <div className="app">
+            {isShowResult ? (
+              <div className="score-section">You scored {score} out of {questions.length} <br/>
+                  Bạn vừa kiếm được {score} tỉ VNĐ
+                </div>
+              
+            ) : (
+              <div className="question-layout">
+                <div className="question-section">
+                  <div className="question-count">
+                    <span>Question {curentQuestion + 1}</span>/{questions.length}
+                  </div>
+                  <div className="question-text">{questions[curentQuestion].text}</div>
+                </div>
+                <div className="answer-section">
+                    {questions[curentQuestion].option.map((option, index) => {
+                        return (
+                            <button key={index} onClick={() => optionChecked(option.isCorrect)}>{option.text}</button>
+                        )
+                    })}
+                  
+                  
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      };
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
