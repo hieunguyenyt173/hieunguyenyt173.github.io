@@ -10,21 +10,20 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <!-- Link slide -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <!-- Link slide -->
-  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Link font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Devonshire&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
     rel="stylesheet" />
-  <!-- Link jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Link bootstrap> -->
   <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css" />
   <!-- Link icon -->
@@ -36,6 +35,7 @@
 </head>
 
 <body>
+  
   <!-- Header -->
   <div id="header">
     <div class="container">
@@ -44,30 +44,32 @@
           <div class="col-sm-4 d-flex align-items-center">
             <div class="seach-form d-flex align-items-center rounded shadow-sm pe-3">
               <!-- Ô tìm kiếm sản phẩm -->
-              <input type="text" placeholder="Tìm kiếm sản phẩm"
-                  class="form-control border-0 seach-form-input">
-                  <!-- Nút tìm kiếm sản phẩm -->
-              <span class="text-black-50 seach-form-button"><i
-                      class="fa-solid fa-magnifying-glass"></i></span>
-          </div>
+              <input type="text" placeholder="Tìm kiếm sản phẩm" class="form-control border-0 seach-form-input">
+              <!-- Nút tìm kiếm sản phẩm -->
+              <span class="text-black-50 seach-form-button ps-2"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
           </div>
           <div class="col-sm-4 d-flex align-items-center justify-content-center">
-            <div class="logo text-decoration-underline">Perfuma</div>
+            <a href="./index.html">
+              <div class="logo text-decoration-underline">Perfuma</div>
+            </a>
           </div>
           <div class="col-sm-4">
             <div class="navbar-icon align-items-center justify-content-end">
               <p class="hello mb-0 hide">Xin chào, <span class="username">Khách</span></p>
               <div class="icon fs-4">
-                <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn px-2" data-bs-toggle="modal" data-bs-target="#loginModal">
                   <span class="icon-user"><i class="fa-solid fa-user"></i></span>
                 </button>
 
                 <a href="./favorite.html"><span class="like-icon-header"><i class="fa-solid fa-heart"></i></span></a>
-                <button class="btn px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  <span class="bag"><i class="fa-solid fa-bag-shopping"></i>
-                    <span class="amount">0</span></span>
+                <button class="btn px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight">
+                  <div class="bag"><i class="fa-solid fa-bag-shopping"></i>
+                    <span class="amount">0</span>
+                  </div>
                 </button>
-                
+
               </div>
             </div>
           </div>
@@ -81,176 +83,176 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="subnav">
-            <a href="./index.html" class="menu-item">TRANG CHỦ</a>
+            <a href="./index.html" class="menu-item"><span class="active">TRANG CHỦ</span></a>
             <a href="./product.html" class="menu-item">NƯỚC HOA NAM
-              <div class="menu-men-desktop"> 
+              <div class="menu-men-desktop">
                 <p class="category-title">Nhãn hiệu</p>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p class="brand-name">Azzaro</p>
-                      <p class="brand-name">Issey Miyake</p>
-                      <p class="brand-name">Burberry</p>  
-                      <p class="brand-name">Jean Paul Gaultier</p>
-                      <p class="brand-name">Calvin Klein</p>
-                      <p class="brand-name">Kenneth Cole</p>
-                      <p class="brand-name">Carolina Herrera</p>
-                      <p class="brand-name">Lacoste</p>
-                      <p class="brand-name">Davidoff</p>
-                      <p class="brand-name">Dolce & Gabbana</p>
-                      
-                    
-                  </div>
-                  <div class="col-md-6">
-                    <p class="brand-name">Gianni Versace</p>
-                    <p class="brand-name">Ralph Lauren</p>
-                    <p class="brand-name">Giorgio Armani</p>
-                    <p class="brand-name">Sean John</p>
-                    <p class="brand-name">Givenchy</p>
-                    <p class="brand-name">Thierry Mugler</p>
-                    <p class="brand-name">Gucci</p>
-                    <p class="brand-name">Tom Ford</p>
-                    <p class="brand-name">Hugo Boss</p>
-                    
-                    <p class="brand-name">Shop all brands</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="layout-menu pb-4">
+                <div class="row">
+                  <div class="col-md-4">
                     <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
-                          </div>
-                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
-                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                          
-                        </div>
+                      <div class="col-md-6">
+                        <p class="brand-name">Azzaro</p>
+                        <p class="brand-name">Issey Miyake</p>
+                        <p class="brand-name">Burberry</p>
+                        <p class="brand-name">Jean Paul Gaultier</p>
+                        <p class="brand-name">Calvin Klein</p>
+                        <p class="brand-name">Kenneth Cole</p>
+                        <p class="brand-name">Carolina Herrera</p>
+                        <p class="brand-name">Lacoste</p>
+                        <p class="brand-name">Davidoff</p>
+                        <p class="brand-name">Dolce & Gabbana</p>
+
+
                       </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/dang-sale.png" alt="dang-sale">
-                          </div>
-                            <p class="item-sidebar-men">Đang khuyến mãi</p>
-                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                         
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/bo-qua-tang.png" alt="bo qua tang nam">
-                          </div>
-                            <p class="item-sidebar-men">Bộ quà tặng</p>
-                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                          
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/all-sp.png" alt="tat ca sp nam">
-                          </div>
-                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
-                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                         
-                        </div>
+                      <div class="col-md-6">
+                        <p class="brand-name">Gianni Versace</p>
+                        <p class="brand-name">Ralph Lauren</p>
+                        <p class="brand-name">Giorgio Armani</p>
+                        <p class="brand-name">Sean John</p>
+                        <p class="brand-name">Givenchy</p>
+                        <p class="brand-name">Thierry Mugler</p>
+                        <p class="brand-name">Gucci</p>
+                        <p class="brand-name">Tom Ford</p>
+                        <p class="brand-name">Hugo Boss</p>
+
+                        <p class="brand-name">Shop all brands</p>
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-8">
+                    <div class="layout-menu pb-4">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/sp-ban-chay.png" alt="sp-ban-chay">
+                            </div>
+                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
 
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/dang-sale.png" alt="dang-sale">
+                            </div>
+                            <p class="item-sidebar-men">Đang khuyến mãi</p>
+                            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/bo-qua-tang.png" alt="bo qua tang nam">
+                            </div>
+                            <p class="item-sidebar-men">Bộ quà tặng</p>
+                            <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/all-sp.png" alt="tat ca sp nam">
+                            </div>
+                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
             <a href="./product-women.html" class="menu-item">NƯỚC HOA NỮ
-              <div class="menu-women-desktop"> 
+              <div class="menu-women-desktop">
                 <p class="category-title">Nhãn hiệu</p>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p class="brand-name">Azzaro</p>
-                      <p class="brand-name">Issey Miyake</p>
-                      <p class="brand-name">Burberry</p>  
-                      <p class="brand-name">Jean Paul Gaultier</p>
-                      <p class="brand-name">Calvin Klein</p>
-                      <p class="brand-name">Kenneth Cole</p>
-                      <p class="brand-name">Carolina Herrera</p>
-                      <p class="brand-name">Lacoste</p>
-                      <p class="brand-name">Davidoff</p>
-                      <p class="brand-name">Dolce & Gabbana</p>
-                      
-                    
-                  </div>
-                  <div class="col-md-6">
-                    <p class="brand-name">Gianni Versace</p>
-                    <p class="brand-name">Ralph Lauren</p>
-                    <p class="brand-name">Giorgio Armani</p>
-                    <p class="brand-name">Sean John</p>
-                    <p class="brand-name">Givenchy</p>
-                    <p class="brand-name">Thierry Mugler</p>
-                    <p class="brand-name">Gucci</p>
-                    <p class="brand-name">Tom Ford</p>
-                    <p class="brand-name">Hugo Boss</p>
-                    
-                    <p class="brand-name">Shop all brands</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="layout-menu pb-4">
+                <div class="row">
+                  <div class="col-md-4">
                     <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
-                          </div>
-                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
-                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                          
-                        </div>
+                      <div class="col-md-6">
+                        <p class="brand-name">Azzaro</p>
+                        <p class="brand-name">Issey Miyake</p>
+                        <p class="brand-name">Burberry</p>
+                        <p class="brand-name">Jean Paul Gaultier</p>
+                        <p class="brand-name">Calvin Klein</p>
+                        <p class="brand-name">Kenneth Cole</p>
+                        <p class="brand-name">Carolina Herrera</p>
+                        <p class="brand-name">Lacoste</p>
+                        <p class="brand-name">Davidoff</p>
+                        <p class="brand-name">Dolce & Gabbana</p>
+
+
                       </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/dang-sale-nu.webp" alt="dang-sale">
-                          </div>
-                            <p class="item-sidebar-men">Đang khuyến mãi</p>
-                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                         
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/bo-quatang-nu.webp" alt="bo qua tang nu">
-                          </div>
-                            <p class="item-sidebar-men">Bộ quà tặng</p>
-                          <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                          
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <div class="item-men">
-                          <div class="img-item-men">
-                            <img src="./img/all-sp-nu.webp" alt="tat ca sp nam">
-                          </div>
-                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
-                          <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                         
-                        </div>
+                      <div class="col-md-6">
+                        <p class="brand-name">Gianni Versace</p>
+                        <p class="brand-name">Ralph Lauren</p>
+                        <p class="brand-name">Giorgio Armani</p>
+                        <p class="brand-name">Sean John</p>
+                        <p class="brand-name">Givenchy</p>
+                        <p class="brand-name">Thierry Mugler</p>
+                        <p class="brand-name">Gucci</p>
+                        <p class="brand-name">Tom Ford</p>
+                        <p class="brand-name">Hugo Boss</p>
+
+                        <p class="brand-name">Shop all brands</p>
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-8">
+                    <div class="layout-menu pb-4">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/sp-banchay-nu.webp" alt="sp-ban-chay">
+                            </div>
+                            <p class="item-sidebar-men">Sản phẩm bán chạy</p>
+                            <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
 
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/dang-sale-nu.webp" alt="dang-sale">
+                            </div>
+                            <p class="item-sidebar-men">Đang khuyến mãi</p>
+                            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/bo-quatang-nu.webp" alt="bo qua tang nu">
+                            </div>
+                            <p class="item-sidebar-men">Bộ quà tặng</p>
+                            <span span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="item-men">
+                            <div class="img-item-men">
+                              <img src="./img/all-sp-nu.webp" alt="tat ca sp nam">
+                            </div>
+                            <p class="item-sidebar-men">Tất cả sản phẩm</p>
+                            <span class="more fs-4"><i class="fa-solid fa-circle-arrow-right"></i></span>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
             <a href="sale.html" class="menu-item">KHUYẾN MÃI</a>
             <a href="./blog.html" class="menu-item">TIN TỨC</a>
@@ -264,7 +266,7 @@
           </div>
 
         </div>
-        
+
       </div>
       <!-- Sidebar -->
       <div class="sidebar">
@@ -696,8 +698,8 @@
   </div>
   <!-- Popuplogin, create -->
   <div id="login">
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body px-0 py-0">
@@ -709,18 +711,18 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="infomation">
+                  <div class="infomation pb-4">
                     <div class="modal-header border-none">
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <p class="title text-uppercase text-center mb-4">Vui lòng đăng nhập</p>
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                      <label for="loginEmail">Email</label>
                     </div>
                     <div class="form-floating">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Mật khẩu</label>
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                      <label for="loginPassword">Mật khẩu</label>
                     </div>
                     <p class="subtitle text-end mb-3 mt-2">Quên mật khẩu?</p>
                     <div class="btn-login text-uppercase text-center box-login mb-2">
@@ -729,7 +731,7 @@
                     <p class="subtitle text-center mb-3">Bạn chưa có tài khoản?</p>
 
                     <button type="button" class="btn btn-create text-uppercase text-center box-login"
-                      data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                      data-bs-toggle="modal" data-bs-target="#registerModal">
                       Đăng kí
                     </button>
                   </div>
@@ -742,8 +744,8 @@
     </div>
   </div>
   <div id="create">
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body px-0 py-0">
@@ -755,28 +757,28 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="infomation">
+                  <div class="infomation pb-4">
                     <div class="modal-header border-none">
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <p class="title text-uppercase text-center mb-4">Tạo tài khoản</p>
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingInput" placeholder="name">
-                      <label for="floatingInput">Tên tài khoản</label>
+                      <input type="text" class="form-control" id="registerName" placeholder="name">
+                      <label for="registerName">Tên tài khoản</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email</label>
+                      <input type="email" class="form-control" id="registerEmail" placeholder="name@example.com">
+                      <label for="registerEmail">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Mật khẩu</label>
+                      <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                      <label for="registerPassword">Mật khẩu</label>
                     </div>
 
 
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Xác nhận lại mật khẩu</label>
+                      <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+                      <label for="confirmPassword">Xác nhận lại mật khẩu</label>
                     </div>
 
                     <div class="btn-create text-uppercase text-center box-login mb-3">
@@ -784,7 +786,7 @@
                     </div>
                     <p class="subtitle text-center mb-2">Bạn đã có tài khoản?</p>
                     <button type="button" class="btn btn-login text-uppercase text-center box-login mb-3"
-                      data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      data-bs-toggle="modal" data-bs-target="#loginModal">
                       Đăng nhập
                     </button>
                   </div>
@@ -798,280 +800,237 @@
   </div>
   <!-- Cart -->
   <div id="thumbnail-cart">
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header border-bottom">
-    <h5 id="offcanvasRightLabel" class="text-uppercase">Giỏ hàng( <span>5</span> sản phẩm)</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="menu-item-thumbalnail">
-      <div class="item-thumbnail-cart border-bottom">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="image-cart">
-              <img src="./img/img-product.png" alt="image-product">
-            </div>
-          </div>
-          <div class="col-sm-7">
-              <div class="item-cart-info">
-                <p class="text-uppercase brand-name">
-                  GIORGIO ARMANI
-                </p>
-                <p class="product-name">
-                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
-                  Spray
-                </p>
-                <p class="capacity">50ml</p>
-              </div>
-              <div class="price-cart-item d-flex justify-content-between">
-                <p class="mb-2">2.390.000₫</p>
-                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
-              </div>
-          </div>
-          <div class="col-sm-2 d-flex align-items-center justify-content-center">
-            <div class="product-amount d-flex align-items-center justify-content-center">
-              <div
-                class="btn-up d-flex justify-content-center align-items-center"
-              >
-                +
-              </div>
-              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
-              <div
-                class="btn-down d-flex justify-content-center align-items-center"
-              >
-                -
-              </div>
-            </div>
-          </div>
-         </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 id="offcanvasRightLabel" class="text-uppercase">Giỏ hàng( <span>5</span> sản phẩm)</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="item-thumbnail-cart border-bottom">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="image-cart">
-              <img src="./img/img-product.png" alt="image-product">
-            </div>
-          </div>
-          <div class="col-sm-7">
-              <div class="item-cart-info">
-                <p class="text-uppercase brand-name">
-                  GIORGIO ARMANI
-                </p>
-                <p class="product-name">
-                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
-                  Spray
-                </p>
-                <p class="capacity">50ml</p>
+      <div class="offcanvas-body">
+        <div class="menu-item-thumbalnail">
+          <div class="item-thumbnail-cart border-bottom">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="image-cart">
+                  <img src="./img/img-product.png" alt="image-product">
+                </div>
               </div>
-              <div class="price-cart-item d-flex justify-content-between">
-                <p class="mb-2">2.390.000₫</p>
-                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+              <div class="col-sm-7">
+                <div class="item-cart-info">
+                  <p class="text-uppercase brand-name">
+                    GIORGIO ARMANI
+                  </p>
+                  <p class="product-name">
+                    Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                    Spray
+                  </p>
+                  <p class="capacity">50ml</p>
+                </div>
+                <div class="price-cart-item d-flex justify-content-between">
+                  <p class="mb-2">2.390.000₫</p>
+                  <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+                </div>
               </div>
-          </div>
-          <div class="col-sm-2 d-flex align-items-center justify-content-center">
-            <div class="product-amount d-flex align-items-center justify-content-center">
-              <div
-                class="btn-up d-flex justify-content-center align-items-center"
-              >
-                +
-              </div>
-              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
-              <div
-                class="btn-down d-flex justify-content-center align-items-center"
-              >
-                -
-              </div>
-            </div>
-          </div>
-         </div>
-      </div>
-      <div class="item-thumbnail-cart border-bottom">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="image-cart">
-              <img src="./img/img-product.png" alt="image-product">
-            </div>
-          </div>
-          <div class="col-sm-7">
-              <div class="item-cart-info">
-                <p class="text-uppercase brand-name">
-                  GIORGIO ARMANI
-                </p>
-                <p class="product-name">
-                  Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
-                  Spray
-                </p>
-                <p class="capacity">50ml</p>
-              </div>
-              <div class="price-cart-item d-flex justify-content-between">
-                <p class="mb-2">2.390.000₫</p>
-                <p class="text-decoration-line-through mb-2">4.125.000₫</p>
-              </div>
-          </div>
-          <div class="col-sm-2 d-flex align-items-center justify-content-center">
-            <div class="product-amount d-flex align-items-center justify-content-center">
-              <div
-                class="btn-up d-flex justify-content-center align-items-center"
-              >
-                +
-              </div>
-              <p class="amount-pro-thumbnail mb-0 px-1">27</p>
-              <div
-                class="btn-down d-flex justify-content-center align-items-center"
-              >
-                -
+              <div class="col-sm-2 d-flex align-items-center justify-content-center">
+                <div class="product-amount d-flex align-items-center justify-content-center">
+                  <div class="btn-up d-flex justify-content-center align-items-center">
+                    +
+                  </div>
+                  <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+                  <div class="btn-down d-flex justify-content-center align-items-center">
+                    -
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-         </div>
+          <div class="item-thumbnail-cart border-bottom">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="image-cart">
+                  <img src="./img/img-product.png" alt="image-product">
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="item-cart-info">
+                  <p class="text-uppercase brand-name">
+                    GIORGIO ARMANI
+                  </p>
+                  <p class="product-name">
+                    Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                    Spray
+                  </p>
+                  <p class="capacity">50ml</p>
+                </div>
+                <div class="price-cart-item d-flex justify-content-between">
+                  <p class="mb-2">2.390.000₫</p>
+                  <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+                </div>
+              </div>
+              <div class="col-sm-2 d-flex align-items-center justify-content-center">
+                <div class="product-amount d-flex align-items-center justify-content-center">
+                  <div class="btn-up d-flex justify-content-center align-items-center">
+                    +
+                  </div>
+                  <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+                  <div class="btn-down d-flex justify-content-center align-items-center">
+                    -
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-thumbnail-cart border-bottom">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="image-cart">
+                  <img src="./img/img-product.png" alt="image-product">
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="item-cart-info">
+                  <p class="text-uppercase brand-name">
+                    GIORGIO ARMANI
+                  </p>
+                  <p class="product-name">
+                    Acqua Di Gio For Women By Giorgio Armani Eau De Toilette
+                    Spray
+                  </p>
+                  <p class="capacity">50ml</p>
+                </div>
+                <div class="price-cart-item d-flex justify-content-between">
+                  <p class="mb-2">2.390.000₫</p>
+                  <p class="text-decoration-line-through mb-2">4.125.000₫</p>
+                </div>
+              </div>
+              <div class="col-sm-2 d-flex align-items-center justify-content-center">
+                <div class="product-amount d-flex align-items-center justify-content-center">
+                  <div class="btn-up d-flex justify-content-center align-items-center">
+                    +
+                  </div>
+                  <p class="amount-pro-thumbnail mb-0 px-1">27</p>
+                  <div class="btn-down d-flex justify-content-center align-items-center">
+                    -
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer mt-3">
+          <div class="total d-flex justify-content-between pb-2">
+            <p class="total-price text-uppercase">Thành tiền</p>
+            <p class="price-desc">6.380.000₫</p>
+          </div>
+          <a href="./checkout.html">
+            <div class="btn-pay px-2 py-3 mb-3 text-center">Tiến hành thanh toán</div>
+          </a>
+          <a href="./shopping-cart.html">
+            <div class="btn-continue px-2 py-3 mb-3 text-center">Xem giỏ hàng</div>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="cart-footer mt-3">
-      <div class="total d-flex justify-content-between pb-2">
-        <p class="total-price text-uppercase">Thành tiền</p>
-        <p class="price-desc">6.380.000₫</p>
-      </div>
-      <a href="./checkout.html">
-        <div class="btn-pay px-2 py-3 mb-3 text-center">Tiến hành thanh toán</div>
-      </a>
-      <a href="./shopping-cart.html">
-        <div class="btn-continue px-2 py-3 mb-3 text-center">Xem giỏ hàng</div>
-      </a>
-    </div>
-  </div>
-</div>
   </div>
   <!-- Popup quick-view -->
   <div id="popup-view">
     <div class="container">
-<!-- Modal -->
-  <div class="quickview">
-    <div class="modal fade" id="quickview-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title text-uppercase">Xem nhanh sản phẩm</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div id="carousel">
-                  <div id="mainCarousel" class="carousel">
-                    <div
-                      class="carousel__slide"
-                      data-src="https://lipsum.app/id/1/900x600"
-                      data-fancybox="gallery"
-                    >
-                      <img src="./img/product-slide1.webp" />
-                    </div>
-                    <div
-                      class="carousel__slide"
-                      data-src="https://lipsum.app/id/2/900x600"
-                      data-fancybox="gallery"
-                    >
-                      <img src="./img/product-slide2.webp" />
-                    </div>
-                    <div
-                      class="carousel__slide"
-                      data-src="https://lipsum.app/id/3/900x600"
-                      data-fancybox="gallery"
-                    >
-                      <img src="./img/product-slide3.webp" />
-                    </div>
-                    <div
-                      class="carousel__slide"
-                      data-src="https://lipsum.app/id/4/900x600"
-                      data-fancybox="gallery"
-                    >
-                      <img src="./img/product-slide4.webp" />
-                    </div>
-                   
-                  </div>
-    
-                  <div id="thumbCarousel" class="carousel max-w-xl mx-auto mb-3">
-                    <div class="carousel__slide">
-                      <img
-                        class="panzoom__content"
-                        src="./img/product-slide1.webp"
-                      />
-                    </div>
-                    <div class="carousel__slide">
-                      <img
-                        class="panzoom__content"
-                        src="./img/product-slide2.webp"
-                      />
-                    </div>
-                    <div class="carousel__slide">
-                      <img
-                        class="panzoom__content"
-                        src="./img/product-slide3.webp"
-                      />
-                    </div>
-                    <div class="carousel__slide">
-                      <img
-                        class="panzoom__content"
-                        src="./img/product-slide4.webp"
-                      />
-                    </div>
-                    
-                  </div>
-                </div>
+      <!-- Modal -->
+      <div class="quickview">
+        <div class="modal fade" id="quickview-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title text-uppercase">Xem nhanh sản phẩm</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-    
-              <div class="col-md-6">
-                <div id="detail">
-                  <div class="brand-rating d-flex">
-                      <p class="brand-name">AZZARO</p>
-                      <ul class="rating d-flex">
-                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
-                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
-                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
-                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
-                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
-                      </ul>
-                      <p class="rating-number ps-2">4.8</p>
-                  </div>
-                  <p class="product-name fs-5">Azzaro For Men By Azzaro Eau De Toilette Spray</p>
-                  <div class="price-info d-flex justify-content-between">
-                      <div class="d-flex">
-                          <p class="product-price text-danger fs-5 fw-bold mb-4 pe-3">
-                              500,000đ
-                            </p>
-                          <p class="product-sale text-danger fs-5 fw-bold mb-4 text-decoration-line-through pe-3">
-                              750,000đ
-                          </p>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div id="carousel">
+                      <div id="mainCarousel" class="carousel">
+                        <div class="carousel__slide" data-src="https://lipsum.app/id/1/900x600" data-fancybox="gallery">
+                          <img src="./img/product-slide1.webp" />
+                        </div>
+                        <div class="carousel__slide" data-src="https://lipsum.app/id/2/900x600" data-fancybox="gallery">
+                          <img src="./img/product-slide2.webp" />
+                        </div>
+                        <div class="carousel__slide" data-src="https://lipsum.app/id/3/900x600" data-fancybox="gallery">
+                          <img src="./img/product-slide3.webp" />
+                        </div>
+                        <div class="carousel__slide" data-src="https://lipsum.app/id/4/900x600" data-fancybox="gallery">
+                          <img src="./img/product-slide4.webp" />
+                        </div>
+
                       </div>
-                      <p class="status">Tình trạng : <span class="text-danger">Còn hàng</span></p>
-                  </div>
-                  <p>Dung tích</p>
-                  <div class="product-size mb-4">
-                    
-                    <div class="size d-flex">
-                      <p class="border py-2 px-3 border-dark me-2">30ml</p>
-                    <p class="border py-2 px-3 border-dark me-2">50ml</p>
-                    <p class="border py-2 px-3 border-dark me-2">100ml</p>
-                    <p class="border py-2 px-3 border-dark me-2">10ml</p>
+
+                      <div id="thumbCarousel" class="carousel max-w-xl mx-auto mb-3">
+                        <div class="carousel__slide">
+                          <img class="panzoom__content" src="./img/product-slide1.webp" />
+                        </div>
+                        <div class="carousel__slide">
+                          <img class="panzoom__content" src="./img/product-slide2.webp" />
+                        </div>
+                        <div class="carousel__slide">
+                          <img class="panzoom__content" src="./img/product-slide3.webp" />
+                        </div>
+                        <div class="carousel__slide">
+                          <img class="panzoom__content" src="./img/product-slide4.webp" />
+                        </div>
+
+                      </div>
                     </div>
                   </div>
-    
-                  <div class="d-flex align-items-center mb-4">
-                    <span class="border d-inline-block me-3">
-                      <span class="py-2 px-3 d-inline-block fw-bold btn-minus-count"
-                        >-</span
-                      >
-                      <span class="py-2 px-3 d-inline-block fw-bold count">1</span>
-                      <span class="py-2 px-3 d-inline-block fw-bold btn-plus-count"
-                        >+</span
-                      >
-                    </span>
-    
-                    <button class="btn btn-dark py-2 rounded-0 btn-add-to-cart">
-                      Số lượng
-                    </button>
-                  </div>
-                  <div class="d-flex justify-content-center my-5">
-                      <button class="btn btn-danger py-2 rounded-0 btn-add-to-cart text-uppercase mx-3">
+
+                  <div class="col-md-6">
+                    <div id="detail">
+                      <div class="brand-rating d-flex">
+                        <p class="brand-name">AZZARO</p>
+                        <ul class="rating d-flex">
+                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
+                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
+                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
+                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
+                          <li class="star"><span><i class="fa-solid fa-star"></i></span></li>
+                        </ul>
+                        <p class="rating-number ps-2">4.8</p>
+                      </div>
+                      <p class="product-name fs-5">Azzaro For Men By Azzaro Eau De Toilette Spray</p>
+                      <div class="price-info d-flex justify-content-between">
+                        <div class="d-flex">
+                          <p class="product-price text-danger fs-5 fw-bold mb-4 pe-3">
+                            500,000đ
+                          </p>
+                          <p class="product-sale text-danger fs-5 fw-bold mb-4 text-decoration-line-through pe-3">
+                            750,000đ
+                          </p>
+                        </div>
+                        <p class="status">Tình trạng : <span class="text-danger">Còn hàng</span></p>
+                      </div>
+                      <p>Dung tích</p>
+                      <div class="product-size mb-4">
+
+                        <div class="size d-flex">
+                          <p class="border py-2 px-3 border-dark me-2">30ml</p>
+                          <p class="border py-2 px-3 border-dark me-2">50ml</p>
+                          <p class="border py-2 px-3 border-dark me-2">100ml</p>
+                          <p class="border py-2 px-3 border-dark me-2">10ml</p>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center mb-4">
+                        <span class="border d-inline-block me-3">
+                          <span class="py-2 px-3 d-inline-block fw-bold btn-minus-count">-</span>
+                          <span class="py-2 px-3 d-inline-block fw-bold count">1</span>
+                          <span class="py-2 px-3 d-inline-block fw-bold btn-plus-count">+</span>
+                        </span>
+
+                        <button class="btn btn-dark py-2 rounded-0 btn-add-to-cart">
+                          Số lượng
+                        </button>
+                      </div>
+                      <div class="d-flex justify-content-center my-5">
+                        <button class="btn btn-danger py-2 rounded-0 btn-add-to-cart text-uppercase mx-3">
                           Thêm vào giỏ hàng
                         </button>
                         <a href="./checkout.html">
@@ -1079,8 +1038,10 @@
                             Tiến hành thanh toán
                           </button>
                         </a>
+                      </div>
+
+                    </div>
                   </div>
-      
                 </div>
               </div>
             </div>
@@ -1089,12 +1050,20 @@
       </div>
     </div>
   </div>
-    </div>
-  </div>
   <!-- Section banner -->
   <div id="banner">
     <div class="container">
-      <img class="banner" src="./img/banner.webp" alt="banner" />
+      <div class="list-banner">
+        <a href="./sale.html">
+          <img class="banner" src="./img/banner.webp" alt="banner" />
+        </a>
+        <a href="./sale.html">
+          <img class="banner" src="./img/banner2.webp" alt="banner" />
+        </a>
+        <a href="./sale.html">
+          <img class="banner" src="./img/banner3.webp" alt="banner" />
+        </a>
+      </div>
     </div>
   </div>
   <!-- Section slider -->
@@ -1103,38 +1072,38 @@
       <h3 class="heading text-uppercase text-center mt-4 mb-4">
         Những thương hiệu hàng đầu
       </h3>
-      <div class="owl-carousel owl-theme">
-        <div class="item">
+      <div class="list-brands">
+        <div class="item-brand">
           <img src="./img/brand-item/Azzardo.webp" alt="brand1" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/blvgari_logo.webp" alt="brand2" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Burberry_Brand_Logo.webp" alt="brand3" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Calvin_Klein_Brand_Logo.webp" alt="brand4" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Carolina_Herrera_Brand_Logo.webp" alt="brand5" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/dolce_gabbana.webp" alt="" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Giorgio_Armani_Brand_Logo.webp" alt="brand6" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Gucci_Brand_Logo.webp" alt="brand7" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Kenneth_Cole_Brand_Logo.webp" alt="brand8" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Marc_Jacobs_Logo.webp" alt="brand9" />
         </div>
-        <div class="item">
+        <div class="item-brand">
           <img src="./img/brand-item/Ralph_Lauren_Logo.webp" alt="brand10" />
         </div>
       </div>
@@ -1153,10 +1122,12 @@
           </a>
           <div class="row">
             <div class="col text-center">
-              <a href="./product-women.html"><div class="popular-item">Tất cả nước hoa nữ</div></a>
+              <a href="./product-women.html">
+                <div class="popular-item">Tất cả nước hoa nữ</div>
+              </a>
             </div>
             <div class="col">
-              <a href="./product-women.html">
+              <a href="./best-seller-women.html">
                 <div class="popular-item">Bán chạy</div>
               </a>
             </div>
@@ -1174,24 +1145,24 @@
               <div class="gender-image">
                 <img src="./img/Men.webp" alt="">
               </div>
-          </a>
-          <div class="row">
-            <div class="col text-center">
-              <a href="./product.html">
-                <div class="popular-item">Tất cả nước hoa nam</div>
-              </a>
+            </a>
+            <div class="row">
+              <div class="col text-center">
+                <a href="./product.html">
+                  <div class="popular-item">Tất cả nước hoa nam</div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="./best-seller-men.html">
+                  <div class="popular-item">Bán chạy</div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="./gift-men.html">
+                  <div class="popular-item">Bộ quà tặng</div>
+                </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="./product.html">
-                <div class="popular-item">Bán chạy</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./gift-men.html">
-                <div class="popular-item">Bộ quà tặng</div>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -1213,233 +1184,31 @@
                 <div class="sale-timer"><span id="seconds">12</span></div>
               </div>
             </div>
-            <a href="./sale.html"><div class="btn-more">Xem thêm
-              <span class="icon-more"><i class="fa-solid fa-angles-right"></i></span>
-            </div></a>
+            <a href="./sale.html">
+              <div class="btn-more">Xem thêm
+                <span class="icon-more"><i class="fa-solid fa-angles-right"></i></span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="list-item owl-carousel owl-theme ">
-        <div class="item">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#quickview-modal">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
+      <div class="row">
+        <div class="col">
+          <div class="list-item">
+            <div class="card mx-3" style="width: 18rem;">
+              <img src="./img/img-product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
+            </div>
 
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <a href="./product-details.html"><div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-             <a href="./product-details.html">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-             </a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col">
-              <div class="image-product">
-                <img src="./img/img-product.png" alt="anh san pham">
-                <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                  <p class="my-0">Xem nhanh</p>
-                </div>
-                <div class="saleoff d-flex align-item-center text-white text-center">
-                  <p class="">Sale 45%</p>
-                </div>
-                <div class="like">
-                  <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="product-info">
-                <p class="product-brand">Azzaro</p>
-                <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                <div class="product-price d-flex justify-content-between">
-                  <p class="price-sale">2.390.000₫</p>
-                  <p class="price text-decoration-line-through">4.125.000₫</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
   <!-- Section best seller -->
@@ -1458,228 +1227,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="owl-carousel owl-theme ">
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
+          <div class="list-bestseller">
 
           </div>
         </div>
@@ -1734,224 +1282,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col">
-                  <div class="image-product">
-                    <img src="./img/img-product.png" alt="anh san pham">
-                    <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                      <p class="my-0">Xem nhanh</p>
-                    </div>
-                    <div class="saleoff d-flex align-item-center text-white text-center">
-                      <p class="">Sale 45%</p>
-                    </div>
-                    <div class="like">
-                      <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="product-info">
-                    <p class="product-brand">Azzaro</p>
-                    <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                    <div class="product-price d-flex justify-content-between">
-                      <p class="price-sale">2.390.000₫</p>
-                      <p class="price text-decoration-line-through">4.125.000₫</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="listgift">
 
           </div>
         </div>
@@ -1966,25 +1297,28 @@
         <div class="col text-center mt-5">
           <h3 class="text-uppercase fs-4">Dành riêng cho bạn</h3>
           <p class="">Đăng nhập ngay để nhận những ưu đãi chỉ dành cho thành viên</p>
-          <button type="button" class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng nhập ngay</button>
+          <button type="button" class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng
+            nhập ngay</button>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-5 col-sm-12 py-3">
+        <div class="col-lg-5 col-md-12 col-sm-12 py-3">
           <a href="./sale.html">
             <div class="banner-sale-user">
               <img src="./img/banner-sale-user.png" alt="banner-sale-user">
             </div>
           </a>
         </div>
-        <div class="col-lg-7 col-md-12 product-user">
-          <div class="row py-3">
+        <div class="col-lg-7 product-user">
+          <div class="row py-3 list-product-user">
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="item">
+              <div class="item shadow mb-3 bg-body rounded me-0">
                 <div class="row">
                   <div class="col">
                     <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
+                      <img
+                        src="https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0101891larger_1024x1024.jpg?v=1623934516"
+                        alt="anh san pham">
                       <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
                         <p class="my-0">Xem nhanh</p>
                       </div>
@@ -2013,11 +1347,13 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="item">
+              <div class="item shadow mb-3 bg-body rounded me-0">
                 <div class="row">
                   <div class="col">
                     <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
+                      <img
+                        src="https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0101891larger_1024x1024.jpg?v=1623934516"
+                        alt="anh san pham">
                       <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
                         <p class="my-0">Xem nhanh</p>
                       </div>
@@ -2045,12 +1381,49 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 tablet-none">
-              <div class="item">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item shadow mb-3 bg-body rounded me-0">
                 <div class="row">
                   <div class="col">
                     <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
+                      <img
+                        src="https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0101891larger_1024x1024.jpg?v=1623934516"
+                        alt="anh san pham">
+                      <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
+                        <p class="my-0">Xem nhanh</p>
+                      </div>
+                      <div class="saleoff d-flex align-item-center text-white text-center">
+                        <p class="">Sale 45%</p>
+                      </div>
+                      <div class="like">
+                        <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="product-info">
+                      <p class="product-brand">Azzaro</p>
+                      <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
+                      <div class="product-price d-flex justify-content-between">
+                        <p class="price-sale">2.390.000₫</p>
+                        <p class="price text-decoration-line-through">4.125.000₫</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item shadow mb-3 bg-body rounded me-0">
+                <div class="row">
+                  <div class="col">
+                    <div class="image-product">
+                      <img
+                        src="https://marvel-b1-cdn.bc0a.com/f00000000246772/cdn.shopify.com/s/files/1/0269/7763/2389/products/I0101891larger_1024x1024.jpg?v=1623934516"
+                        alt="anh san pham">
                       <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
                         <p class="my-0">Xem nhanh</p>
                       </div>
@@ -2079,113 +1452,13 @@
               </div>
             </div>
           </div>
-          <div class="row py-3">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="item">
-                <div class="row">
-                  <div class="col">
-                    <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
-                      <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                        <p class="my-0">Xem nhanh</p>
-                      </div>
-                      <div class="saleoff d-flex align-item-center text-white text-center">
-                        <p class="">Sale 45%</p>
-                      </div>
-                      <div class="like">
-                        <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                      </div>
-                    </div>
 
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="product-info">
-                      <p class="product-brand">Azzaro</p>
-                      <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                      <div class="product-price d-flex justify-content-between">
-                        <p class="price-sale">2.390.000₫</p>
-                        <p class="price text-decoration-line-through">4.125.000₫</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="item">
-                <div class="row">
-                  <div class="col">
-                    <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
-                      <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                        <p class="my-0">Xem nhanh</p>
-                      </div>
-                      <div class="saleoff d-flex align-item-center text-white text-center">
-                        <p class="">Sale 45%</p>
-                      </div>
-                      <div class="like">
-                        <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="product-info">
-                      <p class="product-brand">Azzaro</p>
-                      <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                      <div class="product-price d-flex justify-content-between">
-                        <p class="price-sale">2.390.000₫</p>
-                        <p class="price text-decoration-line-through">4.125.000₫</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 tablet-none">
-              <div class="item">
-                <div class="row">
-                  <div class="col">
-                    <div class="image-product">
-                      <img src="./img/img-product.png" alt="anh san pham">
-                      <div class="btn-view mx-auto d-flex justify-content-center align-items-center">
-                        <p class="my-0">Xem nhanh</p>
-                      </div>
-                      <div class="saleoff d-flex align-item-center text-white text-center">
-                        <p class="">Sale 45%</p>
-                      </div>
-                      <div class="like">
-                        <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="product-info">
-                      <p class="product-brand">Azzaro</p>
-                      <p class="product-name">Azzaro Chrome For Men By Azzaro Eau De Toilette Spray</p>
-                      <div class="product-price d-flex justify-content-between">
-                        <p class="price-sale">2.390.000₫</p>
-                        <p class="price text-decoration-line-through">4.125.000₫</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <a href="./sale.html">
         <div class="btn-more text-center mt-2">Xem thêm <span class="icon-more"><i
-          class="fa-solid fa-angles-right"></i></span>
-    </div>
+              class="fa-solid fa-angles-right"></i></span>
+        </div>
       </a>
     </div>
   </div>
@@ -2195,53 +1468,100 @@
       <h3 class="title-blog text-center text-uppercase fs-4 mt-5">Tin tức</h3>
       <p class="text-center">Cập nhật những thông tin mới nhất về nước hoa</p>
       <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <a href="./blog-details.html">
-                <div class="blog-item my-2 d-flex">
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="image-blog">
-                      <img src="./img/blog1.webp" alt="blog-1">
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8 col-sm-8">
-                    <div class="blog-info">
-                      <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
-                      <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
-                      <p class="posts">Link mua: John Varvatos XX Artisan Men EDT Người ta đã luôn quá quen với những...
-                      </p>
-                    </div>
+        <div class="col-lg-6">
+          <a href="./blog-details.html">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/blog1.webp" class="img-fluid rounded-start" alt="anh blog">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                    <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
+                    <p class="posts">Link mua: John Varvatos XX Artisan Men EDT Người ta đã luôn quá quen với
+                      những...
+                    </p>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <a href="./blog-details.html">
-                <div class="blog-item my-2 d-flex">
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="image-blog">
-                      <img src="./img/blog1.webp" alt="blog-1">
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8 col-sm-8">
-                    <div class="blog-info">
-                      <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
-                      <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
-                      <p class="posts">Link mua: John Varvatos XX Artisan Men EDT Người ta đã luôn quá quen với những...
-                      </p>
-                    </div>
+        <div class="col-lg-6">
+          <a href="./blog-details.html">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/medium/100/335/381/articles/8f4640737e7ebd20e46f.jpg?v=1655952856117"
+                    class="img-fluid rounded-start" alt="anh blog">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p>El Ganso Collection - Những chàng Tây Ban Nha thanh lịch.</p>
+                    <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
+                    <p class="posts">El Ganso trong mắt giới mộ điệu là sự giao thoa giữa rất nhiều vẻ đẹp, khi
+                      những sản phẩm đầu tiên ra mắt chỉ cách đây 2 năm,..
+                    </p>
                   </div>
                 </div>
-              </a>
-            </div>
-          </div>
+              </div>
+          </a>
         </div>
       </div>
+      <!-- <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="./blog-details.html">
+                  <div class="blog-item my-2 d-flex">
+                    <div class="col-lg-4 col-lg-4 col-md-6 col-sm-4">
+                      <div class="image-blog">
+                        <img src="./img/blog1.webp" alt="blog-1">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div class="blog-info">
+                        <p>John Varvatos XX Artisan- Một mùi hương khô - ấm đầy nam tính, bạn muốn thử?</p>
+                        <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
+                        <p class="posts">Link mua: John Varvatos XX Artisan Men EDT Người ta đã luôn quá quen với
+                          những...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="./blog-details.html">
+                  <div class="blog-item my-2 d-flex">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="image-blog">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/medium/100/335/381/articles/8f4640737e7ebd20e46f.jpg?v=1655952856117"
+                          alt="blog-1">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                      <div class="blog-info">
+                        <p>El Ganso Collection - Những chàng Tây Ban Nha thanh lịch.</p>
+                        <p class="time-blog">03/07/2022 | Viết bởi: Blanc Perfume</p>
+                        <p class="posts">El Ganso trong mắt giới mộ điệu là sự giao thoa giữa rất nhiều vẻ đẹp, khi
+                          những sản phẩm đầu tiên ra mắt chỉ cách đây 2 năm,..
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
       <a href="./blog.html">
         <div class="btn-more text-center">Xem thêm
           <span class="icon-more"><i class="fa-solid fa-angles-right"></i></span>
@@ -2274,12 +1594,24 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="logo text-decoration-underline my-3">Perfuma</div>
-          <p>GPKD số: 58A8011955</p>
-          <p>Ngày cấp: 01/10/2021</p>
-          <p>Cấp bởi: UBND TP Trà Vinh</p>
-          <p>Đ/c: 77 Điện Biên Phủ, P.6, Trà Vinh</p>
-          <p>Sđt : 0966434787</p>
-          <p>Email: support@hieushop.com.vn</p>
+          <a href="#">
+            <p>GPKD số: 58A8011955</p>
+          </a>
+          <a href="#">
+            <p>Ngày cấp: 01/10/2021</p>
+          </a>
+          <a href="#">
+            <p>Cấp bởi: UBND TP Trà Vinh</p>
+          </a>
+          <a href="#">
+            <p>Đ/c: 77 Điện Biên Phủ, P.6, Trà Vinh</p>
+          </a>
+          <a href="#">
+            <p>Sđt : 0966434787</p>
+          </a>
+          <a href="#">
+            <p>Email: support@hieushop.com.vn</p>
+          </a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <p class="title-footer mt-5">HÕ TRỢ KHÁCH HÀNG</p>
@@ -2323,25 +1655,18 @@
     </div>
   </div>
   <div class="overlay"></div>
-
-
-
-
-
-
-
-
-
-
   <!-- Link slide -->
-   <!-- Slide -->
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <!-- <script src="jquery.min.js"></script> -->
-  <script src="./library/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- Link axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- Bootstrap -->
   <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- Link tự viết -->
   <script src="./js/main.js"></script>
+  <script src="./js/product-details.js"></script>
 </body>
 
 </html>
