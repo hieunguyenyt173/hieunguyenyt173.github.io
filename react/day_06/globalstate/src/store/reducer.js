@@ -1,3 +1,4 @@
+
 import {ADD_TODO, DELETE_TODO, EDIT_TODO} from "./constants"
 export const initialState = [
     {
@@ -16,8 +17,9 @@ export const initialState = [
         status: false
     }
 ];
+
 const reducer = (state, action) => {
-    console.log(action.payload.title)
+    
     switch(action.type) {
         case ADD_TODO : {
             return [...state, action.payload]
@@ -26,7 +28,14 @@ const reducer = (state, action) => {
             return state.filter(todo => todo.id != action.payload.id);
         }
         case EDIT_TODO : {
-            return 
+            const { id, title} = action.payload;
+            const newTodos = state.map(todo => {
+                if(todo.id == id) {
+                    return { ...todo, title: title }
+                }
+                return todo;
+            })
+            return newTodos;
         }
         default : {
             return state;

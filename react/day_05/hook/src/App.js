@@ -22,8 +22,8 @@ function App() {
       {/* <ReactMemo /> */}
       {/* <Content1 /> */}
       {/* <Counter /> */}
-      {/* <TodoList/> */}
-      <Blog/>
+      <TodoList/>
+      {/* <Blog/> */}
       {/* <button onClick={() => setIsShowClock(!isShowClock)}>Toggle</button>
       {isShowClock && <Clock />} */}
     </div>
