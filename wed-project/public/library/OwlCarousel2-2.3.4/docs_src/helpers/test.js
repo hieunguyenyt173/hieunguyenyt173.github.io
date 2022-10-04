@@ -4,7 +4,7 @@ module.exports.register = function (Handlebars, options)  {
   //   var b = pageName;
 
   //   if(a.indexOf(b) > -1){
-  //   	return 'class="active"'
+  //   	return 'className="active"'
   // 	} else {
   	
   // 	}

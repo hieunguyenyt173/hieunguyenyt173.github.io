@@ -68,33 +68,33 @@ function renderProducts(arr,list,listUi) {
  let html = "";
   arr.forEach(p => {
     html += `
-    <div class="item shadow mb-3 bg-body rounded mx-2">
-    <div class="row">
-      <div class="col">
-        <div class="image-product">
+    <div className="item shadow mb-3 bg-body rounded mx-2">
+    <div className="row">
+      <div className="col">
+        <div className="image-product">
           <img src="${p.imageproduct}" alt="anh san pham">
-          <div class="btn-view mx-auto d-flex justify-content-center align-items-center" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quickview-modal">
-            <p class="my-0">Xem nhanh</p>
+          <div className="btn-view mx-auto d-flex justify-content-center align-items-center" type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quickview-modal">
+            <p className="my-0">Xem nhanh</p>
           </div>
-          <div class="saleoff d-flex align-item-center text-white text-center">
-            <p class="">Sale 45%</p>
+          <div className="saleoff d-flex align-item-center text-white text-center">
+            <p className="">Sale 45%</p>
           </div>
-          <div class="like">
-            <span class="like-icon fs-4"><i class="fa-solid fa-heart"></i></span>
+          <div className="like">
+            <span className="like-icon fs-4"><i className="fa-solid fa-heart"></i></span>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="row">
+    <div className="row">
     <a href="./product-details.html?id=${p.id}">
-    <div class="col">
-      <div class="product-info d-flex flex-column justify-content-between">
-        <p class="product-brand mb-1">${p.brandname}</p>
-        <p class="product-name mb-1">${p.name}</p>
-        <div class="product-price d-flex justify-content-between">
-          <p class="price-sale">${formatMoney(p.price_sale)}</p>
-          <p class="price text-decoration-line-through">${formatMoney(p.price)}</p>
+    <div className="col">
+      <div className="product-info d-flex flex-column justify-content-between">
+        <p className="product-brand mb-1">${p.brandname}</p>
+        <p className="product-name mb-1">${p.name}</p>
+        <div className="product-price d-flex justify-content-between">
+          <p className="price-sale">${formatMoney(p.price_sale)}</p>
+          <p className="price text-decoration-line-through">${formatMoney(p.price)}</p>
         </div>
       </div>
     </div>

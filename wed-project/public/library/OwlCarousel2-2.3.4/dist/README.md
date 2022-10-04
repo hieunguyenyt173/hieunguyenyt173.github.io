@@ -72,7 +72,7 @@ Put the script at the [bottom](https://developer.yahoo.com/performance/rules.htm
 Wrap your items (`div`, `a`, `img`, `span`, `li` etc.) with a container element (`div`, `ul` etc.). Only the class `owl-carousel` is mandatory to apply proper styles:
 
 ```html
-<div class="owl-carousel owl-theme">
+<div className="owl-carousel owl-theme">
   <div> Your Content </div>
   <div> Your Content </div>
   <div> Your Content </div>

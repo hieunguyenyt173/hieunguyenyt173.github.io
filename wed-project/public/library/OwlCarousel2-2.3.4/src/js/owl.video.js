@@ -176,7 +176,7 @@
 			lazyClass = '',
 			settings = this._core.settings,
 			create = function(path) {
-				icon = '<div class="owl-video-play-icon"></div>';
+				icon = '<div className="owl-video-play-icon"></div>';
 
 				if (settings.lazyLoad) {
 					tnLink = $('<div/>',{
@@ -288,7 +288,7 @@
 			html.attr( 'src', '//view.vzaar.com/' + video.id + '/player?autoplay=true' );
 		}
 
-		iframe = $(html).wrap( '<div class="owl-video-frame" />' ).insertAfter(item.find('.owl-video'));
+		iframe = $(html).wrap( '<div className="owl-video-frame" />' ).insertAfter(item.find('.owl-video'));
 
 		this._playing = item.addClass('owl-video-playing');
 	};

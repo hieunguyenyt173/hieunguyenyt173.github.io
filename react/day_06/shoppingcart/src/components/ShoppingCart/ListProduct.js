@@ -1,11 +1,18 @@
-import React from 'react'
-import Product from './Product'
+import React, { useContext } from "react";
+import Product from "./Product";
+import Context from "../../context/Context";
 const ListProduct = () => {
-  return (
-    <div className="product-list">
-           <Product/>             
-    </div>
-  )
-}
+  const { products } = useContext(Context);
 
-export default ListProduct
+  return (
+    <div className="col-md-8">
+      <div className="product-list">
+        {products.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ListProduct;
