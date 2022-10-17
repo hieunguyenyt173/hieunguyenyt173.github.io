@@ -23,7 +23,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="lo-trinh" element={<Track />} />
-
           <Route path="khoa-hoc">
             <Route index element={<Course />} />
             <Route path=":courseId" element={<CourseDetail />} />
