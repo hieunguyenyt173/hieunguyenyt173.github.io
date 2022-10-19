@@ -11,19 +11,19 @@ function UserList() {
   };
   
   const handleSearch = (e) => {
-    let newList=[...users]
-    if(e.keyCode=== 13) {
+    let newList = [...users]
         if(term) {
              newList = newList.filter((user) => (
-                user.name.toLowerCase().includes(term.toLowerCase())
+                user.name.toLowerCase().includes(term.toLowerCase())   
             ))
-            
+          
         }
-        
-    }
-    return newList
     
+    return newList
   }
+ 
+  const renderList = handleSearch()
+  
   
   return (
     <div className="container mt-5 mb-5">
@@ -31,16 +31,16 @@ function UserList() {
 
       <div className="row justify-content-center">
         <div className="col-md-10">
-          <div className="d-flex justify-content-between align-items-center mt-5 mb-4">
+          <div className="d-flex align-items-center mt-5 mb-4">
             <input
                 value={term}
                 onChange={(e) => setTerm(e.target.value)}
-                onKeyDown= {(e) => handleSearch(e)}
               type="text"
               id="search"
               className="form-control w-50"
               placeholder="Tìm kiếm user"
             />
+            {/* <button className="btn btn-danger ms-3" onClick={(e) => handleSearch(e)}>Search</button> */}
           </div>
 
           <div className="bg-light p-4">
@@ -57,7 +57,8 @@ function UserList() {
               </thead>
 
               <tbody>
-                {users.map((user, index) => (
+                
+                {renderList.map((user, index) => (
                   <tr key={index}>
                     <td>{user.id}</td>
                     <td>{user.name}</td>

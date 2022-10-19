@@ -8,11 +8,7 @@ function TodoList() {
     const [value, setValue] = useState("")
     const dispatch = useDispatch()
     const handleAdd = () => {
-        const newTodo = {
-            id: todo.length + 1,
-            title : value
-        }
-        dispatch(addTodo(newTodo))
+        
         setValue("")
     }
   return (

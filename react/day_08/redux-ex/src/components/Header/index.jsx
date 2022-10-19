@@ -11,11 +11,9 @@ function Header() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link" to="/create">Create</Link>
+          <Link className="nav-link" to="/users/create">Create</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/:userId">Detail</Link>
-        </li>
+       
         
       </ul>
     </div>
